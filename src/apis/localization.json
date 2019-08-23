@@ -1,0 +1,19 @@
+{
+    "languagues": [
+        {
+            "id":1,
+            "key": "en",
+            "name": "English"
+        },
+        {
+            "id":2,
+            "key": "vi",
+            "name": "Tiếng Việt"
+        },
+        {
+            "id":3,
+            "key": "ar-eg",
+            "name": "العربية"
+        }
+    ]
+}

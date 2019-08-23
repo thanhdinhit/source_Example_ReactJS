@@ -1,0 +1,61 @@
+.google-map {
+    .location-map-view {
+        min-height: calc(100vh - 140px);
+    }
+    .location-dialog-google {
+        height: 300px;
+    }
+    .popover-info-container:after {
+        content: " ";
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 8px solid #fff;
+        position: absolute;
+        bottom: 0px;
+        left: 180px;
+    }
+    .popover-info-container {
+        background: transparent;
+        padding-bottom: 8px;
+        .popover-info-location {
+            width: 375px;
+            background: white;
+            padding: 20px;
+            padding-right: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 1px 4.8px 0.3px rgba(0, 0, 0, 0.2);
+            .popover-label {
+                font-weight: bold;
+                font-size: 12px;
+                padding-bottom: 5px;
+            }
+            .name,
+            .address {
+                font-size: 12px;
+                padding-bottom: 18px;
+            }
+            .text-right {
+                margin-right: 15px;
+            }
+        }
+    }
+    .google-search-input {
+        box-sizing: border-box;
+        border: 1px solid transparent;
+        width: 180px;
+        height: 32px;
+        margin-top: 10px;
+        padding: 0 12px;
+        border-radius: 3px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        font-size: 12px;
+        outline: none;
+        text-overflow: ellipses;
+    }
+}
+
+.pac-container {
+    z-index: 2000;
+}

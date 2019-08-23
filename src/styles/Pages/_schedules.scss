@@ -1,0 +1,81 @@
+.schedules{
+    .header {
+        margin-bottom: 20px;
+    }
+    table {
+        tr{
+            cursor: pointer;
+        }
+        td {
+            height: 56px !important;
+
+            &.group-status-stat {
+                padding: 4px 10px 8px 0;
+            }
+        }
+    }
+    .schedule__status {
+        margin-right: 10px;
+        text-align: center;
+        display: inline-block;
+
+        .number {
+            padding-top: 1px;
+            padding-bottom: 1px;
+            font-size: 12px;
+        }
+
+        .status-error {
+            background-color: $status-error-background;
+            color: white;
+        }
+
+        .number-error {
+            color: $number-error-color;
+        }
+
+        .status-missing {
+            background-color: $status-missing-background;
+            color: $status-missing-color;
+            width: 110px;
+        }
+
+        .number-missing {
+            color: $number-missing-color;
+        }
+
+        .status-unpublish {
+            background-color: $status-unpublish-background;
+            color: $status-unpublish-color;
+        }
+
+        .number-unpublish {
+            color: $number-unpublish-color;
+        }
+
+        .number-error,
+        .number-missing,
+        .number-unpublish {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .status-done {
+            background-color: $status-done-background;
+            color: $status-done-color;
+        }
+
+        .status-initial {
+            background-color: $blue-color-3;
+            color: $status-initial-color;
+        }
+    }
+    .dialog-confirm.new-schedule {
+        .modal-body {
+            overflow-y: initial;
+        }
+        .input-container, .common-select {
+            margin-bottom: 15px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+table {
+    &.tree {
+        &.preventCollapse {
+            .treegrid-expander {
+                width: 0;
+            }
+        }
+        .treegrid-indent {
+            padding-right: 20px;
+        }
+        .parentExpand {
+            background-color: #fafafa;
+        }
+        .childrenExpand {
+            background-color: #f4f4f4;
+        }
+    }
+}

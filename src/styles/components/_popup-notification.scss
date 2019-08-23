@@ -1,0 +1,146 @@
+.notification {
+    .icon-noti{
+        vertical-align: middle;
+        font-size: 22px;
+        margin-left: 30px;
+        margin-right: 20px;
+        color: #afb6c7;
+        cursor: pointer;
+        padding: 7px;
+    }
+    .number-noti {
+        width: 17px;
+        height: 17px;
+        color: white;
+        background: $danger-color;
+        border-radius: 50%;
+        font-size: 10px;
+        top: -8px;
+        right: 22px;
+        position: absolute;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 2px;
+        font-family: "Open Sans";
+    }
+    .notification-modal{
+        z-index: 11111;
+        position: absolute;
+        top: 28px;
+        right: -72px;
+        box-shadow: 0px 1px 4.8px 0.3px rgba(0, 0, 0, 0.2);
+        border: solid 1px $gray-light-border;
+        border-radius: 5px;
+        .modal-content{
+            max-height: 458px;
+            overflow-y: hidden;
+            width: 400px;
+            box-shadow: none;
+            border: none;
+            .page-container {
+                padding: 14px 0px 0px 0px;
+                .noti-type-switch {
+                    margin-left: 20px;
+                    > div {
+                    width: 178px;
+                    }
+                }
+                .noti-empty {
+                    color: $grey-color-deep;
+                    line-height: 30px;
+                    text-align: center;
+                }
+            }
+            tr {
+                height: 80px;
+                td {
+                    padding: 5px 0px 5px 0px;
+                }
+            }
+            .status-read {
+                .cell-content{
+                    padding: 12px 20px;
+                    height: 62px;
+                    .main-label {
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+                    .sub-label {
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        max-width: 358px;
+                        color: $lighter-text;
+                    }
+                    .time-label {
+                        float: right;
+                    }
+                }
+            }
+            .status-unread {
+                .cell-content{
+                    padding: 12px 20px;
+                    height: 62px;
+                    .main-label {
+                        font-size: 13px;
+                        font-weight: bold;
+                    }
+                    .sub-label {
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        max-width: 358px;
+                        color: $lighter-text;
+                    }
+                    .time-label {
+                        float: right;
+                    }
+                }
+            }
+        }
+        .modal-footer {
+            text-align: center;
+            border-top: solid 1px $gray-light-border;
+            background: white;
+            .see-all {
+                cursor: pointer;
+            }
+        }
+    }
+    .arrow-up {
+        width: 10px;
+        height: 10px;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #fff;
+        content: "";
+        position: absolute;
+        margin: auto;
+        z-index: 22222;
+        -webkit-filter: drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.2));
+        top: 20px;
+        right: 30px;
+    }
+    .background-dialog {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        will-change: opacity;
+        transform: translateZ(0px);
+        transition: left 0ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, opacity 400ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        z-index: 2500;
+        .background-dialog-container{
+            margin-top: 50px;
+            margin-left: 53px;
+            background-color: rgba(0, 0, 0, 0);
+            height: 100%;
+            width: 100%;
+            transition: all .4s;
+        }
+    }
+}

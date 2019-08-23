@@ -1,0 +1,624 @@
+$block_width_default: 14.285%;
+
+.new-contract-working-location-container {
+    margin-bottom: 30px;
+}
+
+.locations-container {
+    margin-top: 10px;
+}
+
+.contract-working-location {
+    border-radius: 5px;
+    border: 1px solid $default-border;
+    margin: 0 0 10px 0;
+    width: 100%;
+    position: relative;
+
+    .location {
+        padding: 10px;
+        background-color: #f5fafa;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom: 1px solid $default-border;
+        position: relative;
+
+        table {
+            width: 100%;
+            td {
+                &:nth-child(2) {
+                    width: 250px;
+                }
+                &:nth-child(3) {
+                    width: 215px;
+                }
+                &:nth-child(4) {
+                    width: 200px;
+                }
+                &:nth-child(5) {
+                    width: 80px;
+                }
+            }
+        }
+
+        &.view-mode {
+            table {
+                tbody {
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                }
+                td {
+                    &:nth-child(2) {
+                        width: 40%;
+                        text-align: right;
+                        .text-view {
+                            display: inline-block;
+                            border: none;
+                            position: relative;
+                            border-radius: 4px;
+                            padding: 6px 10px;
+                            margin: 0;
+                            line-height: 16px;
+                            width: 100%;
+                            .group-info {
+                                display: inline-flex;
+                                width: calc(100% - 215px);
+                                justify-content: flex-end;
+                                .field-title {
+                                    display: inline-block;
+                                    padding-right: 2px;
+                                }
+                                .field-value {
+                                    display: inline-block;
+                                    max-width: calc(100% - 45px);
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                            }
+                            .date-info {
+                                display: inline-block;
+                                padding-left: 20px;
+                                width: 215px;
+                            }
+                            .field-value {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .location-info {
+            display: inline-flex;
+            .location-info__icon {
+                font-size: 20px;
+                vertical-align: middle;
+                line-height: 44px;
+                margin-right: 10px;
+            }
+
+            .location-info__name {
+                font-weight: bold;
+                font-size: 14px;
+                padding-bottom: 5px;
+            }
+            .location-info__address{
+                font-size: 12px;
+            }
+
+            .location-info__address,
+            .location-info__name {
+                margin: 0px;
+                white-space: normal;
+            }
+        }
+        .contract-date-view {
+            text-align: center;
+            strong {
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+        .location-group{
+            width: 250px;
+            display: inline-flex;
+            margin-right: 20px;
+            .title {
+                line-height: 30px;
+                margin: 0;
+                padding-right: 10px;
+            }
+            .select-group {
+                width: 200px;
+                line-height: 1.5;
+            }
+        }
+        .location-date {
+            display: inline-flex;
+            margin-right: 10px;
+            .title {
+                line-height: 30px;
+                margin: 0;
+                padding-right: 10px;
+            }
+            .date-picker {
+                width: 140px;
+            }
+        }
+        .btn-copy-location {
+            display: inline-block;
+            margin-right: 10px;
+            line-height: 1;
+            color: $primary-color-deep;
+            border-bottom: 1px solid $primary-color-deep;
+            cursor: pointer;
+        }
+        .btn-delete-location {
+            display: inline-block;
+            line-height: 1;
+            color: $danger-color-deep;
+            border-bottom: 1px solid $danger-color-deep;
+            cursor: pointer;
+        }
+    }
+
+    .working {
+        .working-table {
+            height: 100%;
+
+            .working-table__header {
+                height: 20px;
+                font-size: 20px;
+                text-transform: uppercase;
+                padding-left: 0px;
+                padding-right: 0px;
+                display: inline-table;
+                color: $text-lighter;
+                width: 100%;
+                border-bottom: 1px solid $default-border;
+            }
+
+            .working-table__content {
+                min-height: 80px;
+                padding-left: 0px;
+                padding-right: 0px;
+
+                width: 100%;
+                .location-shifts-content {
+                    padding: 0;
+                    width: 100%;
+                    display: flex;
+                    .shifts-cell {
+                        width: $block_width_default;
+                        min-height: 120px;
+                        padding: 3px;
+                        border-left: 1px solid $default-border;
+                        &:nth-child(1) {
+                            border-left: unset;
+                        }
+                        .btn-add-shift {
+                            color: $primary-color;
+                            font-weight: 600;
+                            border-radius: 5px;
+                            border: 1.2px dashed $primary-color;
+                            text-align: center;
+                            line-height: 25px;
+                            cursor: pointer;
+                        }
+                        .location-shift {
+                            border-radius: 5px;
+                            padding: 10px 15px;
+                            font-size: 12px;
+                            margin-top: 5px;
+                            position: relative;
+                            > div:nth-child(1) {
+                                font-weight: 600;
+                            }
+                            .actions {
+
+                                position: absolute;
+                                top: 10px;
+                                right: 15px;
+                                .fa {
+                                    cursor: pointer;
+                                    font-size: 13px;
+                                    color: $text-lighter;
+                                }
+                                .fa-pencil {
+                                    cursor: pointer;
+                                    margin-right: 10px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .working-table__header-title {
+                text-align: center;
+                padding: 5px 0;
+                width: 100%;
+                display: inline-table;
+
+                .day {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    font-size: 13px;
+                    font-weight: 800;
+                    width: $block_width_default;
+                    display: table-cell;
+                    i{
+                        margin-left: 10px;
+                        margin-top: 3px;
+                        cursor: pointer;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.flexible-working-time {
+    border-radius: 5px;
+    border: 1px solid $default-border;
+    margin: 0 0 10px 0;
+    width: 100%;
+    position: relative;
+
+    .flexible {
+        padding: 10px;
+        background-color: $gray-color-lighter;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: $gray-color-lighter;
+        border-bottom: 1px solid $default-border;
+        position: relative;
+
+        table {
+            width: 100%;
+            td {
+                &:nth-child(1) {
+                    width: 100px;
+                }
+                &:nth-child(2) {
+                    width: 180px;
+                }
+                &:nth-child(3) {
+                    width: 190px;
+                }
+                &:nth-child(4) {
+                    width: 215px;
+                }
+                &:nth-child(5) {
+                    width: 200px;
+                }
+                &:nth-child(6) {
+                    width: 80px;
+                }
+            }
+        }
+
+        .flexible-info {
+            display: inline-flex;
+            .flexible-info__icon {
+                font-size: 20px;
+                vertical-align: middle;
+                line-height: 44px;
+                margin-right: 10px;
+            }
+            > div.flexible-name-wrapper {
+                display: inline-flex;
+                align-items: center;
+                .flexible-info__name {
+                    font-weight: bold;
+                    font-size: 14px;
+                    margin: 0px;
+                    white-space: normal;
+                }
+            }
+        }
+        .flexible-details {
+            display: inline-flex;
+            line-height: 44px;
+            .text-view {
+                display: inline-block;
+                border: none;
+                position: relative;
+                border-radius: 4px;
+                padding: 6px 10px;
+                line-height: 16px;
+                background-color: $gray-color-4;
+                .divider {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .value {
+                    font-weight: 600;
+                }
+            }
+        }
+        .contract-date-view {
+            text-align: center;
+            strong {
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+        .flexible-name {
+            width: calc(100% - 10px);
+            display: inline-flex;
+            margin-right: 10px;
+            .title {
+                line-height: 30px;
+                margin: 0;
+                padding-right: 10px;
+            }
+            .identifier {
+                width: calc(100% - 60px);
+                line-height: 1.5;
+            }
+        }
+        .flexible-group{
+            width: calc(100% - 10px);
+            display: inline-flex;
+            margin-right: 10px;
+            .title {
+                line-height: 30px;
+                margin: 0;
+                padding-right: 10px;
+            }
+            .select-group {
+                width: calc(100% - 60px);
+                line-height: 1.5;
+            }
+        }
+        .flexible-date {
+            display: inline-flex;
+            margin-right: 10px;
+            width: calc(100% - 10px);
+            .title {
+                line-height: 30px;
+                margin: 0;
+                padding-right: 10px;
+            }
+            .date-picker {
+                width: calc(100% - 60px);
+            }
+        }
+        .btn-copy-flexible {
+            display: inline-block;
+            margin-right: 10px;
+            line-height: 1;
+            color: $primary-color-deep;
+            border-bottom: 1px solid $primary-color-deep;
+            cursor: pointer;
+        }
+        .btn-delete-flexible {
+            display: inline-block;
+            line-height: 1;
+            color: $danger-color-deep;
+            border-bottom: 1px solid $danger-color-deep;
+            cursor: pointer;
+        }
+        &.view-mode {
+            table {
+                tbody {
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                }
+                td {
+                    &:nth-child(1) {
+                        width: 60%;
+                    }
+                    &:nth-child(2) {
+                        width: 40%;
+                        text-align: center;
+                        .text-view {
+                            float: right;
+                            display: inline-block;
+                            border: none;
+                            position: relative;
+                            border-radius: 4px;
+                            padding: 6px 10px;
+                            margin: 0;
+                            line-height: 16px;
+                            width: 100%;
+                            .group-info {
+                                display: inline-flex;
+                                width: calc(100% - 215px);
+                                justify-content: flex-end;
+                                .field-title {
+                                    display: inline-block;
+                                    padding-right: 2px;
+                                }
+                                .field-value {
+                                    display: inline-block;
+                                    max-width: calc(100% - 45px);
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                            }
+                            .date-info {
+                                display: inline-block;
+                                padding-left: 20px;
+                                width: 215px;
+                            }
+                            .field-value {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+            .flexible-info__name {
+                vertical-align: middle;
+                padding-bottom: 0;
+            }
+        }
+
+    }
+
+    .working {
+        .working-table {
+            height: 100%;
+
+            .working-table__header {
+                height: 30px;
+                font-size: 13px;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding-left: 0px;
+                padding-right: 0px;
+                display: inline-table;
+                width: 100%;
+                color: $text-lighter;
+                border-bottom: 1px solid $default-border;
+                background-color: #ffffff;
+                // box-shadow: 0px 1px 0 0 $gray-light-border;
+            }
+
+            .working-table__content {
+                min-height: 80px;
+                padding-left: 0px;
+                padding-right: 0px;
+                width: 100%;
+                .location-shifts-content {
+                    padding: 0;
+                    width: 100%;
+                    display: inline-flex;
+                    .shifts-cell {
+                        width: $block_width_default;
+                        min-height: 120px;
+                        padding: 1px 3px;
+                        border-left: 1px solid $default-border;
+                        &:nth-child(1) {
+                            border-left: unset;
+                        }
+                        .location-shift {
+                            border-radius: 5px;
+                            padding: 10px 15px;
+                            font-size: 12px;
+                            margin-top: 5px;
+                            position: relative;
+                            > div:nth-child(1) {
+                                font-weight: 600;
+                            }
+                            .actions {
+                                position: absolute;
+                                top: 10px;
+                                right: 15px;
+                                .fa {
+                                    font-size: 13px;
+                                    cursor: pointer;
+                                }
+                                .fa-pencil {
+                                    margin-right: 10px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        .btn-add-shift {
+                            color: $lighter-text;
+                            font-size: 12px;
+                            font-weight: 600;
+                            border-radius: 5px;
+                            border: 1.2px dashed $lighter-text;
+                            text-align: center;
+                            line-height: 30px;
+                            height: 30px;
+                            cursor: pointer;
+                            margin-top: 2px;
+                        }
+                    }
+                }
+            }
+
+            .working-table__header-title {
+                text-align: center;
+                padding: 5px 0;
+                width: 100%;
+                display: inline-table;
+
+                .day {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    font-size: 13px;
+                    font-weight: 800;
+                    width: $block_width_default;
+                    display: table-cell;
+                    i{
+                        margin-left: 10px;
+                        margin-top: 3px;
+                        cursor: pointer;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1304px) {
+    .flexible-working-time {
+        .flexible {
+            min-height: 60px;
+            table {
+                width: 100%;
+                td {
+                    &:nth-child(1) {
+                        width: unset;
+                    }
+                    &:nth-child(2) {
+                        width: 250px;
+                    }
+                    &:nth-child(3) {
+                        width: 250px;
+                    }
+                    &:nth-child(4) {
+                        width: 215px;
+                    }
+                    &:nth-child(5) {
+                        width: 200px;
+                    }
+                    &:nth-child(6) {
+                        width: 80px;
+                    }
+                }
+            }
+            .flexible-name {
+                width: 260px;
+                margin-right: 20px;
+                .identifier {
+                    width: 200px;
+                }
+            }
+            .flexible-group{
+                width: 250px;
+                margin-right: 20px;
+                .select-group {
+                    width: 200px;
+                }
+            }
+            .flexible-date {
+                margin-right: 10px;
+                .title {
+                    line-height: 30px;
+                    margin: 0;
+                    padding-right: 10px;
+                }
+                .date-picker {
+                    width: 140px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.contract-detail{
+    .new-contract-info-container {
+        .schedule-template {
+            border: 1px solid #eeeef8;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            padding: 5px 20px 20px 0;
+            .template-container {
+                .template-row {
+                    display: flex;
+                }
+                .template-header {
+                    height: 42px;
+                    width: calc((100% - 120px) / 7);
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 42px;
+                    &:nth-child(1) {
+                        width: 120px;
+                    }
+                }
+                .template-item {
+                    height: 42px;
+                    width: calc((100% - 120px) / 7);
+                    display: inline-block;
+                    border-right: 1px solid rgba(135, 135, 135, 0.3);
+                    &:nth-child(1) {
+                        width: 120px;
+                        text-align: center;
+                        line-height: 42px;
+                    }
+                }
+            }
+            .radio-button {
+                label {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}

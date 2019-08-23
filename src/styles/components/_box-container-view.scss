@@ -1,0 +1,100 @@
+.border-box-header-view {
+    height: 35px;
+    background-color: $primary-color-brighter;
+    position: relative;
+    border-radius: 10px;
+    top: -18px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    .title-view {
+        color: $default-text;
+        padding-top: 7px;
+        font-weight: 600;
+    }
+    .img-title {
+        width: 9px;
+        height: 9px;
+        position: absolute;
+        right: 20px;
+        top: 12px;
+        cursor: pointer;
+    }
+}
+
+.border-box-content-view {
+    border-radius: 10px;
+    background-color: white;
+    border: solid 1px $gray-color-light;
+    min-height: 55px;
+    margin-bottom: 40px;
+    padding: 0px;
+    margin-top: 18px;
+    .table-container-view {
+        min-height: 13px;
+        margin-top: -10px;
+        margin-bottom: 13px;
+        align-items: center;
+        display: flex;
+        table {
+            width: 90%;
+            margin-left: 30px;
+        }
+        td,
+        th {
+            padding: 7px 0px;
+        }
+        tr {
+            border-top: 1px solid $gray-light-border;
+        }
+        tr:first-child {
+            border-top: none;
+        }
+        .td-icon-view {
+            width: 25px;
+            img {
+                width: 20px;
+                height: 24px;
+            }
+        }
+        .td-name-view {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 170px;
+            padding-left: 10px;
+        }
+        .td-expiredDate-view {
+            width: 70%;
+            padding-left: 20px;
+            padding-right: 20px;
+            .add-update {
+                padding-top: 10px;
+                padding-bottom: 5px;
+                font-weight: 600;
+                cursor: pointer;
+                font-size: 14px;
+                color: $primary-color-deep;
+                i {
+                    margin-right: 6px;
+                }
+            }
+            .nearly-expired{
+                display: block;
+                color: $yellow-color-brighter;
+            }
+            .expired{
+                display: block;
+                color: $danger-color-brighter;
+            }
+        }
+    }
+}
+.no-content{
+    border: none;
+    min-height: 20px;
+    margin-bottom: 0px;
+}
+
+
+

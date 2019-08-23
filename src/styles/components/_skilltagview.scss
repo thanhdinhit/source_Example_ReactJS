@@ -1,0 +1,25 @@
+.skillstagview{
+    .view-content{
+        border-radius: 10px;
+        background-color: white;
+        border: solid 1px #d6e1e5;
+        min-height: 55px;
+        margin-bottom: 40px;
+        padding: 0px;
+        margin-top: -35px;
+    }
+    .view-title{
+        height: 35px;
+        background-color: #e0f4f6;
+        position: relative;
+        border-radius: 10px;
+        top: -18px;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        .title{
+            color: $default-text;
+            padding-top: 7px;
+        }
+    }
+}

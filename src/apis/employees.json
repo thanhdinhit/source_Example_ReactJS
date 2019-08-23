@@ -1,0 +1,94 @@
+{
+	"items": [
+		{
+			"id": 1,
+			"firstName": "David",
+			"lastName": "Beckham",
+			"employeeId": "123123",
+			"email": "abc@gmail.com",
+			"imageUrl": "/iwfa/images/1",
+			"address": "Old Trafford street Manchester City, Victoria State UK",
+			"deviceId": "12345678",
+			"workingMobile": "091234567",
+			"personalMobile": "0902134567",
+			"homePhone": null,
+			"cvUrl": "/iwfa/cv/david-cv.docx",
+			"reportTo": {
+				"id": 2,
+				"firstName": "Alex",
+				"lastName": "Ferguson"
+			},
+			"userRole": "employee",
+			"skills": [
+				{
+					"id": 1,
+					"name": "baton",
+					"description": "baton permit"
+				},
+				{
+					"id": 2,
+					"name": "gun",
+					"description": " gun permit"
+				}
+			],
+			"jobRoles": [
+				{
+					"id": 1,
+					"name": "guard",
+					"color": "#FF0000",
+					"requiredSkills": [
+						{
+							"id": 1,
+							"name": "baton",
+							"description": "baton permit"
+						},
+						{
+							"id": 2,
+							"name": "gun",
+							"description": " gun permit"
+						}
+					]
+				}
+			],
+			"employeeStartDate": "2016-12-1T00:00:00Z ",
+			"maxWorkingHoursPerWeek": 40,
+			"minWorkingHoursPerWeek": 32,
+			"maxConsecutiveWorkingDays": 5,
+			"maxOverTimeHoursPerWeek": 20,
+			"hourlyWage": 10,
+			"overtimeHourlyWage": 10,
+			"referShiftTemplates": [
+				{
+					"id": 1,
+					"name": "TMA - Day"
+				},
+				{
+					"id": 2,
+					"name": "TMA - Night"
+				}
+			],
+			"workingRegions": [
+				{
+					"id": 1,
+					"name": "Q1"
+				},
+				{
+					"id": 2,
+					"name": "Q2"
+				},
+				{
+					"id": 3,
+					"name": "Q4"
+				}
+			]
+		}
+	],
+	"meta": {
+		"type": "collection",
+		"count": 1,
+		"totalPages": 20,
+		"links": {
+			"self": ""
+		}
+	}
+}

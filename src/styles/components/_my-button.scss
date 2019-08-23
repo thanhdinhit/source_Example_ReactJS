@@ -1,0 +1,11 @@
+
+.delete-button {
+  background: $danger-color-deep !important;
+}
+
+.cancel-button{
+    background: $grey-color-deep;
+    &:hover {
+      background-color: $grey-color-deep-hover;
+  }
+}

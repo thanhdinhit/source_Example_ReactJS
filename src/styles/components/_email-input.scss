@@ -1,0 +1,52 @@
+.email-input-container {
+    width: 100%;
+    border: solid 1px $gray-light-border;
+    border-radius: 5px; 
+    padding: 10px 10px 0px 10px;
+    cursor: text;
+    input {
+        padding-bottom: 10px;
+        background: none transparent;
+        border: 0 none;
+        box-shadow: none;
+        display: inline-block;
+        font-family: inherit;
+        font-size: inherit;
+        margin: 0;
+        outline: none;
+        -webkit-appearance: none;
+        line-height: 27px;
+    }
+    .email-chip {
+        background: $gray-color-4;
+        border-radius: 5px;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 9px 10px 8px 10px;
+        line-height: 10px;
+        cursor: default;
+        i {
+            cursor: pointer;
+            margin-left: 15px;
+            font-size: 8px;
+        }
+        &.email-error {
+            span {
+                border-bottom: 2px dotted $danger-color-brighter;
+            }
+            background: transparent;
+            padding-left: 0px;
+            margin-right: 0px;
+        }
+        &.is-editing{
+            padding: 0px 11px 0px 11px;;
+        }
+        input{
+            padding: 0px;
+        }
+    }
+    .email-chip:first-child{
+        margin-left: 0px;
+    }
+}

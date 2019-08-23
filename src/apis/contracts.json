@@ -1,0 +1,276 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "customer": {
+                "id": 1,
+                "customerName": "TMA"
+            },
+            "identifier": "CTRACT_001",
+            "group": {
+                "id": 1,
+                "name": "TMA Solutions",
+                "supervisor": {
+                    "id": 1,
+                    "firstName": "Thinh",
+                    "lastName": "Nguyen",
+                    "fullName": "Thinh Nguyen",
+                    "photoUrl": "ava_1484799840630.jpg",
+                    "email": "testmail10@gmail.com",
+                    "group": "TMA Solutions",
+                    "jobRole": {
+                        "id": 1,
+                        "name": "Guard",
+                        "color": "#f44336"
+                    }
+                }
+            },
+            "scheduleMode": "Manual",
+            "startDate": "2018-01-01T00:00:00Z",
+            "endDate": "2018-03-31T00:00:00Z",
+            "status": "Draft",
+            "shiftTemplate": {
+                "id": 1,
+                "name": "Shift Template 1",
+                "shiftTimes": [
+                    {
+                        "id": 1,
+                        "name": "Morning",
+                        "color": "Green",
+                        "startTime": "06:00",
+                        "endTime": "10:00"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Afternoon",
+                        "color": "Red",
+                        "startTime": "11:00",
+                        "endTime": "13:00"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Evening",
+                        "color": "Blue",
+                        "startTime": "13:30",
+                        "endTime": "15:00"
+                    }
+                ]
+            },
+            "attachments": [
+                {
+                    "docUrl": "url1"
+                }
+            ],
+            "links": [
+                {
+                    "id": 1,
+                    "identifier": "CTRACT_001"
+                },
+                {
+                    "id": 2,
+                    "identifier": "CTRACT_002"
+                }
+            ],
+            "scheduleTemplate": "Customize",
+            "contractLocations": [
+                {
+                    "id": 1,
+                    "contractId": 1,
+                    "location": {
+                        "id": 1,
+                        "name": "Location Test 1",
+                        "address": null
+                    },
+                    "startDate": "2018-01-01T00:00:00Z",
+                    "endDate": "2018-03-31T00:00:00Z",
+                    "schedules": [
+                        {
+                            "id": 1,
+                            "contractLocationId": 1,
+                            "shiftTime": {
+                                "id": 1,
+                                "name": "Morning",
+                                "color": "Green",
+                                "startTime": "06:00",
+                                "endTime": "10:00"
+                            },
+                            "weekday": "Monday",
+                            "require": [
+                                {
+                                    "id": 1,
+                                    "contractLocationScheduleId": 1,
+                                    "jobRole": {
+                                        "id": 1,
+                                        "name": "Guard",
+                                        "color": "#f44336"
+                                    },
+                                    "number": 2
+                                },
+                                {
+                                    "id": 2,
+                                    "contractLocationScheduleId": 1,
+                                    "jobRole": {
+                                        "id": 2,
+                                        "name": "Region Manager",
+                                        "color": "#795548"
+                                    },
+                                    "number": 2
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "contractLocationId": 1,
+                            "shiftTime": {
+                                "id": 2,
+                                "name": "Afternoon",
+                                "color": "Red",
+                                "startTime": "11:00",
+                                "endTime": "13:00"
+                            },
+                            "weekday": "Monday",
+                            "require": []
+                        }
+                    ]
+                }
+            ],
+            "stamp": 0
+        },
+        {
+            "id": 1,
+            "customer": {
+                "id": 1,
+                "customerName": "TMA"
+            },
+            "identifier": "CTRACT_001",
+            "group": {
+                "id": 1,
+                "name": "TMA Solutions",
+                "supervisor": {
+                    "id": 1,
+                    "firstName": "Thinh",
+                    "lastName": "Nguyen",
+                    "fullName": "Thinh Nguyen",
+                    "photoUrl": "ava_1484799840630.jpg",
+                    "email": "testmail10@gmail.com",
+                    "group": "TMA Solutions",
+                    "jobRole": {
+                        "id": 1,
+                        "name": "Guard",
+                        "color": "#f44336"
+                    }
+                }
+            },
+            "scheduleMode": "Manual",
+            "startDate": "2018-01-01T00:00:00Z",
+            "endDate": "2018-03-31T00:00:00Z",
+            "status": "Draft",
+            "shiftTemplate": {
+                "id": 1,
+                "name": "Shift Template 1",
+                "shiftTimes": [
+                    {
+                        "id": 1,
+                        "name": "Morning",
+                        "color": "Green",
+                        "startTime": "06:00",
+                        "endTime": "10:00"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Afternoon",
+                        "color": "Red",
+                        "startTime": "11:00",
+                        "endTime": "13:00"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Evening",
+                        "color": "Blue",
+                        "startTime": "13:30",
+                        "endTime": "15:00"
+                    }
+                ]
+            },
+            "attachments": [
+                {
+                    "docUrl": "url1"
+                }
+            ],
+            "links": [
+                {
+                    "id": 1,
+                    "identifier": "CTRACT_001"
+                },
+                {
+                    "id": 2,
+                    "identifier": "CTRACT_002"
+                }
+            ],
+            "scheduleTemplate": "Customize",
+            "contractLocations": [
+                {
+                    "id": 1,
+                    "contractId": 1,
+                    "location": {
+                        "id": 1,
+                        "name": "Location Test 1",
+                        "address": null
+                    },
+                    "startDate": "2018-01-01T00:00:00Z",
+                    "endDate": "2018-03-31T00:00:00Z",
+                    "schedules": [
+                        {
+                            "id": 1,
+                            "contractLocationId": 1,
+                            "shiftTime": {
+                                "id": 1,
+                                "name": "Morning",
+                                "color": "Green",
+                                "startTime": "06:00",
+                                "endTime": "10:00"
+                            },
+                            "weekday": "Monday",
+                            "require": [
+                                {
+                                    "id": 1,
+                                    "contractLocationScheduleId": 1,
+                                    "jobRole": {
+                                        "id": 1,
+                                        "name": "Guard",
+                                        "color": "#f44336"
+                                    },
+                                    "number": 2
+                                },
+                                {
+                                    "id": 2,
+                                    "contractLocationScheduleId": 1,
+                                    "jobRole": {
+                                        "id": 2,
+                                        "name": "Region Manager",
+                                        "color": "#795548"
+                                    },
+                                    "number": 2
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "contractLocationId": 1,
+                            "shiftTime": {
+                                "id": 2,
+                                "name": "Afternoon",
+                                "color": "Red",
+                                "startTime": "11:00",
+                                "endTime": "13:00"
+                            },
+                            "weekday": "Monday",
+                            "require": []
+                        }
+                    ]
+                }
+            ],
+            "stamp": 0
+        }    
+    ]
+}

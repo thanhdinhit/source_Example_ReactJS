@@ -1,0 +1,118 @@
+.setting {
+    .number-input {
+        width: 73px !important;
+    }
+    .years {
+        min-width: 150px;
+    }
+    .remind-radio-group {
+        position: relative;
+        vertical-align: baseline;
+        min-width: 200px;
+        .remind-after {
+            margin-bottom: 24px;
+            margin-top: 12px;
+        }
+        .group {
+            width: 143px;
+        }
+    }
+    .cancel-leave-setting {
+        margin-left: 24px;
+    }
+    td {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 50px;
+    }
+    .dot {
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 16px;
+        width: 4px;
+        height: 4px;
+        background-color: #4a5c61;
+    }
+}
+
+.setting-container {
+    padding: 0px 30px 20px 0px !important;
+}
+
+.setting-tag {
+    margin: 0px 0;
+    height: 214px;
+    width: 360px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    .title {
+        color: #0c7094;
+        font-weight: bold;
+        display: table-cell;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .description {
+        font-size: 12px;
+        color: #364347;
+        margin-bottom: 17px;
+        margin-top: 15px;
+        max-height: 85px;
+        overflow: hidden;
+        width: 313px;
+        text-overflow: ellipsis;
+        text-align: justify;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+    }
+    .require-footer {
+        position: absolute;
+        bottom: 0;
+        font-size: 12px;
+        font-weight: 600;
+        color: #db5461;
+        padding-bottom: 16px;
+    }
+    .role-button {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: table-cell;
+    }
+}
+
+.setting-tag-content {
+    height: 163px;
+    padding: 18px 25px 0px 22px;
+    position: relative;
+}
+
+.setting-tag-content .setting-tag-title {
+    color: $primary-color;
+    font-size: 14px;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 9px;
+    cursor: pointer;
+}
+
+.setting-tag-footer {
+    height: 50px;
+    border-top: 1px solid #eeeef8;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: table;
+}
+
+.setting-tag-footer .setting-tag-footer-content {
+    display: table-cell;
+    vertical-align: middle;
+    .group-button {
+        margin-right: 20px;
+    }
+}

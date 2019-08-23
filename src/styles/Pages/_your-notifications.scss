@@ -1,0 +1,80 @@
+.page-your-notifications {
+    .header {
+        margin-bottom: 20px;
+    }
+    .row-header {
+        .noti-type-switch {
+            border: 1px solid $gray-light-border;
+            border-radius: 5px;
+            display: inline-block;
+            > div {
+                display: inline-block;
+                width: 180px;
+                text-align: center;
+                height: 30px;
+                line-height: 30px;
+                cursor: pointer;
+                font-weight: 600;
+                &.active {
+                    background-color: $primary-color-deep;
+                    color: white;
+                }
+            }
+        }
+    }
+    .row-actions {
+        margin-bottom: 10px;
+        .select-all {
+            display: inline-block;
+            margin-left: 35px;
+            label {
+                color: $black !important;
+                font-weight: 600;
+                font-size: 13px;
+            }
+        }
+        .notification-actions-group {
+            float: right;
+            margin-right: 20px;
+        }
+    }
+    .metro-table {
+        tr {
+            cursor: pointer;
+            td {
+                .my-checkbox {
+                    float: left;
+                    margin-top: 5px;
+                    margin-left: 10px;
+                }
+                &:nth-child(1) {
+                    width: calc(100% - 150px);
+                }
+                &:nth-child(2) {
+                    width: 150px;
+                    color: $gray-color-deep;
+                }
+            }
+            &.status-unread {
+                background-color: $blue-color-6;
+                .cell-content {
+                    .main-label {
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            &.status-read {
+                .cell-content {
+                    .main-label {
+                        font-size: 13px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            &.selected {
+                background-color: $blue-color-5;
+            }
+        }
+    }
+}

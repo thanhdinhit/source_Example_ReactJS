@@ -1,0 +1,90 @@
+.employee-contact-detail{
+    .new-employee-info-container {
+        margin-bottom: 24px;
+        .input-container,
+        .common-select,
+        .input-group.date {
+            margin-bottom: 15px;
+        }
+        &:last-child {
+            margin-bottom: 5px;
+        }
+    }
+
+    .avatar-container {
+        text-align: center;
+        position: relative;
+    }
+    .photo-upload {
+        position: relative;
+        height: 110px;
+        width: 110px;
+        margin: 0 auto;
+        .img-upload {
+            border-radius: 50%;
+            height: 110px;
+            width: 110px;
+        }
+    .img-button-upload {
+        cursor: pointer;
+        position: absolute;
+        bottom: 0px;
+        right: -10px;
+        margin-bottom: 0px;
+            .input-camera {
+                width: 31px;
+                height: 31px;
+                color: white;
+                background: $primary-color;
+                border-radius: 25px;
+                border: 3px solid white;
+                i {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .first-col{
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .last-col{
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+}
+
+.title-start-end-date{
+    margin-top: -4px;
+    margin-bottom: 7px;
+    color: $text-lighter;
+    >span>span{
+        color: $danger-color;
+        white-space: nowrap;
+        max-width: 288px;
+    }
+}
+
+.box-start-date{
+    padding: 0px 10px 0px 0px;
+    width: 48.5%;
+}
+
+.box-end-date{
+    padding: 0px 0px 0px 10px;
+    width: 48.5%;
+    float: right;
+}
+
+.new-employee-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 12px;
+    color: $primary-color-darker;
+    &.with-sub-header {
+        margin-bottom: 18px;
+    }
+}

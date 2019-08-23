@@ -1,0 +1,220 @@
+.raised-button {
+    &:hover, &:focus{
+        background-color: $primary-color-deep-hover;
+    }
+    color: #ffffff;
+    height: 30px;
+    border: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: "Open Sans";
+    font-weight: 600;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px 5px;
+    padding: 0px 20px 0px 20px;
+    outline: none;
+    font-size: 12px;
+    transform: translate(0px, 0px);
+    position: relative;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    background-color: $button-background;
+    text-align: center;
+    box-shadow: none;
+    width: auto;
+    min-width: 106px;
+    i.fa {
+        font-size: 12px;
+        font-weight: inherit;
+        margin-right: 5px;
+    }
+    &.mini-circle-button {
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        border-radius: 50%;
+        padding: 0;
+        text-align: center;
+        line-height: 20px;
+    }
+}
+
+.raised-button:last-child {
+    margin-right: 0px;
+}
+
+.raised-button-large {
+    margin: 0px 5px;
+    height: 40px;
+    min-width: 130px;
+    .label-icon {
+        line-height: 40px;
+    }
+}
+
+.raised-button-large:last-child {
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.raised-button-medium {
+    margin: 0px 15px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 12px;
+    .label-icon {
+        line-height: 30px;
+    }
+}
+
+.raised-button-small {
+    margin: 0px 5px;
+    padding: 0px 15px 0px 15px;
+    min-width: 66px;
+    height: 20px;
+    font-size: 12px;
+    .label-icon {
+        line-height: 20px;
+    }
+}
+
+.raised-button-background {
+    color: white;
+    background-color: transparent;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.raised-button-background:hover {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.raised-button-label {
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+    .label-icon {
+        padding-left: 5px;
+        display: table;
+        i {
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 5px;
+        }
+    }
+    i{
+        padding-right: 5px;
+    }
+}
+
+.raised-button:active {
+    -webkit-box-shadow: inset 0px 3px 7px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 3px 7px 0 rgba(0, 0, 0, 0.25);
+}
+
+.raised-button-disable {
+    opacity: 0.5;
+    cursor: not-allowed;
+    &:active {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.raised-button-first {
+    background-color: $primary-color-deep;
+    &:hover, &:focus{
+        background-color: $primary-color-deep-hover;
+    }
+}
+
+.raised-button-first-secondary {
+    background-color: $white;
+    border: 1px solid $primary-color-deep;
+    color: $primary-color-deep;
+    &:hover, &:focus{
+        background-color: $white;
+        border: 1px solid $primary-color-deep;
+        box-shadow: 0px 0px 5px $primary-color-deep;
+    }
+    &:active {
+        background-color: $primary-color-deep-active;
+    }
+}
+
+.raised-button-second {
+    background-color: $green-color-deep;
+    &:hover, &:focus{
+        background-color: $green-color-deep-hover;
+    }
+}
+
+.raised-button-second-secondary {
+    background-color: $white;
+    border: 1px solid $green-color-deep;
+    color: $green-color-deep;
+    &:hover, &:focus{
+        background-color: $white;
+        border: 1px solid $green-color-deep;
+        box-shadow: 0px 0px 5px $green-color-deep;
+    }
+    &:active{
+        background-color: $green-color-deep-active;
+    }
+}
+
+.raised-button-third {
+    background-color: $danger-color-deep;
+    &:hover, &:focus{
+        background-color: $danger-color-deep-hover;
+    }
+}
+
+.raised-button-third-secondary {
+    background-color: $white;
+    border: 1px solid  $danger-color-deep;
+    color:  $danger-color-deep;
+    &:hover, &:focus{
+        background-color: $white;
+        border: 1px solid  $danger-color-deep;
+        box-shadow: 0px 0px 5px  $danger-color-deep;
+    }
+    &:active{
+        background-color:  $danger-color-deep-active;
+    }
+}
+
+.raised-button-fourth {
+    background-color: $grey-color-deep;
+    &:hover, &:focus{
+        background-color: $grey-color-deep-hover;
+    }
+}
+
+.raised-button-fourth-secondary {
+    background-color: $white;
+    border: 1px solid  $grey-color-deep;
+    color:  $grey-color-deep;
+    &:hover, &:focus{
+        background-color: $white;
+        border: 1px solid  $grey-color-deep;
+        box-shadow: 0px 0px 5px  $grey-color-deep;
+    }
+    &:active{
+        background-color:  $grey-color-deep-active;
+    }
+}
+.print-asset-button {
+    margin-left: 0;
+    border: 1px solid $primary-color;
+    background-color: white;
+    color: $primary-color-darker;
+    img {
+        margin-right: 10px;
+    }
+}

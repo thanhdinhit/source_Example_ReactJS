@@ -1,0 +1,45 @@
+.employee-availability {
+    margin-right: -15px;
+    .section-title {
+        font-size: 14px;
+        font-weight: 600;
+        color:  $primary-color-darker;
+        margin-bottom: 20px;
+        height: 12px;
+        line-height: 12px;
+        display: inline-block;
+    }
+    .working-time-type{
+        background: $gray-color-14;
+        font-size: 13px;
+        font-weight: 600;
+        display: inline-block;
+        margin-left: 20px;
+        padding: 7px 20px;
+    }
+    .section-content{
+        .row{
+            margin-right: 18px;
+        }
+    }
+    .workingtype-select {
+        width: 295px;
+        margin-bottom: 20px;
+    }
+    .availability-fixed-width {
+        width: 1254px;
+    }
+    .availability-container {
+        width: 1282px;
+        margin-bottom: 10px;
+        overflow-x: auto;
+    }
+    .button-footer{
+        margin-bottom: 25px;
+    }
+    @media (max-width: 1310px){
+        .availability-fixed-width{
+            width: auto;
+        }
+    }
+}

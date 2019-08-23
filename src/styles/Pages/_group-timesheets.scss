@@ -1,0 +1,88 @@
+.page-group-timesheets {
+    .header {
+        margin-bottom: 20px;
+    }
+    .row-header {
+        > div {
+            display: inline-block;
+        }
+        > div[class^="col-"]{
+            padding-right: 10px;
+        }
+        .filter-status {
+            padding-left: 0;
+        }
+        .filter-group {
+            padding-left: 0;
+        }
+        .time-slider {
+            vertical-align: top;
+        }
+        .pull-right {
+            .filter-option{
+                margin-right: 5px;
+            }
+            > div {
+                display: inline-block;
+            }
+        }
+    }
+    .metro-table {
+        thead>tr>th {
+            &:nth-child(1) {
+                width: 40%;
+            }
+            &:nth-child(2) {
+                width: 20%;
+            }
+            &:nth-child(3) {
+                width: 15%;
+            }
+            &:nth-child(4) {
+                width: 25%;
+            }
+        }
+        tbody>tr>td {
+            height: 56px;
+            &.group-path-cell {
+                .group-name {
+                    font-weight: 600;
+                }
+            }
+            &.primary-avatar-cell {
+                .avatar-content {
+                    left: unset;
+                }
+            }
+            &.group-status-stat {
+                padding: 4px 10px 8px 0;
+                .cell-status-stat {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    text-align: center;
+                    display: inline-block;
+                    span {
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                    div.status {
+                        padding-top: 1px;
+                        padding-bottom: 1px;
+                        font-size: 12px;
+                        &.Submitted {
+                            color: $status-canceled-color;
+                            background-color: $gray-color-7;
+                        }
+                    }
+                }
+            }
+            &.warning-row {
+                color: $warning-text;
+                img {
+                    float: right;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}

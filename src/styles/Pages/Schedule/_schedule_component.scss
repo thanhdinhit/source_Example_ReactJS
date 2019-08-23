@@ -1,0 +1,116 @@
+.cell-visual-view{
+    height: 100%;
+    width:100%;
+    position: relative;
+     .content-view{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top:0;
+        left:0;
+        background: white;
+        z-index: 1;
+    }
+    .action-view{
+        height: 100%;
+        width:100%;
+        visibility: hidden;   
+        z-index: 2;
+        position: absolute;
+        top:0;
+        left:0;
+        display: flex;
+        .wrap-img{
+            margin: auto;
+            img{
+            cursor: pointer;
+            height: 30px;
+            width: 30px;
+            margin: auto 20px;
+            }
+        }
+      
+        
+    }
+   
+}
+.cell-visual-view:hover{
+    height: 100%;
+    width:100%;
+    .action-view{
+        visibility: visible;
+        background-color: rgba(0, 0, 0, 0.09);
+    }
+   
+}
+
+.cell-employee-view{
+    height: 100%;
+    width:100%;
+    position: relative;
+     .content-view{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: pink;
+        z-index: 1;
+    }
+    .action-view{
+        height: 100%;
+        width:100%;
+        visibility: hidden;   
+        z-index: 2;
+        position: absolute;
+        top:0;
+        left:0;
+        display: flex;
+        .wrap-img{
+            margin: auto;
+            img{
+            cursor: pointer;
+            height: 20px;
+            width: 20px;
+            margin: auto 10px;
+            }
+        }
+      
+        
+    }
+   
+}
+.cell-employee-view:hover{
+    height: 100%;
+    width:100%;
+    .action-view{
+        visibility: visible;
+        background-color: rgba(0, 0, 0, 0.09);
+    }
+   
+}
+
+.cell-employee-view > .content-view > .shiftAssignment {
+    height: 20px;
+    width: 100%;
+    background: white;
+    border: 1px solid lightgray;
+    margin: 1px;
+    display: block;
+}
+
+.cell-employee-view > .content-view > .shiftAssignment-none {
+    height: 20px;
+    width: 100%;
+    background: white;
+  
+    margin: 1px;
+    display: block;
+}
+
+.cell-visual-view > .content-view > .shiftAssignment {
+    margin: 4px;
+    display: inline-block;
+    width: 100px;
+    background: #48655f;
+    color: white;
+    border: 1px solid lightgray;
+}

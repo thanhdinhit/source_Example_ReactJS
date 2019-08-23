@@ -1,0 +1,27 @@
+.table-box-container{
+    td{
+        vertical-align: top;
+        height: 100%;
+        padding: 0px 15px 36px 15px;
+    }
+    tr td:first-child{
+        padding-left: 0px;
+    }
+    tr td:last-child{
+        padding-right: 0px;
+    }
+    .border-box-content{
+        height: 100%;
+        margin-bottom: 0px;
+    }
+    .border-box-header{
+        width: 80%
+    }
+    .my-checkbox{
+        padding: 2px 0px 11px 22px;
+    }
+    .border-box-content .my-checkbox:last-child{
+        padding-bottom: 15px;
+    }
+  
+}

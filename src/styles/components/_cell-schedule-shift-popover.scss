@@ -1,0 +1,177 @@
+.cell-schedule-shift-popover {
+    .assigned-employees-popover {
+        padding: 15px 20px;
+        .assigned-employee-list {
+            min-height: 50px;
+            padding-bottom: 10px;
+            width: 280px;
+            max-height: 200px;
+            overflow-y: auto;
+            .assigned-employee-item {
+                height: 50px;
+                text-align: left;
+                position: relative;
+                &.replacement {
+                    height: 100px;
+                }
+                .assigned-empl-msg-popover {
+                    position: fixed !important;
+                    .custom-popover {
+                        top: -30px;
+                        left: -16px;
+                        width: fit-content;
+                        border-color: $error-border-color;
+                        .arrow {
+                            left: 20px;
+                        }
+                    }
+                }
+                .replacement-container {
+                    position: relative;
+                    .main-employee {
+                        position: relative;
+                        height: 50px;
+                        .avatar-container {
+                            &:before {
+                                position: absolute;
+                                z-index: -1;
+                                bottom: 0;
+                                right: 0;
+                                width: 100%;
+                                height: 50%;
+                                content: "";
+                                background-color: $gray-light-border;
+                            }
+                        }
+                    }
+                    .replacement-employee {
+                        position: relative;
+                        height: 50px;
+                        .avatar-container {
+                            &:before {
+                                position: absolute;
+                                z-index: -1;
+                                top: 0;
+                                right: 0;
+                                width: 100%;
+                                height: 50%;
+                                content: "";
+                                background-color: $gray-light-border;
+                            }
+                        }
+                    }
+                }
+                .status {
+                    width: 10px;
+                    height: 10px;
+                    padding: 0;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    &.tobenotify {
+                        background-color: $unpublish-status-color;
+                    }
+                    &.error {
+                        background-color: $error-status-color;
+                    }
+                    &.notified {
+                        background-color: $publish-status-color;
+                    }
+                    i.blank {
+                        width: 10px;
+                        height: 10px;
+                        left: 0;
+                    }
+                }
+                .avatar-container {
+                    width: 35px;
+                    height: 50px;
+                    position: absolute;
+                    top: 0;
+                    left: 15px;
+                }
+                img {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .cell-content {
+                    position: absolute;
+                    top: 50%;
+                    left: 60px;
+                    transform: translateY(-50%);
+                    .main-label {
+                        vertical-align: middle;
+                        font-weight: 600;
+                        line-height: 16px;
+                        &.error {
+                            color: $error-status-color;
+                        }
+                    }
+                    .sub-label {
+                        vertical-align: middle;
+                        font-weight: normal;
+                        line-height: 16px;
+                        font-size: 11px;
+                        color: #6d6f70;
+                    }
+                }
+                .overtime-flag {
+                    float: right;
+                    width: 30px;
+                    height: 18px;
+                    line-height: 18px;
+                    border-radius: 2px;
+                    color: $white;
+                    background-color: $gray-color-13;
+                    text-align: center;
+                    margin-top: 8px;
+                    margin-right: 30px;
+                }
+                .actions {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    i {
+                        margin: 5px;
+                        color: $primary-color-deep-hover;
+                        cursor: pointer;
+                        &.fa-trash {
+                            color: $grey-color-deep-hover;
+                        }
+                    }
+                }
+            }
+            &.no-employees {
+                color: #a9a9a9;
+                font-size: 13px;
+                font-weight: normal;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &.notInPast {
+                    height: 106px;
+                    width: 265px;
+                }
+            }
+        }
+        .actions.pull-right {
+            padding-bottom: 15px;
+            .raised-button {
+                padding: 0;
+                width: 80px;
+                min-width: 80px;
+            }
+        }
+    }
+    &.in-past {
+        .assigned-employee-list {
+            width: 182px;
+            padding-bottom: 0;
+        }
+    }
+}

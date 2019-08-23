@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'icoiwfa';
+    src: url('../fonts/icoiwfa.eot');
+    src: url('../fonts/icoiwfa.eot') format('embedded-opentype'), url('../fonts/icoiwfa.ttf') format('truetype'), url('../fonts/icoiwfa.woff') format('woff'), url('../fonts/icoiwfa.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icoiwfa' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-attachment:before {
+    content: "\e900";
+}
+
+.icon-camera:before {
+    content: "\e905";
+}
+
+.icon-contact-info:before {
+    content: "\e901";
+}
+
+.icon-jobrole-skill:before {
+    content: "\e902";
+}
+
+.icon-pay-rate:before {
+    content: "\e903";
+}
+
+.icon-working-time:before {
+    content: "\e904";
+}
+
+.icon-back-arrow:before {
+    content: "\e906";
+}
+
+.icon-next-arrow:before {
+    content: "\e907";
+}
+
+.icon-picture:before {
+    content: "\e908";
+}
+
+.icon-emergency-contact:before {
+    content: "\e90a";
+}
+
+.icon-clock:before {
+    content: "\e909";
+}
+
+.icon-handsets:before {
+    content: "\e90b";
+}
+
+.icon-termination:before {
+    content: "\e90c";
+}
+
+.icon-dropdown-arrow:before {
+    content: "\e90d";
+}
+
+.icon-location-marker:before {
+    content: "\e910";
+}
+
+.icon-close:before {
+    content: "\e90e";
+}
+
+.icon-transfer:before {
+    content: "\e90f";
+}
+
+.icon-approve:before {
+    content: "\e911";
+}
+
+.icon-decline:before {
+    content: "\e912";
+}
+
+.icon-warning:before {
+    content: "\e913";
+    color: #f5b937;
+}
+
+.icon-more-column:before {
+    content: "\e914";
+}
+
+.icon-add-employee:before {
+    content: "\e915";
+}
+
+.icon-tree-dot:before {
+    content: "\e916";
+    color: #b6b6b6;
+    font-size: 20px;
+}
+
+.icon-calendar:before {
+    content: "\e917";
+}
+
+.icon-employee:before {
+    content: "\e918";
+}
+
+.icon-review:before {
+    content: "\e919";
+}
+
+.icon-building-type1:before {
+    content: "\e91a";
+    color: #878787;
+}
+
+.icon-building-type2:before {
+    content: "\e91b";
+}
+
+.icon-to-be-assigned:before {
+    content: "\e91c";
+    color: #ff7171;
+}
+
+.icon-swap-icon-1:before {
+    content: "\e91d";
+}
+
+.icon-swap-icon-2:before {
+    content: "\e91e";
+}
+
+.icon-notify:before {
+    content: "\e91f";
+}
+
+.icon-copy-arrow-h:before {
+    content: "\e920";
+}
+
+.icon-copy-arrow-v:before {
+    content: "\e921";
+}
+
+.icon-list:before {
+    content: "\e922";
+}
+
+.icon-location-marker-2:before {
+    content: "\e923";
+}
+
+.icon-notification:before {
+    content: "\e924";
+}
+
+.icon-return:before {
+    content: "\e925";
+}
+
+.icon-info:before {
+    content: "\e926";
+    color: #67c9d1;
+}
+
+.icon-copy:before {
+    content: "\e927";
+    color: #c5c5c5;
+}

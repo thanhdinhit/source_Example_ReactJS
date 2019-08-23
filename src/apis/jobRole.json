@@ -1,0 +1,57 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Guard",
+            "requiredSkills": [
+                {
+                    "id": 1,
+                    "name": "Gun",
+                    "description": "Gun permit"
+                },
+                {
+                    "id": 2,
+                    "name": "Baton",
+                    "description": "Baton permit"
+                },
+                {
+                    "id": 3,
+                    "name": "Lead",
+                    "description": "Leader skill, senior"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Leader",
+            "requiredSkills": [
+                {
+                    "id": 1,
+                    "name": "Gun",
+                    "description": "Gun permit"
+                },
+                {
+                    "id": 3,
+                    "name": "Lead",
+                    "description": "Leader skill, senior"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Manager",
+            "requiredSkills": [
+                {
+                    "id": 2,
+                    "name": "Baton",
+                    "description": "Baton permit"
+                },
+                {
+                    "id": 3,
+                    "name": "Lead",
+                    "description": "Leader skill, senior"
+                }
+            ]
+        }
+    ]
+}

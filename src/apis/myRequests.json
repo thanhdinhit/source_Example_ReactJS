@@ -1,0 +1,93 @@
+{
+    "item": [
+        {
+            "data": {
+                "id": "1",
+                "employeeId": "1",
+                "leaveType": {
+                    "id": 1,
+                    "name": "Annual"
+                },
+                "approvers": [
+                    {
+                        "id": 2,
+                        "name": "Qui Tran"
+                    }
+                ],
+                "leaveFrom": "2016-08-22T01:30:00Z",
+                "leaveTo": "2016-08-25T11:00:00Z",
+                "leaveStatus": "Pending",
+                "reasonText": "sick",
+                "emailCCs": "user1@tma.com.vn;user2@tma.com.vn",
+                "reasonFromApprover": null,
+                "createdDate": "2016-08-26T16:32:56Z",
+                "modifiedDate": "2016-08-26T16:32:56Z"
+            },
+            "meta": {
+                "type": "LeaveDto"
+            }
+        },
+        {
+            "data": {
+                "id": "2",
+                "employeeId": "1",
+                "leaveType": {
+                    "id": 2,
+                    "name": "Unpaid"
+                },
+                "approvers": [
+                    {
+                        "id": 2,
+                        "name": "Qui Tran"
+                    }
+                ],
+                "leaveFrom": "2016-08-27T01:30:00Z",
+                "leaveTo": "2016-08-28T05:00:00Z",
+                "leaveStatus": "Approved",
+                "reasonText": "tao thich tao nghi",
+                "emailCCs": "user1@tma.com.vn;user2@tma.com.vn",
+                "reasonFromApprover": "get better soon",
+                "createdDate": "2016-08-26T16:32:56Z",
+                "modifiedDate": "2016-08-26T16:32:56Z"
+            },
+            "meta": {
+                "type": "LeaveDto"
+            }
+        },
+        {
+            "data": {
+                "id": "3",
+                "employeeId": "1",
+                "leaveType": {
+                    "id": 3,
+                    "name": "Medical"
+                },
+                "approvers": [
+                    {
+                        "id": 2,
+                        "name": "Qui Tran"
+                    }
+                ],
+                "leaveFrom": "2016-08-27T08:00:00Z",
+                "leaveTo": "2016-08-28T18:30:00Z",
+                "leaveStatus": "Declined",
+                "reasonText": "di du lich",
+                "emailCCs": "user1@tma.com.vn;user2@tma.com.vn",
+                "reasonFromApprover": "lam khong lo lam di du lich",
+                "createdDate": "2016-08-26T16:32:56Z",
+                "modifiedDate": "2016-08-26T16:32:56Z"
+            },
+            "meta": {
+                "type": "LeaveDto"
+            }
+        }
+    ],
+    "meta": {
+        "type": "collection",
+        "count": 15,
+        "totalPage":3,
+        "links": {
+            "self": "link/to/self"
+        }
+    }
+}

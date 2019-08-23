@@ -1,0 +1,38 @@
+.my-leaves {
+    .row-header {
+        .breadcrumb {
+            margin-bottom: 0;
+            line-height: 30px;
+            height: 30px;
+        }
+    }
+
+    .metro-table {
+        thead>tr>th {
+            &:nth-child(1) {
+                width: 28%;
+            }
+            &:nth-child(2) {
+                width: 20%;
+            }
+            &:nth-child(3) {
+                width: 20%;
+            }
+            &:nth-child(4) {
+                width: 15%;
+            }
+            &:nth-child(5) {
+                width: 12%;
+            }
+            &:nth-child(6) {
+                width: 5%;
+            }
+        }
+    }
+
+    .dialog-confirm.cancel-myleave {
+        .modal-body {
+            padding: 15px 20px;
+        }
+    }
+}

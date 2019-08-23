@@ -1,0 +1,22 @@
+.clockin-clockout{
+    .time-clock{
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .content-wrap{
+        border: 1px solid #e0e2e3;
+        padding: 36px;
+        border-radius: 3px;
+        background: white;
+    }
+    .inner-wrap{
+        max-width: 600px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        text-align: left;
+            box-sizing: border-box;
+    }
+}

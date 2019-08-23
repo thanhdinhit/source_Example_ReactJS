@@ -1,0 +1,50 @@
+.time-picker {
+    .my-custom-popover {
+        z-index: 100;
+        width: calc(100% - 30px);
+        min-width: 60px;
+        height: 86px;
+        position: absolute;
+        display: table;
+        .body-center {
+            display: table-cell;
+            vertical-align: middle;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.16);
+            .body-container {
+                width: 70px;
+                height: 60px;
+                margin: 0 auto;
+                .body-content {
+                    display: inline-flex;
+                    .time-unit {
+                        display: grid;
+                        width: 30px;
+                        height: 60px;
+                        i {
+                            color: $primary-color;
+                            margin: 0 auto;
+                            cursor: pointer;
+                        }
+                        input {
+                            width: 30px;
+                            padding: 6px 6px;
+                            margin-top: 1px;
+                        }
+                    }
+                }
+                .two-dot {
+                    padding: 20px 4px 0px 4px;
+                }
+            }
+        }
+    }    
+    .clear {
+        position: absolute;
+        right: 32px;
+        z-index: 3;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}

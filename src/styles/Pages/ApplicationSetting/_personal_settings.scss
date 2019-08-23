@@ -1,0 +1,104 @@
+.container-fluid.personal-setting {
+    .row.row-body {
+        position: relative;
+        margin-top: 24px;
+        margin-left: 28px;
+        margin-bottom: 30px;
+        padding: 0;
+        .row-body {
+            padding: 30px;
+            padding-bottom: 25px;
+            .col-page {
+                .field-page {
+                    .label-page {
+                        margin-top: 0px;
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        font-weight: bold;
+                        line-height: 14.31px;
+                        text-align: left;
+                        color: $title-text;
+                        text-transform: uppercase;
+                    }
+                    .common-select {
+                        padding-bottom: 0px;
+                        .Select {
+                            width: 300px;
+                        }
+                        .Select.time-clock {
+                            width: 70px;
+                        }
+                    }
+                    >div {
+                        display: table;
+                        margin-top: 19px;
+                        vertical-align: middle;
+                        >span {
+                            padding: 0 10px;
+                            line-height: 16.36px;
+                            text-align: center;
+                            vertical-align: middle;
+                            display: table-cell;
+                        }
+                        >div {
+                            display: inline-block;
+                        }
+                    }
+                    .approval-delegation {
+                        margin-top: 10px;
+                        margin-bottom: -8px;
+                        width: auto;
+                        td {
+                            margin: 0px;
+                            padding: 5px 0px ;
+                            height: 30px;
+                            .toggle-base {
+                                vertical-align: middle;
+                            }
+                            .common-select {
+                                padding-bottom: 5px;
+                            }
+                        }
+                        td:nth-child(1) {
+                            width: 70px;
+                        }
+                        td:nth-child(2) {
+                            width: 153px;
+                        }
+                        td:nth-child(3) {
+                            width: 300px;
+                        }
+                    }
+                    &.time-clock-field {
+                        >div:nth-child(2) {
+                            margin-top: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .shape {
+        position: absolute;
+        margin: auto 30px;
+        bottom: 100px;
+        width: -webkit-calc(100% - 60px);
+        width:    -moz-calc(100% - 60px);
+        width:         calc(100% - 60px);
+        height: 1px;
+        background-color: #eeeef8;
+    }
+    .group-button {
+        position: absolute;
+        display: block;
+        bottom: 30px;
+        right: 15px;
+        .raised-button {
+            font-size: 14px;
+            width: 165px;
+            height: 40px;
+            border-radius: 20px;
+            margin: 0 15px;
+        }
+    }
+}

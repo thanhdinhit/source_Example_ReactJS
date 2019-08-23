@@ -1,0 +1,4 @@
+{
+    "uid": "iwfa-frontend",
+    "script": "tools/distServer.js"
+}

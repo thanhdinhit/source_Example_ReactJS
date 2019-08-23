@@ -1,0 +1,27 @@
+.inputfile {
+	width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+    color: #3fafd7;
+    max-width: 80%;
+    font-size:13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+   
+}
+.inputfile + label * {
+	pointer-events: none;
+}

@@ -1,0 +1,100 @@
+{
+    "data": {
+        "startDate": "2017-03-01T00:00:00Z",
+        "endDate": "2017-03-02T00:00:00Z",
+        "shiftTemplates": [
+            {
+                "id": 1,
+                "effectOn": ""
+            },
+            {
+                "id": 2,
+                "effectOn": ""
+            },
+            {
+                "id": 3,
+                "effectOn": ""
+            }
+        ],
+        "dailyShiftAssignments": [
+            {
+                "date": "2017-03-01T00:00:00Z",
+                "shiftTemplateAssignments": [
+                    {
+                        "shiftTemplate": {
+                            "id": 1
+                        },
+                        "shiftAssignments": [
+                            {
+                                "id": 1,
+                                "roleId": 4,
+                                "shiftDate": "2017-03-01T00:00:00Z",
+                                "shiftTemplate": {
+                                    "id": 1
+                                },
+                                "employee": {
+                                    "id": 1,
+                                    "fullName": "Huy"
+                                },
+                                "shiftScheduleId": 1
+                            },
+                            {
+                                "id": 1,
+                                "roleId": 4,
+                                "shiftDate": "2017-03-01T00:00:00Z",
+                                "shiftTemplate": {
+                                    "id": 2
+                                },
+                                "employee": {
+                                    "id": 2,
+                                    "fullName": "Chau"
+                                },
+                                "shiftScheduleId": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "date": "2017-03-02T00:00:00Z",
+                "shiftTemplateAssignments": [
+                    {
+                        "shiftTemplate": {
+                            "id": 2
+                        },
+                        "shiftAssignments": [
+                            {
+                                "id": 1,
+                                "roleId": 4,
+                                "shiftDate": "2017-03-02T00:00:00Z",
+                                "shiftTemplate": {
+                                    "id": 1
+                                },
+                                "employee": {
+                                    "id": 1,
+                                    "fullName": "Huy"
+                                },
+                                "shiftScheduleId": 1
+                            },
+                            {
+                                "id": 1,
+                                "roleId": 4,
+                                "shiftDate": "2017-03-02T00:00:00Z",
+                                "shiftTemplate": {
+                                    "id": 2
+                                },
+                                "employee": {
+                                    "id": 2,
+                                    "fullName": "Chau"
+                                },
+                                "shiftScheduleId": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "error": {},
+    "errors": []
+}

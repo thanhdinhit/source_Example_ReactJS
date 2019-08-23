@@ -1,0 +1,86 @@
+.breadcrumb {
+    padding: 0px;
+    margin-bottom: 17px;
+    background: transparent;
+    list-style: none;
+    overflow: hidden;
+    margin-top: 0px;
+    font-size: 12px;
+    border-radius: 0px;
+    display: table;
+    height: 12px;
+    line-height: 10px;
+}
+
+.breadcrumb li {
+    float: left;
+    &>span {
+        color: $gray-color-deep;
+    }
+}
+
+.breadcrumb li i {
+    color: $primary-color-deep;
+    margin-top: -3px;
+    padding-left: 20px;
+    font-size: 22px;
+}
+
+.breadcrumb li a i {
+    margin-top: 0px;
+    padding-left: 0px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.breadcrumb li.active a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: $primary-color-deep;
+    cursor: pointer;
+}
+
+.breadcrumb>li+li:before {
+    content: "";
+    padding: 0px;
+}
+
+.breadcrumb li.completed a {
+    margin-left: 0px;
+    margin-right: 10px;
+    color: $primary-color-deep;
+}
+
+.breadcrumb li.completed a i {
+    font-size: 12px;
+}
+
+.breadcrumb li a {
+    color: $default-text;
+    text-decoration: none;
+    margin-left: 10px;
+    position: relative;
+    display: block;
+    float: left;
+    font-size: 12px;
+}
+
+.breadcrumb li:first-child a {
+    padding-left: 0px;
+}
+
+
+
+/*.breadcrumb li a:hover {
+     
+background: #ffc107;
+ 
+}*/
+
+
+/* 
+.breadcrumb li a:hover:after {
+     
+border-left-color: #ffc107 !important;
+ 
+}*/

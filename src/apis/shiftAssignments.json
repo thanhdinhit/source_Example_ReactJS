@@ -1,0 +1,62 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "baseJobRole": {},
+            "shiftDate": "2017-04-01T00:00:00Z",
+            "shiftTemplate": {
+                "id": 1
+            },
+            "employee": {
+                "id": 1,
+                "fullName": "huy"
+            },
+            "baseLocation": {},
+            "shiftSchedule": {}
+        },
+        {
+            "id": 1,
+            "baseJobRole": {},
+            "shiftDate": "2017-04-02T00:00:00Z",
+            "shiftTemplate": {
+                "id": 1
+            },
+            "employee": {
+                "id": 1,
+                "fullName": "huy"
+            },
+            "baseLocation": {},
+            "shiftSchedule": {}
+        },
+        {
+            "id": 1,
+            "baseJobRole": {},
+            "shiftDate": "2017-04-01T00:00:00Z",
+            "shiftTemplate": {
+                "id": 2
+            },
+            "employee": {
+                "id": 2,
+                "fullName": "chau"
+            },
+            "baseLocation": {},
+            "shiftSchedule": {}
+        },
+         {
+            "id": 1,
+            "baseJobRole": {},
+            "shiftDate": "2017-04-02T00:00:00Z",
+            "shiftTemplate": {
+                "id": 2
+            },
+            "employee": {
+                "id": 2,
+                "fullName": "chau"
+            },
+            "baseLocation": {},
+            "shiftSchedule": {}
+        }
+    ],
+    "error": {},
+    "errors": []
+}

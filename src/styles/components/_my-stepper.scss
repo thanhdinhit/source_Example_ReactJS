@@ -1,0 +1,172 @@
+.stepper {
+    position: relative;
+    color: $primary-color;
+    height: 30px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    font-family: "Open Sans";
+    > div {
+        &:first-child{
+            padding-left: 20px;
+        }
+        padding-left: 32px;
+        padding-right: 32px;
+        float: left;
+        border-bottom: 1px solid $primary-color;
+        border-top: 1px solid $primary-color;
+        height: 26px;
+        display: table;
+        > span {
+            white-space: nowrap;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        &.step-item:first-child {
+            border-left: 1px solid $primary-color;
+
+            span {
+                &::before {
+                    border-top: none !important;
+                    border-right: none !important;
+                }
+            }
+        }
+    }
+
+    .step-currently {
+        padding-right: 8px;
+        margin-right: 10px;
+        position: relative;
+        height: 29px;
+        padding-left: 23px;
+        background-color: $primary-color-lighter;
+        span{
+            font-weight: normal;
+            &:before {
+                content: "";
+                height: 20px;
+                width: 20px;
+                transform-origin: 5% 0%;
+                transform: rotate(45deg);
+                left: 0.5px;
+                top: 0px;
+                border-top: 1px solid $primary-color;
+                border-right: 1px solid $primary-color;
+                position: absolute;
+                background: $white;
+            }
+            &:after {
+                content: "";
+                height: 20px;
+                width: 20px;
+                transform-origin: 5% 0%;
+                transform: rotate(45deg);
+                right: -20px;
+                top: 0px;
+                border-top: 1px solid $primary-color;
+                border-right: 1px solid $primary-color;
+                position: absolute;
+                background: linear-gradient(45deg, transparent 30%, $primary-color-lighter 38%);
+                z-index: 1;
+            }
+        }
+    }
+    .step-incomplete {
+        padding-right: 8px;
+        margin-right: 10px;
+        position: relative;
+        padding-left: 23px;
+        height: 29px;
+        border-bottom: 1px solid $gray-light-border;
+        border-top: 1px solid $gray-light-border;
+        background-color: $gray-color-4;
+        color: $lighter-text;
+        span{
+            font-weight: normal;
+            i{
+                color: $color-table-header;
+            }
+            &:before {
+                content: "";
+                height: 20px;
+                width: 20px;
+                transform-origin: 5% 0%;
+                transform: rotate(45deg);
+                left: 0.5px;
+                top: 0px;
+                border-top: 1px solid $gray-light-border;
+                border-right: 1px solid $gray-light-border;
+                position: absolute;
+                background: $white;
+            }
+            &:after {
+                content: "";
+                height: 21px;
+                width: 20px;
+                transform-origin: 5% 0%;
+                transform: rotate(45deg);
+                right: -20px;
+                top: 0px;
+                border-top: 1px solid $gray-light-border;
+                border-right: 1px solid $gray-light-border;
+                position: absolute;
+                background: linear-gradient(45deg, transparent 30%, $gray-color-4 38%);
+                z-index: 1;
+            }
+        }
+    }
+    .step-done{
+        padding-right: 8px;
+        margin-right: 10px;
+        position: relative;
+        height: 29px;
+        padding-left: 23px;
+        border-bottom: 1px solid $primary-color;
+        border-top: 1px solid $primary-color;
+        background-color: $primary-color;
+        color: $white;
+        span{
+            font-weight: normal;
+            &:before {
+                content: "";
+                height: 20px;
+                width: 20px;
+                transform-origin: 5% 0%;
+                transform: rotate(45deg);
+                left: 0.5px;
+                top: 0px;
+                border-top: 1px solid $primary-color;
+                border-right: 1px solid $primary-color;
+                position: absolute;
+                background: $white;
+            }
+            &:after {
+                content: "";
+                height: 20px;
+                width: 20px;
+                transform-origin: 5% 0%;
+                transform: rotate(45deg);
+                right: -20px;
+                top: 0px;
+                border-top: 1px solid $primary-color;
+                border-right: 1px solid $primary-color;
+                position: absolute;
+                background: linear-gradient(45deg, transparent 30%, $primary-color 38%);
+                z-index: 1;
+            }
+        }
+    }
+
+    :first-child {
+        span:before{
+            border-bottom: 5px solid $primary-color;
+            border-top: 5px solid $primary-color;
+            left: -20px;
+            content: "";
+            position: relative
+        }
+    }
+}

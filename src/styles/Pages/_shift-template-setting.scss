@@ -1,0 +1,38 @@
+.shift-template {
+    .content-header {
+        margin-top: 5px;
+    }
+    .section {
+        background-color: #fff;
+        padding: 30px 35px 5px 35px;
+        margin-top: 10px;
+    }
+    .pagination {
+        display: inline-block;
+        float: right; 
+    }
+    
+}
+.calendar {
+        background-image: url("../images/blue-calendar.png");
+        display: inline-block;
+        padding-top: 9px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        height: 30px;
+        width: 31px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .calendar-off {
+        background-image: url("../images/blue-calendar.png");
+        display: inline-block;
+        padding-top: 9px;
+        margin-right: 5px;
+        text-align: center;
+        height: 30px;
+        width: 31px;
+        opacity: 0.4;
+        font-size: 12px;
+    }

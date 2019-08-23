@@ -1,0 +1,42 @@
+{
+    "items": [
+        {
+            "id":1,
+            "name": "TMA Building",
+            "description": "TMA Solution - Quang Trung Software Center - 12 district - Ho Chi Minh city"
+        },
+        {
+            "id":2,
+            "name": "FPT Building",
+            "description": "Floor 2,  FPT Building Cau Giay, Duy Tan, Dich Vong Hau, Cau Giay district, Ha Noi, Viet Nam"
+        },
+        {
+            "id":3,
+            "name": "QTSC",
+            "description": "497 Hoa Hao, F5, 10 district, Ho Chi Minh city"
+        },
+        {
+            "id":4,
+            "name": "TMA Building",
+            "description": "TMA Solution - Quang Trung Software Center - 12 district - Ho Chi Minh city"
+        },
+        {
+            "id":5,
+            "name": "FPT Building",
+            "description": "Floor 2,  FPT Building Cau Giay, Duy Tan, Dich Vong Hau, Cau Giay district, Ha Noi, Viet Nam"
+        },
+        {
+            "id":6,
+            "name": "QTSC",
+            "description": "497 Hoa Hao, F5, 10 district, Ho Chi Minh city"
+        }
+    ],
+"meta": {
+    	"type": "collection",
+      	"count": 1,
+	"totalPages": 20,
+      	"links": {
+          	"self": ""
+      }
+  }
+}

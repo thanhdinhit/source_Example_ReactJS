@@ -1,0 +1,192 @@
+.dialog-add-flexible-shift {
+    .modal-body {
+        overflow: hidden;
+    }
+    &.edit-shift {
+        .flexible-shifts {
+            overflow-y: hidden !important;
+        }
+    }
+    .add-flexible-shift {
+        .flexible-shifts {
+            overflow-y: auto;
+            max-height: calc(100vh - 300px);
+            // min-height: 300px;
+        }
+        .flexible-shift {
+            margin-top: 10px;
+
+            .working-time-actions {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border: solid 1px $gray-light-border;
+                height: 52px;
+                background-color: $gray-color-4;
+                padding: 10px 20px;
+                &.isView {
+                    line-height: 50px;
+                    padding: 0 20px;
+                }
+                .working-time-info {
+                    display: inline-block;
+                    .template-color {
+                        vertical-align: middle;
+                        display: inline-block;
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 100%;
+                        &.options {
+                            width: 42px;
+                            height: 30px;
+                            border-radius: 5px;
+                            > div {
+                                line-height: 28px;
+                            }
+                        }
+                    }
+                    .info {
+                        margin-left: 25px;
+                        display: inline-block;
+                        > span {
+                            &:nth-child(1) {
+                                margin-right: 10px;
+                            }
+                            &:nth-child(2) {
+                                font-weight: 600;
+                            }
+                        }
+                        .separate {
+                           margin: 0 8px;
+                        }
+                        .time-picker.date {
+                            display: inline-block;
+                            width: 107px;
+                            vertical-align: middle;
+                            .my-custom-popover {
+                                width: 77px;
+                            }
+                        }
+                    }
+                }
+                .regular-hours-actions {
+                    float: right;
+                    .input-group.number-input {
+                        margin-right: 5px;
+                        display: inline-block;
+                        width: 60px;
+                        vertical-align: middle;
+                        input {
+                        border-radius: 5px;
+                        }
+                    }
+                    .regular-hours-input {
+                        display: inline-block;
+                        width: 70px;
+                    }
+                    span {
+                        &:nth-child(1) {
+                            margin-right: 10px;
+                        }
+                        &:nth-child(2) {
+                            font-weight: 600;
+                            margin-right: 4px;
+                            font-weight: 600;
+                        }
+                    }
+                    i {
+                        cursor: pointer;
+                        margin-left: 14px;
+                        font-size: 15px;
+                        &.fa-pencil, &.fa-floppy-o {
+                            color: $primary-color-darker;
+                        }
+
+                        &.fa-trash-o, &.fa-times {
+                            color: $lighter-text;
+                        }
+                    }
+                }
+            }
+            .job-roles {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border: solid 1px $gray-light-border;
+                border-top: none;
+                min-height: 47px;
+                >div {
+                    &.roles {
+                        width: 40px;
+                        float: left;
+                        color: $text-lighter;
+                        height: 50px;
+                        vertical-align: middle;
+                        line-height: 50px;
+                        padding-left: 14px;
+                    }
+                    &:nth-child(2) {
+                        width: calc(100% - 40px);
+                        float: right;
+                    }
+                }
+                .job-role {
+                    margin: 7px 0;
+                    display: inline-block;
+                    padding: 2px 15px;
+                    height: 34px;
+                    line-height: 34px;
+                    > span {
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+                    > div {
+                        width: 60px;
+                        float: right;
+                        input {
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .add-more-shift {
+            margin-top: 10px;
+            height: 35px;
+            line-height: 35px;
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 600;
+            color: $primary-color-darker;
+            text-align: center;
+            border: solid 1px $primary-color-darker;
+            border-radius: 5px;
+            border-style: dashed;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .dialog-add-flexible-shift {
+        .job-roles {
+            .job-role {
+                width: 33.3%;
+                &:nth-child(3n-1) {
+                    border-left: 1px solid $gray-light-border;
+                    border-right: 1px solid $gray-light-border;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1023px) {
+    .dialog-add-flexible-shift {
+        .job-roles {
+            .job-role {
+                width: 50%;
+                &:nth-child(even) {
+                    border-left: 1px solid $gray-light-border;
+                }
+            }
+        }
+    }
+}

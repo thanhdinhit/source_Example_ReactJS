@@ -1,0 +1,29 @@
+.multi-value-text-view {
+    span {
+        padding: 2px 10px;
+        border-radius: 5px;
+        height: 20px;
+        font-size: 10px;
+        margin-right: 5px;
+        background-color: #f5f5f5;
+    }
+    .content {
+        width: 100%;
+        border: none;
+        position: relative;
+        border-radius: 4px;
+        padding: 6px 10px;
+        line-height: 16px;
+        background-color: $gray-color-4;
+        font-weight: 600;
+        &.with-image {
+            padding: 4px 10px;
+        }
+    }    
+        img {
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            margin-right: 5px;
+        }
+}

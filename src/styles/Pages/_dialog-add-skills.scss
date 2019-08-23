@@ -1,0 +1,52 @@
+.dialog-add-skills {
+    .header {
+        display: inline-flex;
+        position: relative;
+        top: 0px;
+        height: 34px;
+        width: 100%;
+        border-bottom: solid 1px $grey-color-lighter;
+        .search {
+            position: absolute;
+            right: 0;
+            height: 30px;
+            width: 190px;
+            input {
+                padding-left: 28px;
+            }
+            input::-moz-placeholder {
+                font-size: 12px;
+                font-weight: normal;
+                color: $gray-color-deep;
+            }
+            input::-webkit-input-placeholder {
+                font-size: 12px;
+                font-weight: normal;
+                color: $gray-color-deep;
+            }
+            .img-search {
+                width: 14px;
+                left: 10px;
+                top: 8px;
+                position: absolute;
+                &.none {
+                    display: none;
+                }
+            }
+        }
+    }
+    .body-skill{
+        margin-bottom: 0px;
+        height: 155px;
+        overflow-y: scroll;
+        .my-checkbox:first-child{
+            padding-top: 0px;
+        }
+        .my-checkbox{
+            padding: 5px 0px 5px 0px;
+        }
+    }
+    [type="checkbox"] + label {
+        font-size: 13px;
+    }
+}

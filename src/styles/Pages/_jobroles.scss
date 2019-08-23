@@ -1,0 +1,140 @@
+.page-jobroles{
+    .row-body{
+        background-color: $deeper-background;
+    }
+    .modal-content{
+        width: 600px;
+        color: $default-text;
+        .col.m1,.col.m2,.col.m11,.col.m10{
+            padding: 0;
+        }
+        .col.m11,.col.m10{
+            padding-right: 30px;
+        }
+        .col.m2,.col.m1{
+            text-align: right;
+            .color-div{
+                float: right;
+            }
+        }
+        .error{
+            font-size: 12px;
+
+            &.right-align{
+                text-align: right;
+                position: absolute;
+                margin-top: 10px;
+                right: 10px;
+            }
+        }
+        .add-skills{
+            cursor: pointer;
+            font-size: 12px;
+            line-height: 20px;
+            display: table-row;
+            .mini-label{
+                line-height: 20px;
+                font-size: 12px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+
+        .mini-title{
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .label-title{
+            font-size: 14px;
+        }
+
+        .label-content{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 14.31px;
+            margin-top: 10px;
+        }
+
+        .description-title{
+            margin-top: 30px;
+        }
+        .field-content{
+            margin-top: -8px;
+            font-size: 16px;
+            font-weight: 600;
+            color: $default-text;
+            line-height: 14.31px;
+        }
+
+        .div-table.skills-table{
+
+            .tbody{
+                margin: 15px auto;
+                .tr{
+                    margin-bottom: 10px;
+
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+
+                    .td.removable-cell{
+                        border-radius: 20px;
+                        background-color: $gray-color-dark;
+                        height: 40px;
+                        line-height: 14px;
+                        font-size: 14px;
+                        vertical-align: middle;
+                        padding: 12px 15px 12px 15px;
+
+                        i.fa{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+        }
+        .chose-skill-panel{
+            min-height: 230px;
+            border-radius: 10px;
+            background-color: $white;
+            border: solid 1px $gray-light-border;
+            padding: 0;
+            margin-bottom: 0;
+            //box-shadow: 1px 1px 1px 0 $gray-light-border;
+            .search-filter{
+                padding: 20px;
+                margin-bottom: 0;
+                &>.col{
+                    padding: 0;
+                }
+                .filter{
+                    margin-top: 10px;
+                    margin-left: 0;
+                    height: 181px;
+                    width: 100%;
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+                    border-top: solid 1px $gray-light-border;
+                    padding: 0;
+                    .my-checkbox{
+                        margin-top: 20px;
+                        label{
+                          font-size: 14px;
+                        }
+                    }
+
+                }
+            }
+            .panel-footer{
+                text-align: right;
+                padding: 15px 20px 16px 20px;
+                background-color: $white;
+                margin-bottom: 0;
+                border-radius: 0 0 10px 10px;
+
+            }
+        }
+    }
+}

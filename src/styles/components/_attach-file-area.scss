@@ -1,0 +1,123 @@
+.area-attach-file {
+    .progress {
+        margin: 10px 0px 10px 0px;
+    }
+    .attach-body-drag {
+        width: 100%;
+        height: 300px;
+        background-color: #f7f7f7;
+        display: table;
+        border-radius: 10.3px;
+        margin-bottom: 30px;
+    }
+    .attach-body-icon {
+        text-align: center;
+        margin: 0 auto;
+        
+        img {
+            width: 53px;
+            height: 39px;
+        }
+    }
+    .attach-body-drag-content {
+        padding-top: 80px;
+        padding-bottom: 64px;
+    }
+    .attach-body-title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        font-size: 20px;
+        color: #878787;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .attach-body-browse {
+        color: #66c9d1;
+        font-weight: normal;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .attach-body-content {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        color: #878787;
+    }
+    .additional-content {
+        text-align: center;
+        margin-top: 5px;
+    }
+    .attach-body-file {
+        background-color: white;
+        overflow: auto;
+        margin-right: 0px;
+        .col {
+            padding: 0px;
+        }
+        &.row {
+            margin-bottom: 0px;
+            margin-right: -10px;
+        }
+    }
+
+    .file-preview {
+        display: inline-flex;
+        height: 74px;
+        padding: 0px 15px 25px 15px;
+        img {
+            width: 33px;
+            height: 40px;
+        }
+        .file-preview-content-right {
+            margin-left: 30px;
+            width: 100%;
+        }
+        .headerfile {
+            font-size: 14px;
+            display: flex;
+            position: relative;
+            .filename {
+                margin-top: -5px;
+                color: #364347;
+                max-width: 210px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            .filesize {
+                margin-top: -5px;
+                color: #878787;
+                margin-left: 30px;
+            }
+            .deleteicon {
+                position: absolute;
+                right: 0;
+                top: -1;
+                color: $danger-color;
+                cursor: pointer;
+            }
+        }
+        [class^='status-']{
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 3px;
+        }
+        .status-upload {
+            color: $primary-color;
+        }
+        .status-failed {
+            color: $danger-color-brighter;
+            float: left;
+        }
+        .status-completed {
+            color: $primary-color;
+        }
+        .status-pending {
+            color: $yellow-color-brighter;
+        }
+    }
+}

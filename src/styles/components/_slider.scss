@@ -1,0 +1,49 @@
+.slider {
+    input[type=range] {
+        -webkit-appearance: none;
+    }
+    input[type=range]:focus {
+        outline: none;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 1px;
+        cursor: pointer;
+        border-radius: 0px;
+        background: $disable-text;
+    }
+    input[type=range]::-webkit-slider-thumb {
+        height: 14px;
+        width: 14px;
+        border-radius: 7px;
+        background: $primary-color;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -6px;
+    }
+}
+
+.slider-avatar {
+    color: $disable-text;
+    width: 100%;
+    input {
+        width: 140px;
+    }
+    margin-top: 4px;
+    display: inline-flex;
+    i:nth-child(1){
+        line-height: 23px;
+        margin-right: 9px;
+    }
+    i:nth-child(3){
+        line-height: 23px;
+        padding-left: 9px;
+        font-size: 23px;
+    }
+}
+
+.footer-avatar {
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}

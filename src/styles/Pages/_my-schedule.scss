@@ -1,0 +1,108 @@
+.page-my-schedule{
+    .header{
+        margin-bottom: 5px;
+    }
+    .my-schedule {
+        .my-schedule-tb {
+            .tb-row {
+                width: 100%;
+                display: flex;
+                &.tb-header {
+                    height: 50px;
+                    border-top: 1px solid $border-table-color;
+                    .tb-cell {
+                        padding: 5px;
+                        display: block;
+                        align-items: center;
+                        .weekday {
+                            text-transform: uppercase;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .tb-cell {
+                    padding: 0 2px;
+                    text-align: center;
+                    border-bottom: 1px solid $border-table-color;
+                    border-right: 1px solid $border-table-color;
+                    .location-name {
+                        font-weight: 600;
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    .schedule-shift {
+                        padding: 15px 10px;
+                        border-radius: 5px;
+                        margin-bottom: 2px;
+                        text-align: left;
+                        .shift-name {
+                            font-weight: 600;
+                        }
+                        .shift-time{
+                            text-align: center;
+                        }
+                        .on-leave {
+                            margin: 5px -7px -3px -7px;
+                            padding: 6px 7px;
+                            border-radius: 4px;
+                            background-color: $gray-color-8;
+                            background-image: url("../images/dash-pattern.png");
+                            & ~ .schedule-overtime {
+                                margin-top: 15px !important;
+                            }
+                        }
+                        .schedule-overtime {
+                            text-align: center;
+                            border-radius: 5px;
+                            margin: 5px 0;
+                            background-color: $pink-color-1;
+                            cursor: pointer;
+                            i {
+                                margin-right: 3px;
+                            }
+                        }
+                        &:nth-child(1) {
+                            margin-top: 2px;
+                        }
+                        &.leave-only {
+                            padding: 0;
+                            .on-leave {
+                                margin: 0;
+                                padding: 6px 10px;
+                            }
+                        }
+                    }
+                    &.end-of-week {
+                        background-color: $gray-color-11;
+                    }
+                    &:nth-child(1) {
+                        width: 16%;
+                        border-left: 1px solid $border-table-color;
+                    }
+                    &:nth-child(2) {
+                        width: 12%;
+                    }
+                    &:nth-child(3) {
+                        width: 12%;
+                    }
+                    &:nth-child(4) {
+                        width: 12%;
+                    }
+                    &:nth-child(5) {
+                        width: 12%;
+                    }
+                    &:nth-child(6) {
+                        width: 12%;
+                    }
+                    &:nth-child(7) {
+                        width: 12%;
+                    }
+                    &:nth-child(8) {
+                        width: 12%;
+                    }
+                }
+            }
+        }
+    }
+}

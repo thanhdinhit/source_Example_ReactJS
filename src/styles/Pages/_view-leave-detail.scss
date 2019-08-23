@@ -1,0 +1,99 @@
+.view-leave-detail {
+    .profile-avatar {
+        vertical-align: middle;
+        margin-bottom: 10px;
+        img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+        }
+        .name-profile {
+            padding-left: 8px;
+            display: inline-block;
+            vertical-align: middle;
+            .name {
+                font-size: 13px;
+                font-weight: 600;
+            }
+            .userrole-name {
+                font-size: 12px;
+                font-weight: normal;
+            }
+        }
+    }
+    .warning-due-date {
+        height: 67px;
+        padding: 5px 10px 10px 10px;
+        background-color: #fae0b1;
+        border: solid 1px #faae24;
+        border-radius: 5px;
+        font-size: 13px;
+        position: relative;
+        .icon-close {
+            font-size: 8px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+        .warning-title {
+            line-height: 1.54;
+        }
+        .warning-content {
+            line-height: 1.31;
+            font-weight: 600;
+        }
+    }
+    .text-view {
+        &.inline {
+            margin-bottom: 10px;
+        }
+        .status {
+            height: 30px;
+            width: fit-content;
+            padding: 6px 30px;
+            font-size: 13px;
+        }
+    }
+    .attachment-position {
+        .document-view {
+            position: relative;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: $gray-color;
+            padding: 6px 10px;
+            .icon-type-file{
+                width: 20px;
+            }
+            .document-name {
+                padding-left: 10px;
+                color: $default-text;
+                font-weight: 600;
+                margin-bottom: 10px;
+                vertical-align: middle;
+            }
+            .attach-remove {
+                width: 13px;
+                height: 14px;
+                right: 10px;
+                top: 10px;
+                cursor: pointer;
+                position: absolute;
+            }
+        }
+    }
+    .attach-files {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-bottom: 15px;
+        img {
+            padding-right: 7px;
+            cursor: pointer;
+        }
+        span {
+            cursor: pointer;
+            vertical-align: middle;
+            color: $primary-color-deep;
+        }
+    }
+}

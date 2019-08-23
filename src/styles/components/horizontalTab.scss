@@ -1,0 +1,161 @@
+.tab-position{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: $white;
+}
+.icon-in-more{
+    font-size: 14px;
+    vertical-align: text-bottom;
+    padding-right: 10px !important;
+    color: $status-canceled-color;
+}
+.icon-in-tab{
+    font-size: 14px;
+    vertical-align: text-bottom;
+    padding-right: 10px !important;
+}
+.tabs {
+    z-index: 1;
+    .nav-tabs {
+        font-weight: 600;
+        > li > a > i {
+            font-size: 14px;
+            vertical-align: text-bottom;
+            margin-right: 10px;
+        }
+    }
+}
+
+.tab-more-active {
+    >div{
+        >ul{
+            border-bottom: none !important;
+            margin-top: -1px !important;
+            margin-right: 0px !important;
+            padding: 0px 0 !important;
+                >li{
+                    padding: 0px !important;
+                    >a {
+                        background-color: transparent !important;
+                        color: $default-text !important;
+                    }
+                }
+            }
+        .arrow-up{
+            border-left: 7px solid transparent !important ;
+            border-right: 7px solid transparent !important;
+            border-bottom: 7px solid #fff !important;
+            left: auto !important;
+            right: 18px !important;
+            bottom: 0px !important;
+        }
+    }
+}
+.tab-more{
+    padding: 7px 20px 0px 20px;
+    cursor: default !important;
+        >div {
+            vertical-align: unset;
+        cursor: default;
+            >div>a{
+                background-color: transparent !important;
+                padding: 0px !important;
+            }
+            >ul{
+            border-bottom: none !important;
+            margin-top: 2px !important;
+            margin-right: -17px !important;
+            padding: 0px 0 !important;
+                >li{
+                    padding: 0px !important;
+                    >a {
+                        background-color: transparent !important;
+                    }
+                }
+            }
+        .arrow-up{
+            border-left: 7px solid transparent !important ;
+            border-right: 7px solid transparent !important;
+            border-bottom: 7px solid #fff !important;
+            left: auto !important;
+            right: -2px !important;
+            bottom: -3px !important;
+        }
+    }
+}
+
+.tabs.vertical-tabs {
+    ul {
+        font-size: 12.7px;
+        font-weight: normal;
+        border-bottom: 2px solid $primary-color-deep;
+        >li {
+            cursor: pointer;
+            padding-right: 5px;
+            margin-bottom: 0px;
+            margin-top: 5px;
+            :active {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            span {
+                vertical-align: middle;
+                cursor: pointer;
+            }
+            a {
+                padding: 7px 20px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                background-color: #efefef;
+                border: none;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                :active{
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+            }
+            .drown-arrow{
+                padding-left: 5px;
+                font-size: 8px;
+            }
+        }
+        >li {
+            >div {
+                >div {
+                    &>a {
+                        margin-bottom: -7px;
+                        display: inline-block;
+                        color: $status-canceled-color;
+                        border-top: none !important;
+                        &>img:first-child {
+                            padding-right: 10px;
+                        }
+                        &>span {
+                            padding-left: 0px;
+                        }
+                        &>img {
+                            padding-left: 5px;
+                        }
+                    }
+                }
+                >ul {
+                    >li {
+                        padding: 1px 3px 0 2px;
+                        >a {
+                            padding: 8px 10px;
+                            font-family: "Open sans";
+                            text-align: left;
+                            color: $default-text;
+                            >img {
+                                -webkit-filter: contrast(0) brightness(1.5);
+                                filter: contrast(0) brightness(1.5);
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.contract-detail {
+    .new-contract-working-location-container {
+        .new-contract-title {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+    .new-contract-info-container {
+        margin-bottom: 24px;
+        .contract-information-preview {
+            padding: 10px;
+            background-color: $gray-color-4;
+            &>.row {
+                margin-bottom: 10px;
+                .field-title {
+                    min-width: min-content;
+                    white-space: nowrap;
+                }
+                .field-title-edit {
+                    margin-top: 5px;
+                }
+                .field-value {
+                    max-width: min-content;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-weight: 600;
+                }
+                .input-container, .input-group.date {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .metro-table {
+            thead>tr>th {
+                &:nth-child(1) {
+                    width: unset;
+                }
+            }
+        }
+        .dialog-add-locations {
+            .metro-table {
+                thead>tr>th {
+                    &:nth-child(1) {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+    .attach-body{
+        border: 1px solid $gray-light-border;
+        border-radius: 5px;
+        margin:0px;
+        padding: 20px 5px 5px 5px;
+    }
+    .linked-contracts{
+        border: 1px solid $gray-light-border;
+        border-radius: 5px;
+        margin: 0px;
+        margin-bottom: 30px;
+        padding: 20px;
+        a{
+            color: $primary-color-darker;
+            text-decoration: underline;
+            padding-right: 10px;
+        }
+    }
+    .affected-date {
+        display: flex;
+        align-items: center;
+        .date-picker {
+            padding: 0 5px;
+            width: 180px;
+        }
+    }
+}

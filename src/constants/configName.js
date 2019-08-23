@@ -1,0 +1,5 @@
+export const COMPANY_NAME = 'Company name'
+export const COMPANY_LOGO = 'Company logo'
+export const COMPANY_DEF_LANGUAGE = 'Default language'
+export const ENGLISH = 'en'
+export const VIETNAMESE = 'vi'

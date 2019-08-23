@@ -1,0 +1,166 @@
+/* Checkboxes
+   ========================================================================== */
+
+
+/* Remove default checkbox */
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
+// Checkbox Styles
+[type="checkbox"] {
+    // Text Label Style
+    +label {
+        margin-bottom: 0px;
+        padding-left: 28px;
+        font-weight: 400;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        height: 25px;
+        line-height: 25px;
+        font-size: 1rem;
+        -webkit-user-select: none;
+        /* webkit (safari, chrome) browsers */
+        -moz-user-select: none;
+        /* mozilla browsers */
+        -khtml-user-select: none;
+        /* webkit (konqueror) browsers */
+        -ms-user-select: none;
+        /* IE10+ */
+    }
+    /* checkbox aspect */
+    +label:before,
+    &:not(.filled-in)+label:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        z-index: 0;
+        border: 2px solid $radio-empty-color;
+        border-radius: 2px;
+        margin-top: 2px;
+        transition: .2s;
+    }
+    &:not(.filled-in)+label:after {
+        border: 0;
+        transform: scale(0);
+    }
+    &:not(:checked):disabled+label:before {
+        border: none;
+        background-color: $input-disabled-color;
+    } // Focused styles
+}
+
+[type="checkbox"]:checked {
+    +label:before {
+        top: -4px;
+        left: -5px;
+        width: 12px;
+        height: 22px;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-right: $radio-border;
+        border-bottom: $radio-border;
+        transform: rotate(40deg);
+        transform-origin: 100% 100%;
+    }
+    &:disabled+label:before {
+        border-right: 3px solid $input-disabled-color;
+        border-bottom: 3px solid $input-disabled-color;
+    }
+    &:disabled+label:after {
+        background-color: #e2e2e2 !important;
+    }
+}
+
+// Filled in Style
+[type="checkbox"].filled-in {
+    // General
+    +label:after {
+        border-radius: 2px;
+    }
+    +label:before,
+    +label:after {
+        content: '';
+        left: 0;
+        position: absolute;
+        /* .1s delay is for check animation */
+        transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+        z-index: 1;
+    } // Unchecked style
+    &:not(:checked)+label:before {
+        width: 0;
+        height: 0;
+        border: 3px solid transparent;
+        left: 6px;
+        top: 10px;
+        -webkit-transform: rotateZ(37deg);
+        transform: rotateZ(37deg);
+        -webkit-transform-origin: 20% 40%;
+        transform-origin: 100% 100%;
+    }
+    &:not(:checked)+label:after {
+        height: 20px;
+        width: 20px;
+        background-color: transparent;
+        border: 1px solid $input-disabled-color;
+        top: 3px;
+        z-index: 0;
+    } // Checked style
+    &:checked {
+        +label:before {
+            top: 3px;
+            left: 1px;
+            width: 8px;
+            height: 13px;
+            border-top: 3px solid transparent;
+            border-left: 3px solid transparent;
+            border-right: 3px solid $input-background;
+            border-bottom: 3px solid $input-background;
+            -webkit-transform: rotateZ(37deg);
+            transform: rotateZ(37deg);
+            -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+        }
+        +label:after {
+            top: 3px;
+            border: 1px solid $primary-color;
+            background-color: $primary-color;
+            width: 20px;
+            height: 20px;
+            z-index: 0;
+        }
+    } // Focused styles
+    &:disabled:not(:checked)+label:before {
+        background-color: transparent;
+        border: 2px solid transparent;
+    }
+    &:disabled:not(:checked)+label:after {
+        background-color: #e2e2e2;
+        border: none;
+    }
+    &:disabled:checked+label:after {
+        background-color: #e2e2e2;
+        color: $white;
+        border: none;
+    }
+    &:disabled:checked+label:before {
+        border-right: 3px solid $white;
+        border-bottom: 3px solid $white;
+    }
+}
+
+.my-checkbox {
+    display: flex;
+    align-items: center;
+    &.inline-block {
+        display: inline-block
+    }
+}

@@ -1,0 +1,122 @@
+.nav-tabs {
+    margin-top: 0px;
+    width: 100%;
+    background-color: $white;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    &.underline {
+        border: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-tabs>li>a {
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+    color: $status-canceled-color;
+    ;
+}
+
+.nav-tabs>li>a:hover {
+    border-color: $white $white $white;
+    background-color: $white;
+    border-radius: 0px;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    border-bottom-color: $white;
+    border-left-color: $white;
+    border-top: 3px solid $primary-color;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 1px solid #ddd;
+    color: #414e6e
+}
+
+.nav-tabs.underline>li.active>a,
+.nav-tabs.underline>li.active>a:hover,
+.nav-tabs.underline>li.active>a:focus {
+    border-top-color: $white;
+    border-left-color: $white;
+    border-bottom: 4px solid $primary-color;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 0;
+    border-right: 0;
+    color: #414e6e
+}
+
+.nav-tabs>li>a>img {
+    -webkit-filter: contrast(0) brightness(1.5);
+    filter: contrast(0) brightness(1.5);
+}
+
+.nav-tabs>li.active>a>img {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.nav-tabs>li:first-child>a {
+    border-left: 0px;
+}
+
+.nav-tabs>li.active:first-child>a {
+    border-left: 0px;
+}
+
+.tabs.vertical-tabs {
+    .nav-tabs>li.active {
+        a {
+            border-radius: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #FFFFFF;
+            font-family: "Open sans";
+            background-color: $primary-color-deep;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+            border: none;
+        }
+        div>ul>li>a {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    .nav-tabs>li.active>div {
+        background-color: $white;
+        &>div>a {
+            border-left-color: $white;
+            border-top: 3px solid $primary-color;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+        }
+    }
+}
+
+
+/*.general-tab1 {
+    background-image:;
+    &.active {
+         background-image:;
+    }
+}
+.general-tab2 {
+    background-image:;
+    &.active {
+         background-image:;
+    }
+}
+.general-tab3 {
+    background-image:;
+    &.active {
+         background-image:;
+    }
+}*/

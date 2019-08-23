@@ -1,0 +1,210 @@
+.filter-select-list {
+    background: transparent;
+    position: relative;
+    .title {
+        font-size: 14px;
+        color: $default-text;
+    }
+    .text-value {
+        position: relative;
+        font-size: 13px;
+        font-weight: normal;
+        color: #2b4043;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        padding: 6px 12px;
+        border: 1px solid #dcdfe5;
+        border-radius: 4px;
+        float: left;
+        height: 30px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .value-select .arrow-down {
+        position: absolute;
+        right: 0;
+        font-size: 19px;
+        bottom: 0px;
+        color: $default-text;
+    }
+    .value-select {
+        width: 100%;
+        height: 30px;
+        cursor: pointer;
+        display: table;
+        border-collapse: separate;
+    }
+    .select-line {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: $gray-light-border;
+    }
+    .popover-container {
+        z-index: 100;
+        width: 100%;
+        min-width: 270px;
+        max-height: 500px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.16);
+        position: absolute;
+        padding: 15px;
+        .header {
+            display: inline-flex;
+            position: relative;
+            top: 0px;
+            height: 30px;
+            width: 100%;
+            border-bottom: solid 1px $grey-color-lighter;
+            .search {
+                position: absolute;
+                right: 0;
+                top: -12px;
+                height: 45px;
+                width: 200px;
+                .img-search {
+                    right: 20px;
+                    right: 0;
+                    top: 16px;
+                    position: absolute;
+                }
+            }
+        }
+        .filter-content {
+            max-height: 370px;
+            overflow-y: scroll;
+            .my-checkbox {
+                margin-top: 15px;
+            }
+            .my-checkbox:last-child {
+                margin-bottom: 15px;
+            }
+        }
+        .filter-content-date {
+            max-height: 370px;
+            .row {
+                &>div {
+                    padding-left: 10px;
+                    padding-right: 0px;
+                    .input-group.date {
+                        input {
+                            padding-left: 10px;
+                            padding-right: 0;
+                        }
+                    }
+                    .btn-expand, .btn-collapse {
+                        margin: 5px 0px;
+                        cursor: pointer;
+                        .btn-datefilter{
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+            .no-padding {
+                padding: 0 !important;
+            }
+        }
+        .footer {
+            position: relative;
+            bottom: 0px;
+            height: 45px;
+            width: 100%;
+            border-top: solid 1px $grey-color-lighter;
+            .button-container {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        .footer-date-time {
+            position: relative;
+            bottom: 0px;
+            height: 45px;
+            width: 100%;
+            .button-container {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+    &.more {
+        height: 30px;
+        width: 20%;
+    }
+    .value-select-more {
+        cursor: pointer;
+        color: $primary-color-deep;
+        padding-bottom: 10px;
+        .title-more {
+            font-weight: 600;
+        }
+        .arrow-down-more {
+            font-size: 19px;
+            position: absolute;
+            margin-top: -3px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.col:nth-child(4n) .filter-select-list .popover-container {
+    right: calc(-100% + 350px);
+}
+@media screen and (max-width: 992px) and (min-width: 480px) {
+    .col:nth-child(2n) .filter-select-list .popover-container {
+        right: calc(-100% + 350px);
+    }
+}
+
+.uncheckedIcon {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid 1px #b2c6cd;
+}
+
+.checkedIcon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: solid 1px $primary-color;
+    color: $primary-color;
+    i {
+        font-size: 12px;
+        position: absolute;
+        top: 3px;
+        left: 4px;
+        bottom: 0;
+        right: 0px;
+    }
+}
+
+.filter-collapse {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.filter-collapse-active {
+    width: 100%;
+    overflow: visible;
+    transition: all 2s ease;
+    .filter-more {
+        margin-top: -4px;
+    }
+    .filter-more-selected {
+        margin-top: -15px;
+        padding-bottom: 4px;
+        margin-right: -30px;
+    }
+}

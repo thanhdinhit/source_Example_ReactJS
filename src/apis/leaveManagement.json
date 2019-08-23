@@ -1,0 +1,42 @@
+{
+    "items": [
+        {
+            "id": "1",
+            "configType": "Leave_Type",
+            "name": "Annual leave",
+            "value": "12",
+            "description": "The Organisation of Working Time Act 1997 provides for a basic annual paid leave entitlement of 4 weeks, although an employee's contract could give greater rights.It is for your employer to decide when annual leave may be taken, but this is subject to a number of conditions. Your employer must take into account your family responsibilities, opportunities for rest and recreation that are available to you and to consult with you (or your union) at least one month before the leave is to be taken. In addition, annual leave should be taken within the appropriate leave year or with your consent, within 6 months of the relevant leave year. Further holding over (also known as carrying-over) of annual leave at your wish is a matter for agreement between you and your employer. Holiday pay: Pay in respect of annual leave is paid in advance at the normal weekly rate. If your pay varies because, for example, of commission or bonus payments, your pay for your holidays is the average of your pay over the 13 weeks before you take holidays.",
+            "enable": true,
+            "deleted": false
+        },
+        {
+            "id": "2",
+            "configType": "Leave_Type",
+            "name": "Child Marriage",
+            "value": "3",
+            "description": "Employees are entitled to paid marriage leave according to the relevant Wage Regulation Order that regulates the specific sector of industry in which they are employed. The entitlement may vary depending on the regulation. Employees  in  activities of work which are not regulated by any W.R.O., are allowed  two working days of marriage leave as stipulated in L.N. 432 of 2007 - Minimum Special Leave Entitlement Regulations.",
+            "enable": false,
+            "deleted": false
+        },
+        {
+            "id": "3",
+            "configType": "Leave_Type",
+            "name": "Injury",
+            "value": "5",
+            "description": "All employees are entitled to a maximum period of one year injury leave on full pay, less the full amount of any injury benefit to which such employee may be entitled in terms of the Social Security Act, if s/he is injured during the actual discharge of his duty and not due to contributory negligence on her/his part or to any contravention of safety rules laid down by the employer. While being on Injury Leave, vacation leave and bonuses accrue whenever an employee is on paid status.This entitlement is regulated by the relevant Wage Regulation Order and by L.N. 432 ",
+            "enable": true,
+            "deleted": false
+        },
+        {
+            "id": "4",
+            "configType": "Leave_Type",
+            "name": "Vacation Leave",
+            "value": "2",
+            "description": "Vacation leave starts to accumulate as from commencement of employment. It can be availed of in agreement between the employer and the employee. When an employee is in employment for less than 12 months, s/he shall be entitled to a proportionate amount of annual leave. Leave has to be availed of in agreement with the employer. The application for leave has to be approved by the employer before an employee can proceed with leave. By mutual agreement with the employer, leave can be taken in hours. Otherwise, if there is no agreement between the employer and the employee, leave has to be availed of as a whole day.",
+            "enable": true,
+            "deleted": true
+        }
+    ],
+    "data":{},
+    "meta":{}
+}

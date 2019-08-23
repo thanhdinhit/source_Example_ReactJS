@@ -1,0 +1,53 @@
+.toggle-base {
+    display: inline-block;
+    width: 62px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 15px;
+    background-color:  #afb6c7;
+    cursor: pointer;
+    .toggle-font {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        i {
+            display: inline-block;
+            position: absolute;
+            margin: 5.5px 9.5px;
+            width: 15px;
+            height: 11px;
+            object-fit: contain;
+            font-family: FontAwesome;
+            font-size: 16px;
+            text-align: left;
+            color: #ffffff;
+        }
+    }
+    .toggle-dot {
+        height: 30px;
+        width: 31px;
+        position: relative;
+        display: inline-block;
+        div {
+            display: inline-block;
+            margin-top: 2.5px;
+            margin-left: 4px;
+            position: absolute;
+            width: 28px;
+            height: 24px;
+            border-radius: 12px;
+            background-color: #ffffff;
+            box-shadow: 0 0 2px 0 rgba(84, 84, 84, 0.5);
+        }
+    }
+    &.open {
+        background-color:  #66c9d1;
+        .toggle-dot {
+            div {
+                margin-right: 3px;
+                margin-left: 0px;
+            }
+        }
+    }
+}

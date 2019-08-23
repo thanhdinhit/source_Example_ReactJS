@@ -1,0 +1,82 @@
+.page-application-setting {
+    margin-top: $_nav-header-height - $_specical-br;
+    &>.row {
+        display: flex;
+        margin-bottom: 0;
+
+        &.menu-opened{
+            .btn-overlay-config{
+                position: absolute;
+                z-index: 3;
+                opacity: 0.75;
+                color: $disable-text;
+                cursor: pointer;
+                left: 260px;
+                top: 98px;
+                transition: all 1s ease;
+                transition: opacity 0.8s ease;
+            }
+
+            &>.left-menu {
+                &.fixed{
+                    width: $_menu-opened-width;
+                }
+                &.overlay{
+                    width: $_menu-collapsed-width;
+                }
+            }
+        }
+
+        &.menu-collapsed{
+            .btn-overlay-config{
+                transition: all 1s ease;
+                transition: opacity 0.5s ease;
+                left: 0px;
+                opacity: 0;
+                height: 0;
+            }
+        }
+
+        &>.left-menu {
+            min-width: $_menu-collapsed-width;
+            width: $_menu-collapsed-width;
+            padding: 0;
+            transition: width 0.35s ease;
+        }
+
+        &>.right-main {
+            flex: 1;
+            max-width: calc(100% - #{$_menu-collapsed-width});
+            padding: 0;
+            padding-bottom: $_default-margin;
+            padding-left: $_default-margin;
+            min-height: calc(100vh - #{$_nav-header-height});
+
+            &>div{
+                height: 100%;
+
+                .container-fluid{
+                    $_row-header-margin-top: 28px;
+                    $_row-header-margin-bottom: 24px;
+                    $_row-header-height: 30px;
+                    $_total-header-height: $_row-header-margin-top + $_row-header-margin-bottom + $_row-header-height;
+
+                    height: 100%;
+                    min-height: calc(100vh - #{$_nav-header-height + $_default-margin});
+
+                    &>.row-header{
+                        margin-top: $_row-header-margin-top;
+                        margin-bottom: $_row-header-margin-bottom;
+                        height: $_row-header-height;
+                    }
+
+                    &>.row-body{
+                        margin: 0;
+                        height: calc(100% - #{ $_default-margin + $_specical-br + $_default-margin});
+                        min-height: calc(100vh - #{$_nav-header-height + $_default-margin + $_total-header-height});
+                    }
+                }
+            }
+        }
+    }
+}

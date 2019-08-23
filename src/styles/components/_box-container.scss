@@ -1,0 +1,197 @@
+.border-box-header {
+    .title {
+        margin-bottom: 0;
+        color: $default-text;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 11.36px;
+        &>i{
+            float: right;
+            cursor: pointer;
+        }
+        &> span{
+            color: $danger-color-brighter;
+            padding-left: 2px;
+        }
+    }
+    .img-title {
+        width: 9px;
+        height: 9px;
+        position: absolute;
+        right: 20px;
+        top: 12px;
+        cursor: pointer;
+    }
+}
+
+.border-box-content {
+    border-radius: 5px;
+    background-color: white;
+    border: solid 1px $gray-color-light;
+    min-height: 40px;
+    padding: 15px;
+    margin-top: 15px;
+    .table-container {
+        min-height: 23px;
+        align-items: center;
+        display: flex;
+        td,
+        th {
+            padding-top: 14px;
+            padding-bottom: 24px;
+        }
+        tr {
+            border-top: 1px solid $gray-light-border;
+        }
+        tr:first-child {
+            border-top: none;
+        }
+        tr:nth-last-child(1) {
+            border-top: none;
+            td {
+                padding-top: 20px;
+                padding-bottom: 0;
+            }
+        }
+        tr:nth-last-child(2) {
+            .td-icon {
+                padding-bottom: 10px;
+            }
+            .td-name {
+                padding-bottom: 0;
+            }
+        }
+        .td-icon {
+            width: 25px;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            img {
+                width: 20px;
+                height: 24px;
+            }
+        }
+        .td-name {
+            font-size: 12px;
+            font-weight: bold;
+            color: $default-text;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 300px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 14px;
+            padding-bottom: 10px;
+            width: 100%;
+            .remove-certificate{
+                font-size: 14px;
+                position: absolute;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+        }
+        .td-expiredDate {
+            color: $lighter-text;
+            font-weight: 400;
+            width: 45%;
+            padding-right: 20px;
+            .add-update {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-weight: 400;
+                padding-left: 4px;
+                cursor: pointer;
+                font-size: 12px;
+                color: $primary-color-deep;
+                i {
+                    margin-right: 6px;
+                }
+            }
+            .status-expiredDate {
+                color: $default-text;
+                font-weight: bold;
+            }
+            i {
+                &.add-update {
+                    font-size: 14px;
+                }
+            }
+            .nearly-expired{
+                display: block;
+                color: $yellow-color-brighter;
+                font-weight: 600;
+            }
+            .expired{
+                display: block;
+                color: $danger-color-brighter;
+                font-weight: 600;
+            }
+            .completed{
+                display: block;
+                color: $primary-color-darker;
+                font-weight: 600;
+            }
+        }
+        .td-remove {
+            width: 115px;
+            padding-left: 100px;
+            i {
+                cursor: pointer;
+            }
+        }
+        .td-error{
+            column-span: 4;
+            color: $danger-color;
+            font-size: 12px;
+            font-weight: 400;
+            padding-bottom: 0;
+            img {
+                margin-right: 5px;
+            }
+            span {
+                vertical-align: middle;
+            }
+        }
+        &.view {
+            tr {
+                border-top: none;
+                border-bottom: 1px solid $gray-light-border;
+            }
+            tr:nth-last-child(1) {
+                border-bottom: none;
+            }
+            tr:nth-last-child(2) {
+                .td-name {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+.no-content{
+    border: none;
+    min-height: 20px;
+    margin-bottom: 0px;
+}
+
+.add-circle {
+    color: #65c8d0 !important;
+    top: 4px;
+    padding-right: 10px;
+    font-size: 18px !important;
+}
+
+.label-input {
+    font-weight: 400;
+    color: $primary-color-deep;
+    font-size: 12px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    span {
+        padding-left: 10px;
+    }
+    img {
+        width: 18px;
+        height: 18px;
+    }
+}

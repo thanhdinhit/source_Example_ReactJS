@@ -1,0 +1,187 @@
+.login {
+    .basic-wrap__content {
+        display: inline-flex;
+        .login-form {
+            width: 370px;
+            border-top-left-radius: 5px;
+            -moz-border-top-left-radius: 5px;
+            -webkit-border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            -moz-border-bottom-left-radius: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+
+            .login-form__content {
+                padding: 54px 36px 47px 36px;
+            }
+
+            .login-form__content-option {
+                position: relative;
+                display: inline-table;
+                margin: 23px 0px;
+                width: 100%;
+
+                .my-checkbox {
+                    display: table-cell;
+
+                    label {
+                        font-size: 12.9px;
+                    }
+                }
+
+                .forgot-pw-text {
+                    margin-bottom: 0px;
+                    font-size: 12.9px;
+                    font-style: normal;
+                    font-stretch: normal;
+                    letter-spacing: normal;
+                    text-align: right;
+                    color: $primary-color-darker;
+                    display: table-cell;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .login-bg {
+            width: calc(930px - 370px);
+            position: relative;
+
+            img {
+                width: 560px;
+                height: 448px;
+                border-top-right-radius: 5px;
+                -moz-border-top-right-radius: 5px;
+                -webkit-border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                -moz-border-bottom-right-radius: 5px;
+                -webkit-border-bottom-right-radius: 5px;
+            }
+
+            .welcome-iwfa {
+                position: absolute;
+                left: calc(50% - 128px);
+                top: calc(50% - 62px);
+                text-align: center;
+
+                p {
+                    margin: 0;
+                }
+
+                .welcome-text,
+                .iwfa-text {
+                    color: white;
+                }
+
+                .welcome-text {
+                    font-size: 25px;
+                    font-stretch: normal;
+                    font-weight: 300;
+                }
+
+                .iwfa-text {
+                    font-weight: bold;
+                    font-size: 50px;
+                }
+            }
+        }
+
+        .login-form,
+        .login-bg {
+            height: 100%;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+
+        .forgot-form {
+            width: 370px;
+            padding: 89px 35px 66px 35px;
+
+            &.have-msg-success {
+                padding: 66px 35px 66px 35px;
+            }
+
+            .forgot-form__title {
+                text-align: center;
+                font-size: 24px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                color: $text-lighter;
+                margin-bottom: 23px;
+                line-height: 20px;
+            }
+
+            .forgot-form__note {
+                text-align: center;
+                color: $text-lighter;
+                width: 265px;
+                margin: 0 auto 25px auto;
+                &.have-msg-success {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .forgot-form__message-success {
+                text-align: center;
+                background-color: #c3eaee;
+                padding: 10px;
+                position: relative;
+                border-radius: 5px;
+                color: $default-text;
+                margin-bottom: 14px;
+
+                p {
+                    position: relative;
+                    margin-bottom: 0px;
+                    font-size: 12px;
+                    letter-spacing: normal;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.5;
+                    text-align: left;
+                    padding-left: 25px;
+                }
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: calc(50% - 10px);
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            .redirect {
+                text-align: center;
+                color: $primary-color-darker;
+                margin-top: 14px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+
+        .change-password-success {
+            width: 370px;
+
+            .change-password-success__content {
+                padding: 100px 40px;
+                text-align: center;
+
+                .success-text {
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: $color-dark-slate-grey;
+                    margin-bottom: 9px;
+                }
+
+                .success-msg {
+                    color: $default-text;
+                    margin-bottom: 22px;
+                }
+            }
+        }
+    }
+}
+

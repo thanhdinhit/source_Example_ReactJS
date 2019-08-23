@@ -1,0 +1,352 @@
+.page-group-timesheets-history {
+    padding-bottom: 180px;
+    .header{
+        margin-bottom: 20px;
+    }
+    .breadcrumb {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .row-header {
+        .back-button {
+            width: 56px;
+            min-width: 56px;
+            padding-left: 7px;
+            padding-right: 7px;
+            margin-left: 0;
+        }
+        .raised-button-first-secondary {
+             margin-right: 10px;
+        }
+        .filter-status {
+            display: inline-block;
+            min-width: 150px;
+            margin-right: 10px;
+        }
+        .filter-group {
+            display: inline-block;
+            width: 220px;
+            margin-right: 10px;
+        }
+        div.pull-right {
+            display: inline-block;
+            &>div {
+                display: inline-block;
+                vertical-align: top;
+            }
+            .filter-option {
+                width: 300px;
+                margin-right: 10px;
+            }
+            .btn-group {
+                margin-right: 10px;
+                ul.dropdown-menu {
+                    min-width: 120px;
+                    width: 120px;
+                    padding: 3px 0;
+                    li {
+                        height: 35px;
+                        a {
+                            line-height: 35px;
+                            padding: 0 0 0 5px;
+                            cursor: pointer;
+                            img {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .raised-button {
+                margin-left: 0;
+            }
+            .btn-submit-timesheet {
+                margin-right: 10px;
+            }
+        }
+        .time-slider {
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+    .employee-timsheets-listing {
+        .list-item {
+            padding: 0px;
+            display: table-row !important;
+            .toggle-details{
+                max-width: 45px;
+                width: 45px;
+            }
+        }
+        .avatar-content {
+            display: inline-block;
+            position: relative;
+            img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                box-shadow: 0px 1px 3px 0;
+                vertical-align: middle;
+                margin-right: 8px;
+            } 
+            .cell-content {
+                display: inline-block;
+                vertical-align: middle;
+                .main-label {
+                    vertical-align: middle;
+                    font-weight: 600;
+                    line-height: 16px;
+                }
+                .sub-label {
+                    vertical-align: middle;
+                    font-weight: normal;
+                    line-height: 16px;
+                    font-size: 11px;
+                    color: $color-table-header;
+                }
+                .subscription-label {
+                    font-size: 11px;
+                    line-height: 14px;
+                    vertical-align: middle;
+                    color: $lighter-text;
+                    font-weight: 400;
+                }
+            }
+        }
+        .display-item {
+            display: grid;
+            .list-item {
+                border-bottom: solid 1px #dcdfe5;
+                display: flex;
+                width: 100%;
+                .item-content {
+                    width: 100%;
+                    margin: auto 0;
+                    display: inline-flex;
+                    height: 70px;
+                    align-items: center;
+                    padding: 0px;
+                    >div {
+                        width: 32%;
+                    }
+                    .toggle-details {
+                        display: flex;
+                        width: 4%;
+                        max-width: none;
+                        padding-left: 10px;
+                        i {
+                            margin: auto 0;
+                            cursor: pointer;
+                        }
+                    }
+                    .cell-avatar {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 35%;
+                        min-width: 190px;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            box-shadow: 0px 1px 3px 0 rgba(208, 208, 208, 0.4);
+                            vertical-align: middle;
+                        }
+                        div.cell-content {
+                            padding-left: 8px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            .main-label {
+                                font-size: 13px;
+                                font-weight: 600;
+                            }
+                            .sub-label {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .group-status-stat {
+                        display: inherit;
+                        width: 300px;
+                        min-width: 300px;
+                        .cell-status-stat {
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            text-align: center;
+                            display: inline-block;
+                            span {
+                                font-size: 15px;
+                                font-weight: 600;
+                            }
+                            div.status {
+                                padding-top: 1px;
+                                padding-bottom: 1px;
+                                font-size: 12px;
+                                &.Submitted {
+                                    color: #7f8182;
+                                    background-color: #ededed;
+                                }
+                            }
+                        }
+                    }
+                    .group-stat {
+                        width: 100%;
+                        display: inline-flex;
+                        align-items: center;
+                        .cell-stat {
+                            display: inline-block;
+                            padding: 0 5px;
+                            &>div:nth-child(1) {
+                                font-size: 15px;
+                                white-space: nowrap;
+                                span {
+                                    font-weight: 600;
+                                }
+                            }
+                            .name {
+                                white-space: nowrap;
+                            }
+                        }
+                        .stat-more {
+                            z-index: 100;
+                            padding-left: 20px;
+                            button {
+                                width: 27px;
+                                height: 13px;
+                                min-width: 27px;
+                                min-height: 13px;
+                                border-radius: 6px;
+                                border: solid 1px #dcdfe5;
+                                line-height: 13px;
+                                padding: 0;
+                                text-align: center;
+                                color: #dcdfe5;
+                                cursor: pointer;
+                            }
+                            ul {
+                                li {
+                                    a {
+                                        white-space: normal;
+                                        span.right {
+                                            float: right;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.selected {
+                    .item-content {
+                        background-color: rgba(237, 237, 237, 0.25);
+                        padding: 0px;
+                        border-bottom: solid 1px rgba(208, 208, 208, 0.55);
+                        border-top: solid 1px rgba(208, 208, 208, 0.55);
+                    }
+                }
+            }
+        }
+        .timesheets-details {
+            padding: 0 15px;
+            .pull-right {
+                margin-bottom: 10px;
+                margin-top: 10px;
+                button {
+                    background-color: $gray-color-7;
+                }
+            }
+        }
+        .metro-table thead tr th {
+            padding-top: 10px;
+            width: 32%;
+        }
+        .metro-table thead tr th:first-child {
+            width: 4%;
+        }
+        .metro-table tbody tr td:first-child {
+            padding-left: 25px;
+        }
+        .metro-table tbody tr td {
+            padding: 9px 10px 9px 0px;
+            .avatar-content {
+                left: 0px;
+            }
+        }
+        .metro-table tbody tr:last-child {
+            border-bottom: unset;
+        }
+
+        .metro-table
+        
+        .subtab {
+            thead {
+                tr {
+                    th {
+                        &.col-action {
+                            width: 100px;
+                            float: right;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    &.disable-hover.first-merge-row {
+                        td {
+                            &:first-child {
+                                background-color: rgba(237, 237, 237, 0.6);
+                            }
+                        }
+                    }
+                  td {
+                    &.merge-row {
+                      font-weight: bold;
+                    }
+                    .status {
+                      display: inline-block;
+                    }
+                    .has-popover {
+                      display: inline-block;
+                      &.right-align {
+                          margin-left: 20px;                          
+                      }
+                      cursor: pointer;
+                      .icon-input.popover-top-left {
+                          top: -10px;
+                          .custom-popover {
+                            right: -35px;
+                          }
+                      }
+                    }
+                    &.wrong {
+                      color: $danger-color-brighter;
+                    }
+                    &.correct {
+                      color: $green-color-3;
+                    }
+                    &.col-action {
+                        width: 100px;
+                        float: right;
+                    }
+                  }
+                }
+            }
+        }
+    }
+    .dialog-submit-timesheet {
+        .last-submission {
+            height: 30px;
+            line-height: 30px;
+            background: $blue-color-2;
+            vertical-align: middle;
+            border-left: 4px solid $primary-color-deep;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+        .text-view {
+            .content {
+                padding: 0;
+                background-color: $white;
+            }
+        }
+    }
+}

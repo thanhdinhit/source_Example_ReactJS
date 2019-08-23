@@ -1,0 +1,119 @@
+.dialog-clockin-clockout {
+    background: white;
+    .modal-body {
+        padding: 0px;
+    }
+    .current-time-background {
+        background: $primary-color-darker;
+        height: 183px;
+    }
+    .current-time-container {
+        width: 190px;
+        margin: auto;
+        padding-top: 30px;
+        color: white;
+        text-align: center;
+    }
+    .current-time {
+        line-height: 50px;
+        font-size: 72px;
+        font-weight: bold;
+        height: 54px;
+        margin-bottom: 15px;
+    }
+    .current-date {
+        font-size: 13px;
+        font-weight: 600;
+        height: 13px;
+        line-height: 10px;
+    }
+    .new-employee-title {
+        margin-bottom: 9px;
+    }
+    .time-location-container {
+        display: inline-block;
+        padding-left: 10px;
+        .time {
+            font-size: 15px;
+            font-weight: 600;
+            color: $default-text;
+            height: 12px;
+            line-height: 12px;
+            margin-bottom: 10px;
+        }
+        .location {
+            font-size: 12px;
+            color: $text-lighter;
+            line-height: 10px;
+        }
+    }
+    .info-container {
+        background: white;
+        padding: 15px 0px 0px 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 1px 4.8px 0.3px rgba(0, 0, 0, 0.2);
+        margin-top: -45px;
+        &.clockout {
+            margin-top: 0px;
+        }
+      
+    }
+
+    .raised-button {
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        margin-left: 0px;
+        border-radius: 10px;
+    }
+
+    .body-container {
+        padding: 20px;
+        padding-top: 0px;
+    }
+    .shift-title {
+        margin-bottom: 20px;
+    }
+   
+   
+    .shift-row:last-child {
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
+   
+    .shift-row {
+        border-bottom: 1px solid $gray-light-border;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        &.without-shift{
+            margin-top: -10px;
+        }
+        .img-calendar {
+            vertical-align: text-bottom;
+            display: inline-flex;
+            position: relative;
+            background: $pink-color;
+            &.clock-out {
+                background: $green-color;
+            }
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
+            img {
+                margin: 10px;
+                width: 20px;
+                height: 20px;
+            }
+            .index-number {
+                position: absolute;
+                color: $pink-color;
+                font-size: 8px;
+                font-weight: 600;
+                top: 19px;
+                right: 13px;
+            }
+        }
+    }
+}

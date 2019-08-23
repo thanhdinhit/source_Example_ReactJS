@@ -1,0 +1,58 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "TMA-Day",
+            "shiftCategory": {
+                "id": 1,
+                "name": "Day"
+            },
+            "startTime": "06:00:00",
+            "durationHours": 6,
+            "monday": false,
+            "tuesday": true,
+            "wednesday": false,
+            "thusday": false,
+            "friday": false,
+            "saturday": false,
+            "sunday": false,
+            "description": "Day shift for TMA"
+        },
+        {
+            "id": 2,
+            "name": "TMA-Day",
+            "shiftCategory": {
+                "id": 1,
+                "name": "Day"
+            },
+            "startTime": "06:00:00",
+            "durationHours": 6,
+            "monday": false,
+            "tuesday": true,
+            "wednesday": false,
+            "thusday": false,
+            "friday": false,
+            "saturday": false,
+            "sunday": false,
+            "description": "Day shift for TMA"
+        },
+        {
+            "id": 3,
+            "name": "TMA-Day",
+            "shiftCategory": {
+                "id": 1,
+                "name": "Day"
+            },
+            "startTime": "06:00:00",
+            "durationHours": 6,
+            "monday": false,
+            "tuesday": true,
+            "wednesday": false,
+            "thusday": false,
+            "friday": false,
+            "saturday": false,
+            "sunday": false,
+            "description": "Day shift for TMA"
+        }
+    ]
+}

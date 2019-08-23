@@ -1,0 +1,16 @@
+.number-input {
+    .input-group-addon {
+        padding: 0 7px;
+        > div {
+            width: 17px;
+            height: 28px;
+            .fa {
+                cursor: pointer;
+                display: block;
+            }
+        }
+    }
+    input {
+
+    }
+}

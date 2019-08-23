@@ -1,0 +1,62 @@
+.overtime {
+    .header{
+      margin-bottom: 20px;
+    }
+    tbody>tr>td:last-child{
+      height: 60px;
+    }
+    .row-body {
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+        &.reset-box {
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+          padding-top: 20px;
+        }
+        .overtime-content-body {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+
+        .awesome-table {
+          margin-top: 0;
+        }
+    }
+    .raised-button-label {
+      font-size: 12px;
+    }
+    .progress{
+      height: 24px;
+      background-color: $gray-light-border;
+      .progress-bar{
+          text-align: left;
+          font-size: 14px;
+          font-weight: 500;
+          background-color: $primary-color;
+          line-height: 24px;
+          padding-left: 10px;
+          padding-right: 10px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+        &.progress-overload{
+          background-color: $danger-color-deep;
+        }
+        &.progress-normal{
+          background-color: $primary-color
+        }
+      }
+
+    }
+
+    .widget-box{
+      max-width: 335px;
+      min-height: 90px;
+      background: #fff;
+      position: relative;
+      margin-bottom: -54px;
+      padding: 0;
+      //border: solid 1px #00adff;
+    }
+
+}

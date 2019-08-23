@@ -1,0 +1,29 @@
+.common-select {
+    .select-value-label-normal{
+        font-weight: 400;
+    }
+    &.has-error {
+        .Select-control {
+            border-color: $danger-color-popover;
+            background: $danger-color-input;
+            .Select-input {
+                >input {
+                    background: none;
+                }
+            }
+        }
+    }
+    &.allow-all-option {
+        .Select-placeholder {
+            color: #2b4043;
+        }
+    }
+    .Select--multi {
+        .Select-value {
+            border: solid 1px #dcdfe5;
+            background-color: #f5f5f5;
+            border-radius: 3px;
+        }
+    }
+    position: relative;
+}

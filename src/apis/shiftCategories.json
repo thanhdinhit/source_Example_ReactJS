@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "id":1,
+            "name": "Day",
+            "description": "shift used for day"
+        },
+        {
+            "id":2,
+            "name": "Swing",
+            "description": "shift used between day and night"
+        },
+        {
+            "id":3,
+            "name": "Night",
+            "description": "Shift used for night"
+        }
+    ]
+}

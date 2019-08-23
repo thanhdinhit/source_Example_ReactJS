@@ -1,0 +1,15 @@
+.filter-search-list {
+    background: transparent;
+    max-height: 52px;
+    height: 52px;
+    position: relative;
+    .title {
+        font-size: 14px;
+        color: $default-text;
+    }
+    .img-search {
+        position: absolute;
+        right: 0;
+    }
+
+}

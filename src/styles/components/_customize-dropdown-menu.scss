@@ -1,0 +1,46 @@
+//these css are used for overwriting Icon Button of materialize-ui css
+.button-add-text{
+  button{
+    font-size: inherit !important;
+    padding: inherit !important;
+    width: 51px !important;
+  }
+}
+
+.select-wrapper {
+  position: relative;
+
+  input.select-dropdown {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid  color("grey", "base") ;
+    outline: none;
+    height: 2rem;
+    line-height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+
+  span.caret {
+    color: initial;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    font-size: 10px;
+    &.disabled {
+      color:  rgba(0,0,0, .26);
+    }
+  }
+
+  & + label {
+    position: absolute;
+    top: -14px;
+    font-size: .8rem;
+  }
+}

@@ -1,0 +1,35 @@
+.employee-transfer {
+    .content-position {
+        .text-right {
+            margin-bottom: 16px;
+            .raised-button{
+                height: 25px;
+                min-width: 113px;
+            }
+        }
+        .metro-table {
+            thead>tr>th {
+                &:nth-child(1) {
+                    width: 30%;
+                }
+                &:nth-child(2) {
+                    width: 23%;
+                }
+                &:nth-child(3) {
+                    width: 23%;
+                    float: none;
+                }
+            }
+        }
+    }
+    .dialog-confirm {
+        .modal-content {
+            width: 496px;
+            .modal-body {
+                .common-select, .input-group, .input-container {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

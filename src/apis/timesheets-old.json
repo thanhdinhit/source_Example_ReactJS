@@ -1,0 +1,430 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "employeeId": 10,
+            "approvers": [
+                {
+                    "id": "1",
+                    "name": "Huy Nguyen"
+                },
+                {
+                    "id": "2",
+                    "name": "Trong Cao"
+                }
+            ],
+            "upperManager": {
+                "id": "1",
+                "name": "Huy Nguyen"
+            },
+            "note": "lam viec ngay 23",
+            "date": "2016-10-30T00:00:00Z",
+            "status": "Pending",
+            "totalHours":12,
+            "noteFromApprover": "",
+            "timeRecords": [
+                {
+                    "id": 1,
+                    "length": 8,
+                    "task": "task 1",
+                    "note": null,
+                    "location": "lab 6",
+                    "employeeTrackingTime": {
+                        "shiftId": 2,
+                        "shiftName": "Taking care lab1",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                },
+                 {
+                    "id": 2,
+                    "length": 4,
+                    "task": "task 2",
+                    "note": "em nghi nua ngay",
+                    "location": "lab 4",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                }
+            ]
+        },
+         {
+            "id": 2,
+            "employeeId": 10,
+            "approvers": [
+                {
+                    "id": "1",
+                    "name": "Huy Nguyen"
+                },
+                {
+                    "id": "2",
+                    "name": "Trong Cao"
+                }
+            ],
+            "upperManager": {
+                "id": "1",
+                "name": "Huy Nguyen"
+            },
+            "note": "lam viec ngay 24",
+            "date": "2016-11-01T00:00:00Z",
+            "status": "Approved",
+            "totalHours":24,
+            "noteFromApprover": "Lam tot lam",
+            "timeRecords": [
+                {
+                    "id": 1,
+                    "length": 8,
+                    "task": "task 1",
+                    "note": null,
+                    "location": "lab 6",
+                    "employeeTrackingTime": {
+                        "shiftId": 2,
+                        "shiftName": "Taking care lab1",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                },
+                 {
+                    "id": 4,
+                    "length": 8,
+                    "task": "task 2",
+                    "note": "",
+                    "location": "lab 4",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                },
+                 {
+                    "id": 8,
+                    "length": 8,
+                    "task": "task 2",
+                    "note": "",
+                    "location": "lab 4",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                }
+            ]
+        },
+         {
+            "id": 3,
+            "employeeId": 10,
+            "approvers": [
+                {
+                    "id": "1",
+                    "name": "Huy Nguyen"
+                },
+                {
+                    "id": "2",
+                    "name": "Trong Cao"
+                }
+            ],
+            "upperManager": {
+                "id": "1",
+                "name": "Huy Nguyen"
+            },
+            "note": "lam viec ngay 25",
+            "date": "2016-11-02T00:00:00Z",
+            "status": "Declined",
+            "totalHours":16,
+            "noteFromApprover": "",
+            "timeRecords": [
+                {
+                    "id": 1,
+                    "length": 8,
+                    "task": "task 1",
+                    "note": null,
+                    "location": "lab 6",
+                    "employeeTrackingTime": {
+                        "shiftId": 2,
+                        "shiftName": "Taking care lab1",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                },
+                 {
+                    "id": 2,
+                    "length": 8,
+                    "task": "task 2",
+                    "note": "tang luong anh oi",
+                    "location": "lab 4",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                }
+            ]
+        },
+         {
+            "id": 2,
+            "employeeId": 10,
+            "approvers": [
+                {
+                    "id": "1",
+                    "name": "Huy Nguyen"
+                },
+                {
+                    "id": "2",
+                    "name": "Trong Cao"
+                }
+            ],
+            "upperManager": {
+                "id": "1",
+                "name": "Huy Nguyen"
+            },
+            "note": "lam viec ngay 24",
+            "date": "2016-11-01T00:00:00Z",
+            "status": "Approved",
+            "totalHours":24,
+            "noteFromApprover": "Lam tot lam",
+            "timeRecords": [
+                {
+                    "id": 1,
+                    "length": 8,
+                    "task": "task 1",
+                    "note": null,
+                    "location": "lab 6",
+                    "employeeTrackingTime": {
+                        "shiftId": 2,
+                        "shiftName": "Taking care lab1",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                },
+                 {
+                    "id": 4,
+                    "length": 8,
+                    "task": "task 2",
+                    "note": "",
+                    "location": "lab 4",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                },
+                 {
+                    "id": 8,
+                    "length": 8,
+                    "task": "task 2",
+                    "note": "",
+                    "location": "lab 4",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                }
+            ]
+        },
+         {
+            "id": 2,
+            "employeeId": 10,
+            "approvers": [
+                {
+                    "id": "1",
+                    "name": "Huy Nguyen"
+                },
+                {
+                    "id": "2",
+                    "name": "Trong Cao"
+                }
+            ],
+            "upperManager": {
+                "id": "1",
+                "name": "Huy Nguyen"
+            },
+            "note": "lam viec ngay 24",
+            "date": "2016-11-01T00:00:00Z",
+            "status": "Approved",
+            "totalHours":24,
+            "noteFromApprover": "Lam tot lam",
+            "timeRecords": [
+                {
+                    "id": 1,
+                    "length": 8,
+                    "task": "task 1",
+                    "note": null,
+                    "location": "lab 6",
+                    "employeeTrackingTime": {
+                        "shiftId": 2,
+                        "shiftName": "Taking care lab1",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                },
+                 {
+                    "id": 4,
+                    "length": 8,
+                    "task": "task 2",
+                    "note": "",
+                    "location": "lab 4",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                },
+                 {
+                    "id": 8,
+                    "length": 8,
+                    "task": "task 2",
+                    "note": "",
+                    "location": "lab 4",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                }
+            ]
+        },
+         {
+            "id": 2,
+            "employeeId": 10,
+            "approvers": [
+                {
+                    "id": "1",
+                    "name": "Huy Nguyen"
+                },
+                {
+                    "id": "2",
+                    "name": "Trong Cao"
+                }
+            ],
+            "upperManager": {
+                "id": "1",
+                "name": "Huy Nguyen"
+            },
+            "note": "lam viec ngay 24",
+            "date": "2016-11-01T00:00:00Z",
+            "status": "Approved",
+            "totalHours":24,
+            "noteFromApprover": "Lam tot lam",
+            "timeRecords": [
+                {
+                    "id": 1,
+                    "length": 8,
+                    "task": "task 1",
+                    "note": null,
+                    "location": "lab 6",
+                    "employeeTrackingTime": {
+                        "shiftId": 2,
+                        "shiftName": "Taking care lab1",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                },
+                 {
+                    "id": 4,
+                    "length": 8,
+                    "task": "task 2",
+                    "note": "",
+                    "location": "lab 4",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                },
+                 {
+                    "id": 8,
+                    "length": 8,
+                    "task": "task 2",
+                    "note": "",
+                    "location": "lab 4",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                }
+            ]
+        },
+         {
+            "id": 2,
+            "employeeId": 10,
+            "approvers": [
+                {
+                    "id": "1",
+                    "name": "Huy Nguyen"
+                },
+                {
+                    "id": "2",
+                    "name": "Trong Cao"
+                }
+            ],
+            "upperManager": {
+                "id": "1",
+                "name": "Huy Nguyen"
+            },
+            "note": "lam viec ngay 24, day la mot note rat la dai",
+            "date": "2016-11-01T00:00:00Z",
+            "status": "Approved",
+            "totalHours":24,
+            "noteFromApprover": "Lam tot lam, day la mot dong chu rat la nhieu, nhieu oi la nhiu",
+            "timeRecords": [
+                {
+                    "id": 1,
+                    "length": 8,
+                    "task": "task 1",
+                    "note": null,
+                    "location": "lab 6",
+                    "employeeTrackingTime": {
+                        "shiftId": 2,
+                        "shiftName": "Taking care lab1",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                },
+                 {
+                    "id": 4,
+                    "length": 8,
+                    "task": "task 2",
+                    "note": "",
+                    "location": "lab 4",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                },
+                 {
+                    "id": 8,
+                    "length": 8,
+                    "task": "task 2",
+                    "note": "",
+                    "location": "lab 4",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    }
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "type": " TimeSheetDto ",
+        "totalPage": 3
+    }
+}

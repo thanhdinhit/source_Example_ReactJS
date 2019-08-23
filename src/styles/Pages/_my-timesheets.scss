@@ -1,0 +1,56 @@
+.my-timesheet {
+  .header{
+    margin-bottom: 20px;
+  }
+  .row-header {
+      > div {
+        display: inline-block;
+      }
+
+      .filter-status {
+        min-width: 150px;
+        margin-right: 10px;
+      }
+      .time-slider {
+        vertical-align: top;
+     }
+  }
+
+  .metro-table {
+      tbody {
+        tr {
+          td {
+            &.merge-row {
+              font-weight: bold;
+            }
+            .status {
+              display: inline-block;
+            }
+            .comment-icon {
+              margin-left: 20px;
+              cursor: pointer;
+            }
+            .has-popover {
+              display: inline-block;
+              &.right-align {
+                  margin-left: 20px;                          
+              }
+              cursor: pointer;
+              .icon-input.popover-top-left {
+                  top: -10px;
+                  .custom-popover {
+                    right: -35px;
+                  }
+              }
+            }
+            &.wrong {
+              color: $danger-color-brighter;
+            }
+            &.correct {
+              color: $green-color-3;
+            }
+          }
+        }
+      }
+  }
+}

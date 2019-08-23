@@ -1,0 +1,193 @@
+.container-fluid{
+    padding-left: 0px;
+}
+.navbar-default {
+    background-color: white;
+    border: none;
+    box-shadow: 0px 1px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 32px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-Index: 1500;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0px;
+    }
+    .navbar-nav>li>a {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}
+
+.navbar-right>li>a {
+    padding-right: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+    border-right: 1px solid #a7dcef;
+}
+
+.navbar-brand {
+    float: left;
+    height: 60px;
+    padding: 20px 40px 20px 15px;
+    font-size: 28px;
+    line-height: 20px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: $primary-color;
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: $primary-color;
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #ffffff;
+    }
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: $primary-color;
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: $primary-color
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.caret {
+    margin-left: 8px;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 0;
+}
+
+
+/* =============http://stackoverflow.com/questions/18023493/bootstrap-3-dropdown-sub-menu-missing========================== */
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #cccccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #ffffff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+.dropdown-menu>li>a{
+    font-weight: inherit;
+}
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:active,
+.dropdown-menu>li.active>a,
+.dropdown-menu>li.active>a:hover,
+.dropdown-menu>li.active>a:focus,
+.dropdown-menu>li.active>a:active, {
+    color: $default-text;
+    text-decoration: none;
+    background-color: $primary-color-brighter !important;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+
+/*===================== disable bootstrap =============*/
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+html{
+    font-size: 12px;
+}

@@ -1,0 +1,26 @@
+.employee-chip{
+    &.warning-chip{
+        background: $yellow-color-5;
+    }
+    background:  $gray-color-4;
+    padding: 5px 10px;
+    display: inline-flex;
+    border-radius: 5px;
+    margin: 0px 10px 10px 0px;
+    >img{
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        border-radius: 13px;
+    }
+    >span{
+        font-weight: 600;
+        line-height: 25px;
+    }
+    >i{
+        font-size: 8px;
+        margin: 7px 0px 7px 20px;
+        cursor: pointer;
+    }
+  
+} 

@@ -1,0 +1,19 @@
+.new-role{
+    .footer{
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .view-content{
+        padding-top: 16px;
+        .header{
+            margin: 0px;
+            color: $default-text;
+            font-size: 12px;
+        }
+        .content{
+            font-weight: bold;
+            font-size: 16px;
+            padding: 3px 0px 17px 0px;
+        }
+    }
+}

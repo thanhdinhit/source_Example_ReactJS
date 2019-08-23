@@ -1,0 +1,70 @@
+.employee-leaves {
+    padding-bottom: 180px;
+    .employee-leave-balance {
+        .filter-status {
+            display: inline-block;
+            width: 250px;
+        }
+        .show-hide-column{
+            margin-left: 10px;
+        }
+    }
+    .employee-request-list {
+        .filter-status {
+            display: inline-block;
+            width: 185px;
+        }
+        .metro-table {
+            tbody {
+                tr {
+                    td {
+                        &.overdue-warning {
+                            color: $danger-color
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header{
+        margin-bottom: 20px;
+    }
+    .tab-position {
+        margin-bottom: 20px;
+    }
+    .pointer {
+        cursor: pointer;
+    }
+    .filter-option {
+        width: 300px;
+    }
+    .metro-table {
+        thead>tr>th {
+            &:nth-child(1) {
+                width: 20%;
+            }
+            &:nth-child(2) {
+                width: 15%;
+            }
+            &:nth-child(3) {
+                width: 15%;
+            }
+            &:nth-child(4) {
+                width: 10%;
+            }
+            &:nth-child(5) {
+                width: 15%;
+            }
+            &:nth-child(6) {
+                width: 15%;
+            }
+            &:nth-child(7) {
+                width: 5%;
+            }
+        }
+    }
+
+    .dialog-filter .filter-modal .modal-content .filter-row{
+        margin-right: 0;
+    }
+}

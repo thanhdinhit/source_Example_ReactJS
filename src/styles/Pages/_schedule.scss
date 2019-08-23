@@ -1,0 +1,419 @@
+$error-status-color: #DC5360;
+$error-border-color: #E47680;
+$error-background-color: #ffdede;
+$error-highlight-color: #ea9e9e;
+$unpublish-status-color: #F5BE58;
+$unpublish-border-color: #FDD945;
+$unpublish-background-color: #fefae6;
+$unpublish-highlight-color: #ebdb8f;
+$missing-status-color: $white;
+$missing-border-color: $white;
+$missing-background-color: $white;
+$publish-status-color: #7FBA00;
+$publish-border-color: #9FCB40;
+$publish-highlight-color: #c2dd88;
+$publish-background-color: #EEF8D8;
+$border-table-color: #e0e2e8;
+
+.schedule.shift-view {
+    .schedule-table {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 60px;
+        .tb-row {
+            display: inline-flex;
+            width: 100%;
+            min-width: 770px;
+            overflow-x: visible;
+            &:nth-child(1) {
+                border-top: 1px solid $border-table-color;
+            }
+            &.first-row {
+                border-top: 1px solid $border-table-color;
+            }
+            &.shift-time-title {
+                height: 45px;
+                line-height: 45px;
+                overflow-y: hidden;
+                .tb-cell {
+                    height: 45px;
+                    span {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .schedule-day {
+            text-align: center;
+            display: inline-block;
+            width: calc(100% / 7);
+            border: 1px solid $border-table-color;
+            border-right: none;
+            min-height: 500px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            &:nth-child(7n) {
+                border-right: 1px solid $border-table-color;
+            }
+            &:last-child {
+                border-right: 1px solid $border-table-color;
+            }
+            .day-info {
+                position: relative;
+                padding: 7px;
+                border-bottom: 1px solid $border-table-color;
+                span {
+                    &:nth-child(1) {
+                        font-size: 24px;
+                        line-height: 1;
+                    }
+                }
+                .day-of-week {
+                    color: $lighter-text
+                }
+                .icon-copy {
+                    position: absolute;
+                    top: 8px;
+                    right: 8px;
+                    cursor: pointer;
+                }
+            }
+            &.view-mode {
+                background-color: $in-past-background-day;
+                border: 1px solid $in-past-border-color-day;
+                border-right: none;
+                &:nth-child(7n) {
+                    border-right: 1px solid $in-past-border-color-day;
+                }
+                &:last-child {
+                    border-right: 1px solid $in-past-border-color-day;
+                }
+                .day-info {
+                    border-bottom: 1px solid $in-past-border-color-day;
+                }
+            }
+            .day-detail {
+                .shifts-cell {
+                    min-height: 120px;
+                    padding: 2px;
+                    border-left: 1px solid $default-border;
+                    &:nth-child(1) {
+                        border-left: unset;
+                    }
+                    .btn-add-shift,
+                    .btn-add-employee {
+                        color: $primary-color;
+                        font-weight: 600;
+                        border-radius: 5px;
+                        border: 1.2px dashed $primary-color;
+                        text-align: center;
+                        line-height: 30px;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                        &.disabled {
+                            opacity: 0.5;
+                            cursor: not-allowed;
+                        }
+                    }
+                    .btn-add-shift {
+                        margin: 5px;
+                        margin-bottom: 7px;
+                    }
+                    .schedule-shift {
+                        position: relative;
+                        .schedule-shift-item {
+                            .custom-overlay {
+                                min-width: 180px;
+                                min-height: 70px;
+                            }
+                            position: relative;
+                            padding: 20px;
+                            margin-top: 5px;
+                            border-radius: 5px;
+                            background-color: $gray-color-6;
+                            border: 1px solid $default-border;
+                            text-align: left;
+                            .shift-time {
+                                margin-bottom: 20px;
+                                text-align: left;
+                            }
+                            .assigned-emp-info {
+                                margin-bottom: 4px;
+                                .emp-details {
+                                    display: flex;
+                                    align-items: center;
+                                    height: 33px;
+                                    margin-left: -4px;
+                                    .emp-avatar {
+                                        padding: 4px 0 4px 4px;
+                                        display: inline-block;
+                                        position: relative;
+                                        >img {
+                                            width: 25px;
+                                            height: 25px;
+                                            border-radius: 50%;
+                                        }
+                                        >div.emp-status {
+                                            width: 10px;
+                                            height: 10px;
+                                            position: absolute;
+                                            bottom: 0;
+                                            right: 0;
+                                            border-radius: 50%;
+                                            &.tobenotify {
+                                                background-color: $unpublish-status-color;
+                                            }
+                                            &.error {
+                                                background-color: $error-status-color;
+                                            }
+                                            &.notified {
+                                                background-color: $publish-status-color;
+                                            }
+                                        }
+                                    }
+                                    .emp-name {
+                                        padding-left: 10px;
+                                        display: inline-block;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        max-width: calc(100% - 25px);
+                                        &.has-overtime {
+                                            max-width: calc(100% - 65px);
+                                        }
+                                    }
+                                    .overtime-flag {
+                                        width: 30px;
+                                        height: 18px;
+                                        font-size: 12px;
+                                        border-radius: 3px;
+                                        color: $white;
+                                        background-color: $gray-color-13;
+                                        text-align: center;
+                                        margin-left: 15px;
+                                        flex-shrink: 0;
+                                        position: absolute;
+                                        right: 20px;
+                                    }
+                                }
+                                &.has-replacement {
+                                    .emp-details {
+                                        height: 66px;
+                                        .emp-avatar-group {
+                                            padding: 3px;
+                                            border-radius: 15px;
+                                            display: inline-block;
+                                            &.tobenotify {
+                                                background-color: $unpublish-highlight-color;
+                                            }
+                                            &.error {
+                                                background-color: $error-highlight-color;
+                                            }
+                                            &.notified {
+                                                background-color: $publish-highlight-color;
+                                            }
+                                            .main-emp,
+                                            .replace-emp {
+                                                position: relative;
+                                                >img {
+                                                    width: 25px;
+                                                    height: 25px;
+                                                    border-radius: 50%;
+                                                }
+                                                >div.emp-status {
+                                                    width: 10px;
+                                                    height: 10px;
+                                                    position: absolute;
+                                                    bottom: 0;
+                                                    right: 0;
+                                                    border-radius: 50%;
+                                                    &.tobenotify {
+                                                        background-color: $unpublish-status-color;
+                                                    }
+                                                    &.error {
+                                                        background-color: $error-status-color;
+                                                    }
+                                                    &.notified {
+                                                        background-color: $publish-status-color;
+                                                    }
+                                                }
+                                            }
+                                            .main-emp {
+                                                padding-bottom: 5px;
+                                            }
+                                            .replace-emp {
+                                                padding-top: 5px;
+                                            }
+                                        }
+                                        .emp-name-group {
+                                            text-align: left;
+                                            padding-left: 7px;
+                                            max-width: calc(100% - 36px);
+                                            &.has-overtime {
+                                                max-width: calc(100% - 76px);
+                                            }
+                                            >div {
+                                                max-width: 100%;
+                                                text-overflow: ellipsis;
+                                                overflow: hidden;
+                                                white-space: nowrap;
+                                                line-height: 31px;
+                                                &:nth-child(1) {
+                                                    margin-bottom: 2px;
+                                                }
+                                            }
+                                        }
+                                        .overtime-flag-group {
+                                            position: absolute;
+                                            right: 20px;
+                                            >div {
+                                                height: 31px;
+                                                padding: 7px 0;
+                                                >span {
+                                                    width: 30px;
+                                                    height: 16px;
+                                                    font-size: 12px;
+                                                    border-radius: 3px;
+                                                    color: $white;
+                                                    background-color: $gray-color-13;
+                                                    text-align: center;
+                                                    margin-left: 15px;
+                                                    display: inline-block;
+                                                }
+                                                &:nth-child(1) {
+                                                    margin-bottom: 2px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                +.btn-add-employee {
+                                    margin-top: 10px;
+                                }
+                            }
+                            >.more-assigned {
+                                color: $primary-color-darker;
+                            }
+                            >.need-remove {
+                                color: $danger-color-brighter;
+                            }
+                            &.status-unpublish {
+                                background-color: $unpublish-background-color;
+                                border: 1px solid $unpublish-border-color;
+                            }
+                            &.status-error {
+                                background-color: $error-background-color;
+                                border: 1px solid $error-border-color;
+                            }
+                            &.status-publish {
+                                background-color: $publish-background-color;
+                                border: 1px solid $publish-border-color;
+                            }
+                            &.view-mode {
+                                background-color: $in-past-background-color-shift;
+                                border: solid 1px $in-past-border-color-shift;
+                                font-weight: normal;
+                            }
+                        }
+                        .shift--in-past {
+                            position: absolute;
+                            background: rgba(229, 229, 229, 0.4);
+                            top: 0;
+                            right: 0;
+                            left: 0;
+                            bottom: 0;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dialog-copy {
+        .days-selection {
+            tbody {
+                overflow-y: auto;
+            }
+        }
+    }
+    .status-sumary {
+        text-align: center;
+        border-top: 1px solid $border-table-color;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-right: -20px;
+        margin-left: -20px;
+        z-index: 3;
+        .status {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            margin-right: 10px;
+        }
+        .error {
+            background-color: $error-status-color;
+        }
+        .tobenotify {
+            background-color: $unpublish-status-color;
+        }
+        .publish {
+            background-color: $publish-status-color;
+        }
+        span {
+            margin-right: 50px;
+        }
+    }
+    .dialog-edit-role {
+        text-align: left;
+        .number-input {
+            margin-bottom: 15px;
+        }
+    }
+    .dialog-overtime-request {
+        text-align: left;
+        .primary-avatar-cell {
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                box-shadow: 0px 1px 3px 0;
+                vertical-align: middle;
+            }
+            .avatar-content {
+                display: inline-block;
+                margin-bottom: 15px;
+                &:nth-child(2n+1) {
+                    margin-right: 10px;
+                }
+            }
+            .cell-content {
+                padding-left: 8px;
+                display: inline-block;
+                vertical-align: middle;
+                .main-label {
+                    vertical-align: middle;
+                    font-weight: 600;
+                    line-height: 16px;
+                    width: 105px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .sub-label {
+                    vertical-align: middle;
+                    font-weight: normal;
+                    line-height: 16px;
+                    font-size: 11px;
+                    color: $color-table-header;
+                    width: 105px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}

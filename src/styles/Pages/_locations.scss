@@ -1,0 +1,33 @@
+.locations{
+    .filter-option{
+        width: 300px;
+        margin-right: 10px;
+    }
+    .btn-group-switch-view{
+        margin-right: 5px;
+    }
+    .dialog-edit-location{
+        .input-container{
+            margin-bottom: 20px;
+        }
+        .text-area{
+            margin-bottom: 0px;
+        }
+    }
+    table{
+        .col-action{
+            width: 120px;
+            text-align: left;
+    
+            .fa-plus-circle {
+                color:  $primary-color-darker;
+                font-size: 15.5px;
+            }
+    
+            .fa-trash-o {
+                color: $lighter-text;
+                font-size: 15.5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.my-tab {
+    position: relative;
+    width: 68px;
+    min-height: 660px;
+    height: 100%;
+    overflow: hidden;
+    background-color: $white;
+    transition:0.35s ease all;
+    -moz-transition:0.35s ease all;
+    -webkit-transition:0.35s ease all;
+    &.open {
+        width: 260px;
+    }
+    ul {
+        margin: 0px;
+        li {
+            cursor: pointer;
+            display: block;
+            height: 60px;
+            div {
+                display: inline-block;
+                position: relative;
+                .icon {
+                    position: absolute;
+                    width: 68px;
+                    text-align: center;
+                    line-height: 60px;
+                    img {
+                        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                        filter: grayscale(100%);
+                    }
+                }
+                .title {
+                    position: absolute;
+                    left: 68px;
+                    line-height: 60px;
+                    width: 192px;
+                    height: 60px;
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    color: #979fb2;
+                }
+            }
+            .active {
+                display: inline-flex;
+                .layer {
+                    z-index: 1;
+                    height: 60px;
+                    width: 5px;
+                    background-color: $primary-color;
+                }
+                .icon {
+                    img {
+                        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+                        filter: grayscale(0%);
+                    }
+                }
+                .title {
+                    &.open {
+                        span {
+                            color:  $primary-color;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            .toggle {
+                .icon {
+                    img {
+                        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+                        filter: grayscale(0%);
+                    }
+                }
+            }
+        }
+    }
+}

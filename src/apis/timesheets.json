@@ -1,0 +1,90 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "employeeId": 10,
+            "date": "2016-10-30T00:00:00Z",
+            "totalHours": 12,
+            "timeRecords": [
+                {
+                    "id": 1,
+                    "length": 8,
+                    "location": "lab 6",
+                    "employeeName":"Qui Tran",
+                    "employeeTrackingTime": {
+                        "shiftId": 2,
+                        "shiftName": "Taking care lab1",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    },
+                    "status": "Approved"
+                },
+                {
+                    "id": 2,
+                    "length": 4,
+                    "location": "lab 4",
+                    "employeeName":"Qui Tran",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    },
+                    "status": "Pending"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "employeeId": 10,
+            "date": "2016-11-01T00:00:00Z",
+            "totalHours": 24,
+            "timeRecords": [
+                {
+                    "id": 1,
+                    "length": 8,
+                    "location": "lab 6",
+                    "employeeName":"Qui Tran",
+                    "employeeTrackingTime": {
+                        "shiftId": 2,
+                        "shiftName": "Taking care lab1",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    },
+                     "status": "Approved"
+
+                },
+                {
+                    "id": 4,
+                    "length": 8,
+                    "location": "lab 4",
+                    "employeeName":"Qui Tran",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    },
+                     "status": "Approved"
+                },
+                {
+                    "id": 8,
+                    "length": 8,
+                    "location": "lab 4",
+                    "employeeName":"Qui Tran",
+                    "employeeTrackingTime": {
+                        "shiftId": 1,
+                        "shiftName": "Taking care lab 4",
+                        "checkInTime": "2016-10-27T08:00:00Z",
+                        "checkOutTime": "2016-10-27T05:00:00Z"
+                    },
+                     "status": "Pending"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "type": " TimeSheetDto ",
+        "totalPage": 3
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "items": [],
+    "data": {
+        "usedDays": 5.0,
+        "availableDays": 0.0
+    },
+    "errors": [],
+    "error": null,
+    "meta": {
+        "type": "LeaveStatisticDto",
+        "count": null,
+        "httpStatus": null,
+        "logref": null,
+        "links": null,
+        "totalPage": null
+    }
+}

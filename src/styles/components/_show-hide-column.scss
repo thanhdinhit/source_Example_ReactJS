@@ -1,0 +1,46 @@
+.show-hide-column {
+    position: relative;
+    height: 30px;
+    button {
+        width: 30px;
+        height: 30px;
+        padding: unset;
+    }
+
+    .popover-container {
+        margin-top: 10px;
+        .arrow-up {
+            width: 10px;
+            height: 10px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #fff;
+            content: "";
+            position: absolute;
+            margin: auto;
+            z-index: 22222;
+            -webkit-filter: drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.2));
+            top: 30px;
+            right: 5px;
+        }
+        .popover-content {
+            width: 295px;
+            max-height: 320px;
+            padding: 10px;
+            min-width: 50px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+            position: absolute;
+            right: 0;
+            z-index: 100;
+            overflow-y: auto;
+            .my-checkbox {
+                label {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+}

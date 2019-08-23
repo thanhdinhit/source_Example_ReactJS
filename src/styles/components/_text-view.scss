@@ -1,0 +1,40 @@
+.text-view {
+    color: $default-text;
+    margin-bottom: 15px;
+    &.inline {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    img {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+    .content {
+        width: 100%;
+        border: none;
+        position: relative;
+        border-radius: 4px;
+        padding: 6px 10px;
+        line-height: 16px;
+        background-color: $gray-color-4;
+        font-weight: 600;
+        &.with-image {
+            padding: 4px 10px;
+        }
+    }
+    .text-view-disabled {
+        background-color: #eee;
+        opacity: 0.7;
+        border: 1px solid $gray-light-border;
+    }
+    .title {
+        color: #666666;
+        font-weight: unset;
+    }
+    a{
+        cursor: pointer;
+        color: $default-text;
+    }
+}

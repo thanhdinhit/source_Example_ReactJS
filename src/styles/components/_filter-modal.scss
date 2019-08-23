@@ -1,0 +1,173 @@
+.filter-option {
+    &.no-child {
+        .search-input {
+            padding: 6px 12px 6px 30px;
+        }
+        .clear {
+            right: 10px;
+        }
+    }
+    max-width: 300px;
+    position: relative;
+    .search-label {
+        position: absolute;
+        padding-left: 10px;
+        margin-top: 5px;
+        left: 0;
+    }
+    .filter-input {
+        float: right;
+        margin-top: -25px;
+        padding: 0px 10px 10px 10px;
+        cursor: pointer;
+        z-index: 2;
+        position: relative;
+    }
+    .filter-arrow-up {
+        width: 10px;
+        height: 10px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        content: "";
+        position: absolute;
+        margin: auto;
+        z-index: 22222;
+        -webkit-filter: drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.2));
+        top: 22px;
+        right: 8px;
+    }
+    .search-input {
+        padding: 6px 30px;
+    }
+}
+
+.has-select-arrow {
+    width: 100%;
+}
+
+.dialog-filter {
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    .filter-modal {
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        z-index: 1500;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        .modal-content {
+            margin: 0px auto;
+            margin-left: 73px;
+            animation-name: none;
+            animation-duration: 0s;
+            float: right;
+            margin-right: 25px;
+            &.md-lg {
+                width: 93vw;
+            }
+            &.md-medium {
+                width: 70vw;
+            }
+            &.md-small {
+                width: 60vw;
+            }
+            .modal-body {
+                overflow: visible !important;
+            }
+            .filter-row {
+                margin-right: 50px;
+                .more-options>[class^='col-'] {
+                    margin-bottom: 15px;
+                    min-height: 55px;
+                }
+                >[class^='col-'] {
+                    margin-bottom: 15px;
+                    min-height: 55px;
+                }
+            }
+            .button-add-more {
+                position: absolute;
+                top: 37px;
+                right: 35px;
+                z-index: 3;
+                &.is--disabled {
+                    pointer-events: none;
+                    cursor: not-allowed;
+                }
+                &.open {
+                    &>.arrow-up {
+                        width: 10px;
+                        height: 10px;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid $white;
+                        content: "";
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0px;
+                        right: 0px;
+                        margin: auto;
+                        z-index: 3;
+                        filter: drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.2));
+                    }
+                }
+                .button-circle {
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 0;
+                    border-radius: 50%;
+                    padding: 0px;
+                    border-color: rgba(205, 133, 133, 0.00);
+                    border: 0px;
+                    background-color: $button-text !important;
+                }
+                .scrollable-menu {
+                    height: auto;
+                    max-height: 215px;
+                    overflow-x: hidden;
+                    border-radius: 5px;
+                }
+            }
+            .more-options {
+                margin-left: 0;
+                margin-right: 0;
+                padding-bottom: 15px;
+                span {
+                    color: $text-lighter;
+                }
+                .remove-filter {
+                    padding-left: 10px;
+                    cursor: pointer;
+                    margin-bottom: 8px;
+                }
+                .filter-address {
+                    height: 54px;
+                }
+            }
+        }
+        .modal-footer {
+            height: 55px;
+            text-align: right;
+            padding: 0px;
+            border-top: 0px;
+            .button-footer-right {
+                padding-top: 5px;
+                margin-right: 20px;
+                .button-not-required {
+                    background-color: $grey-color-deep !important;
+                }
+            }
+        }
+    }
+    @media screen and (max-height: 1600px) {
+        .filter-modal .modal-content .modal-body {
+            max-height: none;
+        }
+    }
+}

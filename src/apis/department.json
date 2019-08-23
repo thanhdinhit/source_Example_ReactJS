@@ -1,0 +1,121 @@
+{
+    "items": [
+        {
+            "data": {
+                "id": 1,
+                "name": "TMA Solutions",
+                "country": "Ho Chi Minh",
+                "supervisor": {
+					"email":"testmail11@gmail.com",
+					"fullName":"Phi Luu",
+					"id":4,
+					"photoUrl":"ava_1484799840630.jpg"
+				},
+                "parent": null,
+                "type":         
+				{
+					"id": 1,
+					"name": "Company",
+					"description": "Root Department",
+					"stamp": 0
+				},
+                "description": "Department",
+                "stamp": 0
+            },
+            "meta": {
+                "type": "DepartmentDto"
+            }
+        },
+        {
+            "data": {
+                "id": 2,
+                "name": "HR/Admin Department",
+                "type": 
+				{
+					"id": 2,
+					"name": "Department",
+					"description": "Department",
+					"stamp": 0
+				},
+                "country": "Ho Chi Minh",
+                "supervisor": {
+					"email":"testmail11@gmail.com",
+					"fullName":"Phi Luu",
+					"id":4,
+					"photoUrl":"ava_1484799840630.jpg"
+				},
+                "parent": {
+					"id": 1,
+					"name": "TMA Solutions"
+				},
+                "description": "HR Department",
+                "stamp": 0
+            },
+            "meta": {
+                "type": "DepartmentDto"
+            }
+        },
+        {
+            "data": {
+                "id": 3,
+                "name": "IT Department",
+                "country": "Ho Chi Minh",
+                "supervisor": {
+					"email":"testmail11@gmail.com",
+					"fullName":"Phi Luu",
+					"id":4,
+					"photoUrl":"ava_1484799840630.jpg"
+				},
+                "parent": {
+					"id": 1,
+					"name": "TMA Solutions"
+				},
+                "type": 
+				{
+					"id": 2,
+					"name": "Department",
+					"description": "Department",
+					"stamp": 0
+				},
+                "description": "IT Department",
+                "stamp": 0
+            },
+            "meta": {
+                "type": "DepartmentDto"
+            }
+        },
+        {
+            "data": {
+                "id": 4,
+                "name": "DC7",
+                "country": "Canada",
+                "supervisor": {
+					"email":"testmail11@gmail.com",
+					"fullName":"Phi Luu",
+					"id":4,
+					"photoUrl":"ava_1484799840630.jpg"
+				},
+                "parent": {
+					"id": 1,
+					"name": "TMA Solutions"
+				},
+                "type": 
+				{
+					"id": 3,
+					"name": "Project",
+					"description": "Project",
+					"stamp": 0
+				},
+                "description": "DC7",
+                "stamp": 0
+            },
+            "meta": {
+                "type": "DepartmentDto"
+            }
+        }                
+    ],
+    "meta": {
+        "type": "collection",
+        "count": 12
+    }
+}

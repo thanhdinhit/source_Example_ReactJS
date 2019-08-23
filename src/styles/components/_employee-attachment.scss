@@ -1,0 +1,56 @@
+.employee-attachment{
+    .header-attach{
+        margin-bottom: 11px;
+        width: 100%;
+        text-align: right;
+    }
+    .attach-body{
+        margin-right: -10px;
+    }
+    .attachment-position{
+        .document-view{
+            position: relative;
+            margin-bottom: 15px;
+            height: 25px;
+            display: flex;
+            padding-right: 60px;
+            .icon-type-file{
+                width: 25px;
+            }
+            .document-name {
+                padding-left: 10px;
+                color: $default-text;
+                font-weight: 600;
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+                >div{
+                    display: table-cell;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+            .attach-remove{
+                position: absolute;
+                right: 15px;
+                cursor: pointer;
+                top: 5px;
+            }
+        }
+    }
+    @media screen and (max-width: 991px){
+        .document-name {
+            >div{
+                max-width: 500px !important;
+            }
+        }
+    }
+    @media screen and (max-width: 1199px){
+        .document-name {
+            >div{
+                max-width: 350px;
+            }
+        }
+    }
+}

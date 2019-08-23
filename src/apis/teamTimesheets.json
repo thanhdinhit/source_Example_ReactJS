@@ -1,0 +1,36 @@
+{
+    "items": [
+        {
+            "employeeId": 1,
+            "employeeName":"Huy Nguyen",
+            "totalHours": 12,
+            "scheduledHours":10,
+            "status":"Pending"
+        },
+        {
+            "employeeId": 2,
+            "employeeName":"Hung Tran",
+            "totalHours": 12,
+            "scheduledHours":10,
+            "status":"Pending"
+        },
+        {
+            "employeeId": 3,
+            "employeeName":"Tin Tran",
+            "totalHours": 22,
+            "scheduledHours": 14,
+            "status":"Pending"
+        },
+        {
+            "employeeId": 4,
+            "employeeName":"Phi Luu",
+            "totalHours": 28,
+            "scheduledHours": 23,
+            "status":"Approved"
+        }
+    ],
+    "meta": {
+        "type": " TimeSheetDto ",
+        "totalPage": 3
+    }
+}

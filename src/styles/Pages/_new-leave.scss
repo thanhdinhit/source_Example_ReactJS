@@ -1,0 +1,118 @@
+.new-leave {
+    .dialog-newLeave{
+        padding: 0px;
+        padding-bottom: 10px; 
+        overflow: unset;
+    }
+    .newleave-container{
+        padding: 0px 20px 0px 20px;
+    }
+    .row-header {
+        margin-bottom: 0;
+        .breadcrumb {
+            margin-bottom: 0;
+            line-height: 30px;
+            height: 30px;
+        }
+    }
+    .hours-available {
+        height: 50px;
+        background: rgba(101, 200, 208, 0.1);
+        text-align: center;
+        padding-top: 14px;
+        span {
+            vertical-align: middle;
+            color: $default-text;
+            font-size: 13px;
+        }
+    }
+    .common-select, .input-container, .email-input-container, .time-picker {
+        margin-bottom: 15px;
+    }
+    .input-group {
+        &.date {
+            margin-bottom: 15px;
+        }
+    }
+    .attachment-position {
+        margin-right: 0;
+        margin-left: 0;
+        .attached-file {
+            display: inline-block;
+            margin-right: 10px;
+            .document-view {
+                position: relative;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                background-color: $gray-color;
+                padding: 6px 10px;
+                .icon-type-file {
+                    width: 20px;
+                }
+                .document-name {
+                    &.can-delete {
+                        margin-right: 30px;
+                    }
+                    padding-left: 10px;
+                    color: $default-text;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    vertical-align: middle;
+                }
+                .attach-remove {
+                    width: 13px;
+                    height: 14px;
+                    right: 10px;
+                    top: 10px;
+                    cursor: pointer;
+                    position: absolute;
+                }
+            }
+        }
+    }
+    .attach-files {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-bottom: 15px;
+        img {
+            padding-right: 7px;
+            cursor: pointer;
+        }
+        span {
+            cursor: pointer;
+            vertical-align: middle;
+            color: $primary-color-deep;
+        }
+    }
+    .leave-type-info {
+        .modal-content {
+            width: 740px;
+        }
+        .modal-body {
+            padding-top: 0;
+            padding-bottom: 15px;
+            .title {
+                font-size: 13px;
+                font-weight: 600;
+                margin-top: 15px;
+            }
+        }
+    }
+    .leave-type-title {
+        display: inline-block;
+    }
+    .question-icon {
+        padding-left: 10px;
+    }
+    .footer-container {
+        margin-right: 15px;
+        margin-left: 15px;
+        padding-bottom: 20px;
+    }
+    .my-checkbox {
+        &.with-medical-certificate {
+            margin-top: 0px;
+        }
+    }
+}
+

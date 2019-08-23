@@ -1,0 +1,111 @@
+$unpublish-status-color: #F5BE58;
+$publish-status-color: #7FBA00;
+$error-status-color: #DC5360;
+$error-border-color: #E47680;
+
+.dialog-replace-employee {
+    .modal-body {
+        overflow-y: unset;
+    }
+    .replace-employee-popover-content {
+        text-align: left;
+        > div {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            .radio-button {
+                margin: 0;
+                display: inline-block;
+            }
+            .date-picker {
+                width: 123px;
+                margin: 0 10px;
+                display: inline-block;
+            }
+            > span {
+                font-weight: normal;
+            }
+        }
+        .replacement {
+            display: block;
+            .employee-replacement-info {
+                background-color: #fafafa;
+                border: 1px solid $gray-light-border;
+                border-radius: 5px;
+                padding: 15px 0;
+                .avatar-content {
+                    text-align: center;
+                    img {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                        margin-bottom: 10px;
+                    }
+                    .cell-content {
+                        vertical-align: middle;
+                        .main-label {
+                            vertical-align: middle;
+                            font-weight: 600;
+                            line-height: 16px;
+                        }
+                        .sub-label {
+                            vertical-align: middle;
+                            font-weight: normal;
+                            line-height: 16px;
+                            font-size: 11px;
+                            color: $color-table-header;
+                        }
+                    }
+                }
+                .line-through {
+                    padding-top: 20px;
+                    padding-bottom: 25px;
+                    position: relative;
+                    > div {
+                        height: 1px;
+                        border-top: 1px solid $gray-light-border;
+                        display: inline-block;
+                        width: calc(50% - 20px);
+                    }
+                    .right-line {
+                        position: relative;
+                        left: 40px;
+                    }
+                    .swap-icon {
+                        position: absolute;
+                        border: none;
+                        font-size: 23px;
+                        color: $gray-color-deep;
+                        width: 40px;
+                        top: 18px;
+                        text-align: center;
+                    }
+                }
+                .employee-selection {
+                    position: relative;
+                    .employee-common-select {
+                        width: 210px;
+                        margin: auto;
+                        background-color: $white;
+                        margin-bottom: 10px;
+                    }
+                    .clear-button {
+                        position: absolute;
+                        top: 5px;
+                        right: 38px;
+                    }
+                }
+                .advanced-search, .clear-button {
+                    text-align: center;
+                    font-weight: 600;
+                    a {
+                        color: $primary-color-darker;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

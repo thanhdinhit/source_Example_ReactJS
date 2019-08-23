@@ -1,0 +1,52 @@
+.filter-address {
+    .my-custom-popover {
+        z-index: 100;
+        width: 100%;
+        min-width: 60px;
+        height: 86px;
+        padding-right: 30px;
+        position: absolute;
+        display: table;
+        .body-center {
+            display: table-cell;
+            vertical-align: middle;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.16);
+            .body-container {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                .body-content {
+                    display: table;
+                    width: 100%;
+                    >div{
+                        padding: 15px 10px 0px 10px;
+                        >div{
+                            display: flex;
+                            >span{
+                                position: fixed;
+                            }
+                            >div:nth-child(1){
+                                position: absolute;
+                                top: 24px;
+                            }
+                            >div:nth-child(2){
+                                width: 100%;
+                                padding-left: 55px;
+                                position: relative;
+                            }
+                        }
+                    }
+                    .Select-multi-value-wrapper{
+                        display: table;
+                    }
+                }
+                .footer-content{
+                    float: right;
+                    padding: 20px 10px 20px 0px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.export-dialog {
+    .modal-body {
+        overflow-y: hidden;
+        padding: 15px 20px 0 20px;
+        .body-export {
+            .header {
+                display: inline-flex;
+                position: relative;
+                top: 0px;
+                height: 34px;
+                width: 100%;
+                border-bottom: solid 1px $grey-color-lighter;
+            }
+            .columns-export{
+                margin-bottom: 0px;
+                height: 225px;
+                overflow-y: scroll;
+                .my-checkbox{
+                    padding: 5px 0px 5px 0px;
+                }
+            }
+            [type="checkbox"] + label {
+                font-size: 13px;
+            }
+        }
+    }
+}

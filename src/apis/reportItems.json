@@ -1,0 +1,29 @@
+{
+    "items": [
+        {
+            "id": "1",
+            "name": "Huy Nguyen",
+            "position": "Guard",
+            "team": "Security",
+            "annualDaysAvailable": 23,
+            "annualDaysUsed": 0
+        },
+        {
+            "id": "2",
+            "name": "Trong Cao",
+            "position": "Engineer",
+            "team": "Teach",
+            "annualDaysAvailable": 10,
+            "annualDaysUsed": 6
+        }
+    ],
+    "errors": [],
+    "meta": {
+        "type": "collection",
+        "count": 1,
+        "httpStatus": null,
+        "logref": null,
+        "links": null,
+        "totalPage": 1
+    }
+}

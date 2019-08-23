@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+            "id":1,
+            "name": "Da Nang",
+            "description": "Da Nang City"
+        },
+        {
+            "id":2,
+            "name": "Ha Noi",
+            "description": "Ha Noi City"
+        },
+        {
+            "id":3,
+            "name": "Ho Chi Minh",
+            "description": "Ho Chi Minh City"
+        }
+    ]
+
+}

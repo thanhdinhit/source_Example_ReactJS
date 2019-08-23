@@ -1,0 +1,399 @@
+.new-employee {
+    .footer-container {
+        margin-top: 30px;
+    }
+    .header{
+        margin-bottom: 5px;
+    }
+    .stepper-container {
+        margin-bottom: 15px;
+    }
+    .contact-detail-container {
+        margin-bottom: 5px;
+    }
+    .working-time-checkbox {
+        margin-bottom: 12px;
+        margin-top: 4px;
+        font-weight: 600;
+    }
+    .report-to-checkbox {
+        margin-top: -4px;
+    }
+    .availability-container {
+        margin-bottom: 10px;
+        .workingtype-select {
+            width: 295px;
+            margin-bottom: 20px;
+        }
+        .new-employee-title {
+            padding-bottom: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .select-container {
+        position: relative;
+    }
+    .new-employee-attach-files {
+        .area-attach-file {
+            margin-top: 8px;
+        }
+        .area-attach-file .attach-body-file .col:nth-child(2n + 1) {
+            padding-right: 15px;
+        }
+        .area-attach-file .attach-body-file .col:nth-child(2n + 2) {
+            padding-left: 15px;
+        }
+    }
+    .toggle-container {
+        display: flex;
+        min-width: 33.33333333%;
+        width: unset;
+        .toggle-base {
+            margin-top: 18px;
+        }
+        span {
+            padding-left: 10px;
+            position: absolute;
+            margin-top: 24px;
+        }
+        >div{
+            margin-right: 30px;
+        }
+    }
+    .pay-rate {
+        .new-employee-title {
+            span {
+                vertical-align: middle;
+            }
+            .question-icon {
+                cursor: pointer;
+            }
+        }
+        .text-view {
+            margin-bottom: 0;
+        }
+        margin-bottom: 40px;
+        span:nth-child(1){
+            margin-right: 10px;
+        }
+    }
+    .dialog-change-pay-rate {
+        > div {
+            line-height: 11px;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 15px;
+            }
+        }
+        span:last-child {
+            float: right;
+            font-weight: 600;
+        }
+        .increase {
+            color: #4bd78d;
+        }
+        .decrease {
+            color: #db5461;
+        }
+    }
+
+    
+}
+
+.new-employee-com {
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.16);
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.border-dialog {
+    border-bottom: 1px solid #d6e1e5;
+}
+
+.contact-detail-right {
+    &>.row>.col {
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+}
+
+.col.availability>div:last-child {
+    border-bottom: 0 !important;
+}
+
+.line {
+    height: 1px;
+    background-color: #eeeef8;
+    position: relative;
+    margin: 20px 0px 20px 0px;
+}
+
+.deleteicon {
+    float: right;
+    color: #db5360;
+    cursor: pointer;
+}
+
+.contact-detail-textfield {
+    margin-bottom: -30px !important;
+    margin-right: -12px !important;
+    margin-left: -30px !important;
+}
+
+.required-textfield {
+    color: $danger-color-brighter;
+}
+
+.cancel-button {
+    background-color: $grey-color-deep;
+    &:hover {
+        background-color: $grey-color-deep-hover;
+    }
+}
+
+.date-picker-custom-input {
+    margin-top: -8px;
+    margin-bottom: 22px;
+}
+
+.date-picker-text-field {
+    visibility: hidden;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+}
+
+.date-picker-custom-icon {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    cursor: pointer;
+}
+
+.job-role-skills {
+    .new-employee-title {
+        line-height: 12px;
+        font-size: 14px;
+        padding-bottom: 0;
+    }
+    >.row {
+        &:first-child {
+            height: 14px;
+            margin-bottom: 20px;
+            div {
+                margin-bottom: 0;
+            }
+        }
+        &:nth-child(2) {
+            height: 30px;
+            .common-select {
+                padding-top: 0;
+            }
+            margin-bottom: 20px;
+        }
+        .border-box-content {
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding: 0px;
+            border: 1px solid $gray-light-border;
+            .table-container {
+                &.no-min-height {
+                    min-height: 0px;
+                }
+
+                table {
+                    width: 100%;
+                }
+
+                padding: 0px 17px;
+
+                td {
+                    padding-top: 17px;
+                }
+
+                tr:nth-last-child(1) td {
+                    padding: 17px 0px;
+                }
+
+                .note-action {
+                    position: relative;
+
+                    .td-actions {
+                        position: absolute;
+                        right: 0;
+                        top: calc(50% - 12px);
+                    }
+                }
+
+                .title-note {
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: $default-text;
+                }
+
+                .reason-note {
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-align: left;
+                    color: $lighter-text;
+                }
+
+                .label-input span {
+                    font-size: 13px;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                }
+
+                .certificate {
+                    border-top: none;
+                    border-bottom: 1px solid #eeeeee;
+
+                    td {
+                        padding-bottom: 17px;
+                    }
+                }
+
+                .certificate-view {
+                    .td-name {
+                        padding-left: 10px;
+                    }
+                }
+
+                .td-expiredDate {
+                    padding-right: 0px;
+                    width: 100%;
+
+                    .add-update {
+                        padding-left: 0px;
+                        text-transform: capitalize;
+                    }
+                }
+
+                .td-actions {
+                    .dropdown-menu {
+                        padding: 0px !important;
+
+                        li {
+                            padding: 0px !important;
+
+                            a {
+                                padding: 8px 10px;
+                            }
+
+                            i {
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.has-error {
+                border: solid 1px $danger-color-popover;
+
+                .popover-error {
+                    top: 0px;
+                    right: 0px;
+                }
+
+                .border-box-header {
+                    background-color: $danger-color-input;
+                    border-bottom: 1px solid $danger-color-popover;
+                }
+            }
+        }
+        .border-box-header {
+            color: $default-text;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 17px;
+            background-color: #f5fafa;
+            border-radius: 5px;
+            &.has-border-bottom {
+                border-bottom: 1px solid $gray-light-border;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+
+            .my-checkbox {
+                position: absolute;
+                margin-top: -7px;
+            }
+
+            .title {
+                margin-left: 30px;
+                position: relative;
+
+                &.title-optional {
+                    margin-left: 0px;
+
+                    .trash-icon {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .button-add-skill {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    .row.add-skills {
+        height: 25px;
+        margin-bottom: 20px;
+        .row-header {
+            margin-top: 12px;
+            height: 12px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    }
+    .dialog-confirm {
+        .modal-header {
+            height: 43px;
+        }
+        .modal-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #2b4043;
+            padding: 15px 20px;
+            line-height: 1;
+        }
+        .modal-icon {
+            margin: 0;
+            padding: 0;
+        }
+        .modal-body {
+            min-height: 78px;
+            padding: 11px 20px 20px 20px;
+        }
+        &.dialog-attach-file {
+            .modal-header {
+                .modal-title {
+                    padding-top: 12px;
+                }
+            }
+            .modal-body {
+                padding: 14px 20px 0 20px;
+            }
+        }
+    }
+    .title-skills {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        color: $default-text;
+    }
+    .add-skill {
+        padding: 41px;
+        border: dashed 1px $primary-color-deep;
+        border-radius: 5px;
+
+        .label-input {
+            span {
+                font-size: 13px;
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,227 @@
+.employee-handsets {
+    .text-right {
+        margin-bottom: 20px;
+    }
+    .metro-table {
+        thead>tr>th {
+            .columnName {
+                text-transform: none;
+            }
+            &:nth-child(1) {
+                width: 25%;
+            }
+            &:nth-child(2) {
+                width: 15%;
+            }
+            &:nth-child(3) {
+                width: 15%;
+            }
+            &:nth-child(4) {
+                width: 15%;
+            }
+            &:nth-child(5) {
+                width: 15%;
+            }
+            &:nth-child(6) {
+                width: 15%;
+            }
+        }
+    }
+    .dialog-confirm {
+        &.dialog-return-handsets {
+            .modal-body {
+                min-height: 0;
+            }
+        }
+        .modal-header {
+            height: 43px;
+        }
+        .modal-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #2b4043;
+            padding: 15px 20px;
+            line-height: 1;
+        }
+        .modal-icon {
+            margin: 0;
+            padding:0;
+        }
+        .modal-content {
+            .modal-body {
+                overflow-y: visible;
+                padding: 15px 20px 20px 20px;
+                > div >.row {
+                    margin-bottom: 15px;
+                    .common-select {
+                        margin: 0;
+                    }
+                    &:first-child {
+                        margin-bottom: 0;
+                        .input-group {
+                            margin-bottom: 15px
+
+                        }
+                        .common-select {
+                            margin-bottom: 15px;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.dialog-add-handset-type {
+    .handset-footer {
+        margin-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.dialog-add-handset {
+    .title-header {
+    color: $primary-color-darker;
+    margin-top: -10px;
+    padding-bottom: 18px;
+    font-weight: 600;
+    }
+    .row {
+        padding-bottom: 17px;
+        &:last-child {
+            padding-bottom: 30px;
+        }
+    }
+    .handset-footer {
+        padding-bottom: 20px;
+        float: right;
+    }
+}
+.dialog-assign-handset {
+    .choose-handset-step {
+        .filter {
+            position: relative;
+            > div {
+                &:first-child {
+                    float: left;
+                    width: 197px;
+                    margin-right: 10px;
+                }
+                &:nth-child(2) {
+                    float: left;
+                    width: 197px;
+                }
+                &:nth-child(3) {
+                    width: 230px;
+                    float: right;
+                }
+            }
+        }
+        .search {
+            position: absolute;
+            right: 0;
+            height: 30px;
+            width: 190px;
+            input {
+                padding-left: 28px;
+            }
+            input::-moz-placeholder {
+                font-size: 12px;
+                font-weight: normal;
+                color: $gray-color-deep;
+            }
+            input::-webkit-input-placeholder {
+                font-size: 12px;
+                font-weight: normal;
+                color: $gray-color-deep;
+            }
+            .img-search {
+                width: 14px;
+                left: 10px;
+                top: 8px;
+                position: absolute;
+                &.none {
+                    display: none;
+                }
+            }
+        }
+        .metro-table {
+            margin-top: 15px;
+            tbody {
+                display: block;
+                height: 200px;
+                overflow-y: scroll;
+            }
+            thead, tbody  {
+                tr {
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                    margin-top: 0;
+                }
+            }
+            thead tr th {
+                &:nth-child(1) {
+                    width: 20%;
+                }
+                &:nth-child(2) {
+                    width: 27%;
+                }
+                &:nth-child(3) {
+                    width: 27%;
+                }
+                &:nth-child(4) {
+                    width: auto;
+                }
+            }
+            tbody tr td {
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                &:nth-child(1) {
+                    width: 20%;
+                }
+                &:nth-child(2) {
+                    width: 27%;
+                }
+                &:nth-child(3) {
+                    width: 27%;
+                }
+                &:nth-child(4) {
+                    width: auto;
+                }
+            }
+        }
+        .clear {
+            clear: both;
+        }
+    }
+    .assign-handset-step {
+        .handset-type-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: $primary-color-darker;
+            margin-bottom: 20px;
+            line-height: 14px;
+            margin-top: 5px;
+        }
+        .text-area {
+            margin-bottom: 15px;
+        }
+        .date-picker {
+            margin-bottom: 15px;
+        }
+        .print-asset-button {
+            margin-left: 0;
+            border: 1px solid $primary-color;
+            background-color: white;
+            color: $primary-color-darker;
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}

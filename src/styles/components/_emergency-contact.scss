@@ -1,0 +1,86 @@
+
+.emergency-contact{
+    .emergency-box{
+        &:nth-child(4){
+            margin-right: 0px;
+        }
+        >div{
+            width: 100%;
+            font-weight: 600;
+        }
+        .emergency-box-container{
+            background-color: $gray-color-4;
+            min-height: 49px;
+            border-radius: 5px;
+            padding: 6px 15px 10px 20px;
+            word-wrap: break-word;
+            .emergency-one-action{
+                float: right;
+                width: auto;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            >span{
+                color: $default-text;
+                font-weight: normal;
+                font-size: 12px;
+            }
+        }
+    }
+    .add-emergency{
+        margin-top: 14px;
+        >div{
+            cursor: pointer;
+            width: fit-content;
+            >span{
+                padding-left: 10px;
+                color: $primary-color-darker;
+                vertical-align: middle;
+            }
+        }  
+    }
+}
+
+.emergency-contact {
+    .content-position {
+        .text-right {
+            margin-bottom: 4px;
+            .raised-button.add-contact {
+                height: 25px;
+                min-width: 113px;
+            }
+        }
+        margin-top: 5px;
+        .metro-table {
+            margin-top: 0px;
+            thead>tr>th {
+                &:nth-child(1) {
+                    width: 45%;
+                }
+                &:nth-child(2) {
+                    width: 25%;
+                }
+                &:nth-child(3) {
+                    width: 25%;
+                    float: right;
+                }
+            }
+            .fa.fa-trash-o.danger {
+                padding-right: 15px;
+                font-size: 14px;
+                color: $danger-color-brighter;
+            }
+        }
+    }
+    .dialog-confirm {
+        .modal-content {
+            width: 415px;
+            .modal-body {
+                .input-container {
+                    margin-bottom: 15px;
+                }
+            }
+
+        }
+    }
+}

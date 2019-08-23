@@ -1,0 +1,112 @@
+.view-edit-employee {
+    padding-bottom: 100px;
+    .employee-attachment{
+        margin-top: -10px;
+    }
+    .row-header-profile {
+        margin-bottom: 20px;
+            .profile-header {
+                width: 100%;
+                .box-avatar {
+                    position: absolute;
+                    z-index: 2;
+                    .avatar-profile {
+                        border-radius: 50%;
+                        height: 60px;
+                        width: 60px;
+                    }
+                    .img-button-upload {
+                        cursor: pointer;
+                        position: absolute;
+                        bottom: 0px;
+                        right: -10px;
+                        margin-bottom: 0px;
+                        .input-camera {
+                            width: 31px;
+                            height: 31px;
+                            color: white;
+                            background: $primary-color;
+                            border-radius: 25px;
+                            border: 3px solid white;
+                            i {
+                                font-size: 14px;
+                                line-height: 24px;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+                .name-profile {
+                    min-width: 250px;
+                    padding-left: 80px;
+                    padding-top: 6px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: $title-text;
+                    position: absolute;
+                    >div{
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        max-width: 500px;
+                        overflow: hidden;
+                    }
+                    .userrole-name {
+                        color: $lighter-text;
+                        font-size: 13px;
+                        margin-top: -5px;
+                        font-weight: normal;
+                    }
+                }
+                .error {
+                    font-size: 14px;
+                }
+                .header-button {
+                    padding-right: 0px !important;
+                    width: 100%;
+                    margin-bottom: 40px;
+                    padding-top: 10px;
+                    .change-pw-button {
+                        height: 30px;
+                        border-radius: 5px;
+                        width: auto;
+                        font-weight: 600;
+                        &:hover {
+                            background-color: $primary-color-deep-hover;
+                        }
+                    }
+                }
+        }
+    }
+    .text-view-disabled {
+        color: $disable-text;
+    }
+    @media (max-width: 769px) {
+        .box-avatar {
+            width: 100px !important; 
+            height: 100px !important;
+            margin-left: 0 !important;
+            top: 20px !important;
+            &>img {
+                width: 100px !important;
+                height: 100px !important;
+            }
+        }
+        .name-profile {
+            margin-top: 15px !important;
+            margin-left: 5px !important;
+        }
+        .box-position {
+            margin-top: -117px !important;
+        }
+        .tabs {
+            top: -35px !important;
+            padding-left: 93px !important;
+        }
+    }
+    @media(max-width:902px) {
+        .box-position {
+            margin-top: -163px;
+        }
+    }
+}
+

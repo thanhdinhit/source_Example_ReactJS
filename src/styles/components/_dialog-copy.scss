@@ -1,0 +1,42 @@
+.dialog-copy {
+    .copy-schedule-info {
+        .underline {
+            padding: 13px 0;
+            div {
+                display: inline-block;
+                &:nth-child(1) {
+                    border-bottom: 1px solid $border-table-color;
+                    width: calc(50% - 10px);
+                }
+                &:nth-child(2) {
+                    height: 20px;
+                    margin-bottom: -10px;
+                    text-align: center;
+                    position: relative;
+                    i {
+                        position: absolute;
+                        font-size: 22px;
+                        color: $gray-light-border;
+                        background: white;
+                        padding-right: 10px;
+                        padding-left: 10px;
+                    }
+                }
+                &:nth-child(3) {
+                    border-bottom: 1px solid $border-table-color;
+                    width: calc(50% - 10px);
+                    margin-bottom: 0;
+                    margin-left: 20px;
+                }
+            }
+        }
+        div {
+            &:last-child {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .modal-body {
+        overflow: initial;
+    }
+}

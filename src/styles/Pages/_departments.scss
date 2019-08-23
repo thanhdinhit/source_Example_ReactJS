@@ -1,0 +1,86 @@
+.page-departments{
+    .row-header{
+        .header-button{
+            padding-right: 0;
+        }
+    }
+    .row-body{
+        background-color: $white;
+        .awesome-table{
+            tr{
+                td{
+                    min-height: 70px;
+                    height: 70px;
+                }
+                td.normal-avatar-cell {
+                    .avatar-label{
+                        font-weight: 600;
+                    }
+                }            
+            }
+        }
+    }
+
+    .modal-content{
+        width: 600px;
+        color: $default-text;
+        .row{
+            margin-bottom: 0;
+        }
+
+        .col.s12{
+            padding: 0;
+        }
+        .error{
+            font-size: 12px;
+            
+            &.right-align{
+                text-align: right;
+                position: absolute;
+                margin-top: 10px;
+                right: 10px;
+            }
+        }
+
+        .raised-button{
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+
+        .label-title{
+            font-size: 14px;
+        }
+
+        .label-content{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 14.31px;
+            margin-top: 10px;
+        }
+
+        .field-content{
+            margin-top: 0px;
+            font-size: 16px;
+            font-weight: 600;
+            height: 42px !important;
+            color: $default-text;
+            line-height: 14.31px;
+            margin-bottom: 15px;
+
+            &>div:first-child {
+                color: $default-hint !important;
+                font-family: 'Open Sans';
+                line-height: 24px;
+                font-weight: 400;
+            }
+        }
+
+        .common-select{
+            margin-bottom: 5px;
+            .Select-control{
+                padding-bottom: 2px;
+            }
+        }
+    }
+}

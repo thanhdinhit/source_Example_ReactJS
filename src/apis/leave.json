@@ -1,0 +1,28 @@
+{
+    "item":[],
+    "data": {
+        "id": "1",
+        "employeeId": "1",
+        "leaveType": {
+            "id": 2,
+            "name": "Unpaid"
+        },
+        "approvers": [
+            {
+                "id": 2,
+                "name": "Qui Tran"
+            }
+        ],
+        "leaveFrom": "2016-08-22T01:30:00Z",
+        "leaveTo": "2016-08-25T11:00:00Z",
+        "leaveStatus": "Pending",
+        "reasonText": "sick",
+        "emailCCs": "user1@tma.com.vn;user2@tma.com.vn",
+        "reasonFromApprover": null,
+        "createdDate": "2016-08-26T16:32:56Z",
+        "modifiedDate": "2016-08-26T16:32:56Z"
+    },
+    "meta": {
+        "type": "LeaveDto"
+    }
+}

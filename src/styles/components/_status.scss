@@ -1,0 +1,61 @@
+.status-cell {
+    .status-active {
+        background: $blue-color-3;
+        border: solid 1px $blue-color-3;
+        color: $blue-color-4;
+    }
+    .status-terminated {
+        background:  $status-declined-background;
+        border: solid 1px  $status-declined-background;
+        color: $status-declined-color;
+    }
+    .status-completed {
+        background: $blue-color-3;
+        border: solid 1px $blue-color-3;
+        color: $blue-color-4;
+    }
+    .status-draft {
+        background: $gray-color-lighter;
+        border: solid 1px $gray-color-lighter;
+        color: grey;
+    }
+    .status-suspended {
+        background:  $status-declined-background;
+        border: solid 1px  $status-declined-background;
+        color: $status-declined-color;
+    }
+}
+
+.status {
+    width: 85px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;
+    &.Active{
+        color: $status-active-color;
+        background: $status-active-background;
+    }
+    &.Draft{
+        color: $status-draft-color;
+        background: $status-draft-background;
+    }
+    &.Pending {
+        color: $status-pending-color;
+        background: $status-pending-background;
+    }
+    &.Declined, &.Suspended {
+        color: $status-declined-color;
+        background: $status-declined-background;
+    }
+    &.Approved, &.Accepted {
+        color: $status-approved-color;
+        background: $status-approved-background;
+    }
+    &.Canceled, &.Completed {
+        color: $status-canceled-color;
+        background: $status-canceled-background;
+    }
+}

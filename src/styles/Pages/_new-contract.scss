@@ -1,0 +1,80 @@
+.new-contract {
+    .header {
+        margin-bottom: 5px;
+        .status {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            margin-left: 10px;
+        }
+    }
+    .stepper-container {
+        margin-bottom: 15px;
+    }
+    .new-contract-title {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        line-height: 12px;
+        color: $primary-color-darker;
+        display: inline-block;
+    }
+    .new-contract-working-location-container {
+        .new-contract-title {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        .no-location-added {
+            text-align: center;
+            background-color: #f9f9f9;
+            padding-top: 55px;
+            padding-bottom: 55px;
+            margin-bottom: 30px;
+            .no-location-added__icon {
+                i {
+                    font-size: 30px;
+                }
+            }
+            .no-location-added__title {
+                font-size: 25px;
+                color: #bebebe;
+                padding-bottom: 15px;
+            }
+        }
+        .dialog-add-locations {
+            .modal-body {
+                .search {
+                    display: inline-block;
+                    width: 420px;
+                    .img-search {
+                        left: 26px;
+                    }
+                }
+                .new-location {
+                    float: right;
+                }
+                .metro-table {
+                    tr {
+                        th {
+                            &:nth-child(2) {
+                                width: 30%;
+                            }
+                            &:nth-child(3) {
+                                width: 70%;
+                            }
+                        }
+                        td {
+                            &:nth-child(2) {
+                                width: 30%;
+                            }
+                            &:nth-child(3) {
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

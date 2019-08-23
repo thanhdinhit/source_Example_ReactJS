@@ -1,0 +1,234 @@
+.slider-duration-time {
+    display: inline-flex;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    .slider-label {
+        line-height: 25px;
+        font-size: 12px;
+        width: 40px;
+        font-weight: normal;
+    }
+    .slider-btn-all-day {
+        line-height: 25px;
+        width: 80px;
+        color: $color-all-day-slider;
+        text-align: right;
+        font-size: 12px;
+        i {
+            margin-right: 5px;
+        }
+        label {
+            cursor: pointer;
+            font-weight: 600;
+        }
+    }
+    .slider-regular-hours {
+        z-index: 1;
+        height: 25px;
+        width: 77px;
+        padding-left: 10px;
+        margin-right: 35px;
+        margin-left: 40px;
+        line-height: 25px;
+        color: #2b4043;
+        background-color: #eeeeee;
+        text-align: left;
+        font-size: 13px;
+        border: 1px solid #dcdfe5;
+        border-radius: 5px;
+        span {
+            text-align: left;
+            font-weight: 600;
+        }
+    }
+    .slider-container {
+        background: white;
+        width: 1056px;
+        height: 25px;
+        position: relative;
+        .slider-draggable {
+            &.view {
+                cursor: auto;
+            }
+            cursor: pointer;
+            background: transparent;
+            height: 25px;
+            position: absolute;
+            top: 0px;
+            &.slider-green {
+                background: $color-slider;
+                .resize-left,
+                .resize-right {
+                    background: none;
+                }
+            }
+            &.slider-blue {
+                background: $color-slider-blue;
+                .resize-left,
+                .resize-right {
+                    background: none;
+                }
+            }
+            &.slider-error {
+                background: $color-slider-error;
+                .resize-left,
+                .resize-right {
+                    background: none;
+                }
+            }
+        }
+        .slider-draggable>.resize-left {
+            position: absolute;
+            left: 0;
+            cursor: e-resize;
+            height: 100%;
+            width: 5px;
+            background: $color-slider;
+        }
+        .slider-draggable>.resize-right {
+            right: 0;
+            position: absolute;
+            cursor: e-resize;
+            height: 100%;
+            width: 5px;
+            background: $color-slider;
+            vertical-align: middle;
+        }
+        .slider-background {
+            display: table;
+            position: absolute;
+            bottom: 0;
+            height: 8px;
+            width: 100%;
+        }
+        .slider-background .slider-cell {
+            border-left: 1px solid $color-border-left-slider;
+            border-bottom: 1px solid $color-border-bottom-slider;
+            height: 100%;
+            width: 44px;
+            display: table-cell;
+        }
+        .slider-background .slider-cell:last-child {
+            width: auto;
+            border-left: 1px solid $color-border-left-slider;
+            border-bottom: 1px solid $color-border-bottom-slider;
+            border-right: 1px solid $color-border-left-slider;
+            height: 100%;
+            display: table-cell;
+        }
+        .slider-draggable>.slider-remove {
+            right: 10px;
+            line-height: 25px;
+            cursor: pointer;
+            position: absolute;
+            font-size: 10px;
+            color: white;
+        }
+        .slider-draggable>.icon-input {
+            right: 24px;
+            top: 5px;
+            z-index: unset;
+        }
+        .slider-draggable.view>.icon-input {
+            right: 10px;
+        }
+        .slider-draggable .slider-title {
+            color: white;
+            position: absolute;
+            line-height: 25px;
+            left: 10px;
+            font-weight: 600;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            user-select: none;
+        }
+        .slider-draggable .slider-title-small {
+            color: white;
+            position: absolute;
+            left: 10px;
+            font-weight: 600;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            user-select: none;
+            padding-top: 1px;
+            div {
+                font-size: 11px;
+                line-height: 11px;
+            }
+        }
+    }
+}
+
+.availability-container {
+    position: relative;
+}
+
+.regular-hour-background {
+    top: 0;
+    right: 44px;
+    width: 110px;
+    height: 283px;
+    z-index: 0;
+    position: absolute;
+    background: $gray-color-4;
+    border-radius: 5px;
+}
+
+.slider-ruler {
+    margin-top: 15px;
+    position: relative;
+    width: 1066px;
+    height: 22px;
+    margin-left: 50px;
+    margin-bottom: 8px;
+    .slider-ruler-number {
+        height: 10px;
+        width: 1190px;
+        margin-left: -7px;
+        margin-bottom: 4px;
+        .slider-ruler-hour {
+            font-size: 12px;
+            line-height: 12px;
+            width: 44px;
+        }
+        &.regular-hours {
+            font-weight: bold;
+            width: 90px;
+            white-space: nowrap;
+            font-size: 12px;
+            line-height: 12px;
+            z-index: 1;
+        }
+    }
+    .slider-ruler-line {
+        height: 8px;
+        display: table;
+    }
+    .slider-ruler-cell {
+        width: 11px;
+        display: table-cell;
+        vertical-align: middle;
+        .slider-ruler-piece {
+            margin: auto;
+            width: 11px;
+        }
+    }
+    .slider-ruler-cell:nth-child(4n+1) {
+        .slider-ruler-piece {
+            height: 8px;
+            border-left: 1px solid $color-border-left-ruler1;
+        }
+    }
+    .slider-ruler-cell:nth-child(4n+3) {
+        .slider-ruler-piece {
+            height: 5px;
+            border-left: 1px solid $color-border-left-ruler1;
+        }
+    }
+    .slider-ruler-cell:nth-child(2n+2) {
+        .slider-ruler-piece {
+            height: 5px;
+            border-left: 1px solid $color-border-left-ruler2;
+        }
+    }
+}

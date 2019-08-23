@@ -1,0 +1,117 @@
+.dialog-schedule {
+    margin-top: 10px;
+    .col1 {
+    width: 20px;
+    }
+    .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 0px 1px 3px 0 rgba(28, 77, 94, 0.35);
+
+    }
+}
+.roll {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    img {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+}
+.schedule-assign-employee {
+    .modal-title {
+        text-align: left;
+
+        label {
+            text-transform: uppercase;
+        }
+    }
+
+    .modal-body {
+        height: 500px;
+        width: 100%;
+        display: table;
+        .dialog-parent {
+            display: table-cell;
+            height: 100%;
+            width: 100%;
+            .dialog-child {
+                display: block;
+                height: 100%;
+                width: 100%;
+                display: table;
+                .row {
+                    display: table-row;
+                    &:nth-child(1) {
+                        height: 0;
+                    }
+                    &:nth-child(2) {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .filter-option {
+        max-width: 100%;
+    }
+
+    .common-select {
+        text-align: left !important;
+    }
+
+    .employees-assign {
+        margin-top: 20px;
+        .dialog-content-wrapper {
+            position: relative;
+            width: 100%;
+            height: calc(100% - 30px);
+            .dialog-content {
+                overflow-y: auto;
+                position: absolute;
+                top: 10px;
+                left: 15px;
+                bottom: 0px;
+                right: 0px;
+            }
+        }
+        .metro-table tbody tr {
+            &.is--selected {
+                background-color: $background-selected;
+            }
+
+            &.is--disable {
+                pointer-events: none;
+                cursor: not-allowed;
+            }
+
+            td {
+                text-align: left;
+            }
+        }
+
+        .show-selected {
+            color: $primary-color;
+            text-decoration: underline;
+        }
+
+        .my-checkbox {
+            float: left;
+            margin-left: -5px;
+        }
+
+        .request-overtime {
+            margin-top: 10px;
+            .ot-checkbox {
+                padding-left: 10px;
+            }
+            .employees-selected {
+                text-align: right;
+            }
+        }
+    }
+}

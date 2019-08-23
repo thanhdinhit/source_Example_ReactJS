@@ -1,0 +1,68 @@
+.termination-tab {
+    .termination-first-time {
+        margin-top: 250px;
+        >div {
+            display: table;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        >button {
+            display: table;
+            margin: auto;
+        }
+    }
+    .termination-action {
+        .raised-button {
+            float: right;
+        }
+    }
+    .dialog-confirm {
+        &.rejoin-dialog {
+            .modal-body {
+                min-height: 0;
+            }
+        }
+        .modal-header {
+            height: 43px;
+        }
+        .modal-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #2b4043;
+            padding: 15px 20px;
+            line-height: 1;
+        }
+        .modal-icon {
+            margin: 0;
+            padding: 0;
+        }
+        .modal-content {
+            .modal-body {
+                padding: 15px 20px 20px 20px;
+                >div>.row {
+                    margin-bottom: 15px;
+                    .common-select {
+                        margin: 0;
+                    }
+                    &:first-child {
+                        margin-bottom: 0;
+                        .input-group {
+                            margin-bottom: 15px
+                        }
+                        .common-select {
+                            margin-bottom: 15px;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &.rejoin {
+                        .input-group {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

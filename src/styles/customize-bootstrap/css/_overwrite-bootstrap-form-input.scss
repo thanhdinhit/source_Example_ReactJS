@@ -1,0 +1,154 @@
+.form-control {
+    font-size: 13px;
+    height: 30px;
+    box-shadow: none;
+    border: 1px solid $gray-light-border;
+    color: $default-text;
+    font-weight: 600;
+}
+
+.disabled-span {
+    background-color: #eee !important;
+    opacity: 1;
+}
+
+.has-error .form-control,
+.has-error .input-group-addon,
+.has-error textarea {
+    border-color: $danger-color-popover
+}
+
+.input-group-addon {
+    font-size: inherit;
+    padding: 6px 7px;
+    background: white;
+    &.text-view {
+        background-color: $gray-color-4;
+        border: 0;
+        border-left: 1px solid $gray-light-border;
+    }
+}
+
+.input-group {
+    .form-control.form-text-input {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .content {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.popover {
+    font-family: "Open Sans";
+}
+
+.has-error input,
+.has-error textarea {
+    background: $danger-color-input;
+}
+
+.has-error-text input {
+    padding-right: 30px;
+}
+
+.popover-normal {
+    .custom-popover {
+        background-color: $white;
+        box-shadow: none;
+        border: none;
+    }
+    .popover-content {
+        background: $white;
+        box-shadow: -1px 0px 4.8px 0.3px rgba(0, 0, 0, 0.2);
+        // border: solid 1px $danger-color-popover;
+        border-radius: 5px;
+    }
+    .popover>.arrow {
+        border-top-color: transparent;
+        border-width: 6px !important;
+        &:after {
+            border-top-color: $white;
+            border-bottom-color: transparent;
+            border-width: 6px;
+            bottom: -5px;
+            right: -6px;
+        }
+    }
+}
+
+.popover-error {
+    .custom-popover {
+        background-color: white;
+        border: 1px solid $danger-color-popover;
+    }
+    .popover-content {
+        background: white;
+        color: $danger-color-popover;
+    }
+    .popover>.arrow {
+        border-top-color: $danger-color-popover !important;
+
+        &:after {
+            border-top-color: white;
+            border-bottom-color: white;
+        }
+    }
+}
+
+.popover-warning {
+    .custom-popover {
+        background-color: $white;
+        box-shadow: none;
+        border: none;
+    }
+    .popover-content {
+        background: $white;
+        color: $yellow-color-3;
+        box-shadow: 0px 2px 5.8px 0.2px rgba(249, 198, 104, 0.5);
+        border: solid 1px $yellow-color-4;
+        border-radius: 5px;
+    }
+    .popover>.arrow {
+        border-top-color: transparent;
+        border-width: 6px !important;
+        border-top-color: $yellow-color-4;
+        &:after {
+            border-top-color: $white;
+            border-bottom-color: transparent;
+            border-width: 6px;
+            bottom: -5px;
+            right: -6px;
+        }
+    }
+}
+
+.dropdown-menu {
+    font-size: 13px;
+}
+
+input {
+    font-weight: 600;
+}
+
+.form-control::-moz-placeholder {
+    font-weight: 400;
+    color: $gray-color-deep;
+}
+
+.form-control:-ms-input-placeholder {
+    font-weight: 400;
+    color: $gray-color-deep;
+}
+
+.form-control::-webkit-input-placeholder {
+    font-weight: 400;
+    color: $gray-color-deep;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-weight: 400;
+    color: $gray-color-deep;
+}

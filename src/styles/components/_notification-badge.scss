@@ -1,0 +1,19 @@
+.notification-badge {
+  position: relative;
+}
+
+.notification-badge[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: 15px;
+  right: -2px;
+  font-size: .7em;
+  background: #209e91;
+  color: white;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px #333;
+}

@@ -1,0 +1,111 @@
+.contract-detail{
+    .header{
+        .right{
+            float: right;
+        }
+        .select-appendix{
+            font-size: 13px;
+            font-weight: 400;
+            float: right;
+            color:  $text-lighter;
+            display: inline-flex;
+            align-items: baseline;
+            .common-select{
+                width: 250px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .new-contract-info-container {
+        margin-bottom: 24px;
+        .input-container, .common-select, .input-group.date {
+            margin-bottom: 15px;
+        }
+        &:last-child {
+            margin-bottom: 5px;
+        }
+        .metro-table {
+            thead>tr>th {
+                &:nth-child(1) {
+                    width: 50px;
+                }
+            }
+            tbody {
+                td {
+                    .template-name {
+                        display: flex;
+                        vertical-align: middle;
+                        div {
+                            display: inline-block;
+                            &.template-color {
+                                width: 15px;
+                                height: 15px;
+                                display: inline-block;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .attach-body {
+            margin-top: 5px;
+        }
+        .attachment-position {
+            .document-view {
+                position: relative;
+                margin-bottom: 15px;
+                background-color: #efefef;
+                border-radius: 3px;
+                padding: 10px;
+                height: 40px;
+                display: flex;
+                .icon-type-file {
+                    width: 25px;
+                }
+                .document-name {
+                    padding-left: 10px;
+                    color: #2b4043;
+                    font-weight: 600;
+                    display: table;
+                    table-layout: fixed;
+                    width: calc(100% - 50px);
+                    div {
+                        display: table-cell;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
+                .attach-remove {
+                    position: absolute;
+                    right: 10px;
+                    padding-top: 4px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .linked-contracts {
+            .Select-arrow-zone {
+                display: none;
+            }
+            .Select-value-label {
+                a {
+                    color: $primary-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .est-contract-rate{
+            >div:first-child{
+                padding: 0px;
+                padding-right: 5px;
+            }
+            >div:last-child{
+                padding: 0px;
+                padding-top: 22px;
+            }
+        }
+    }
+}

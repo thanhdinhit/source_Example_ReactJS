@@ -1,0 +1,41 @@
+{
+    "items": [
+        {
+            "data": {
+                "id": 1,
+                "name": "Company",
+                "description": "Root Department",
+                "stamp": 0
+            },
+            "meta": {
+                "type": "DepartmentTypeDto"
+            }
+        },
+        {
+            "data": {
+                "id": 2,
+                "name": "Department",
+                "description": "Department",
+                "stamp": 0
+            },
+            "meta": {
+                "type": "DepartmentTypeDto"
+            }
+        },
+        {
+            "data": {
+                "id": 3,
+                "name": "Project",
+                "description": "Project",
+                "stamp": 0
+            },
+            "meta": {
+                "type": "DepartmentTypeDto"
+            }
+        }               
+    ],
+    "meta": {
+        "type": "collection",
+        "count": 3
+    }
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "name": "Annual"
+    },
+    {
+        "id":2,
+        "name": "Unpaid"
+    },
+    {
+        "id":3,
+        "name": "Medical"
+    }
+]

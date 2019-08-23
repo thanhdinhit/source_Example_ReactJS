@@ -1,0 +1,78 @@
+.edit-handset-page {
+    .header {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .edit-handset {        
+        .information-title, .purchase-warranty-title, .status-title {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: $primary-color-darker;
+            text-transform: uppercase;
+        }
+        .status-title {
+            margin-bottom: 18px;
+        }
+        .info-purchase-warning {
+            background-color: $gray-color-11;
+            border-radius: 10px;
+        }
+        .handset-information {
+            padding: 20px;
+            padding-bottom: 0;
+            hr {
+                margin: 0;
+                border-top: 1px dashed #c5c5c5;
+            }
+        }
+        .purchase-waranty-handset {
+            padding: 20px;
+            padding-bottom: 0;
+        }
+        .handset-status {
+            padding: 20px;
+            .status-component-title, .history-component-title {
+                margin-bottom: 15px;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            .print-asset-button {
+                margin-bottom: 20px;
+            }
+            .handset-status-history {
+                .primary-avatar-cell {
+                    .avatar-content {
+                        left: 0;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+                .metro-table {
+                    thead>tr>th {
+                        &:nth-child(1) {
+                            width: 15%;
+                        }
+                        &:nth-child(2) {
+                            width: 15%;
+                        }
+                        &:nth-child(4) {
+                            width: 30%;
+                        }
+                    }
+                }
+            }    
+        }
+        .input-container,
+        .common-select,
+        .input-group.date {
+            margin-bottom: 20px;
+        }
+    }
+    .footer-container {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,74 @@
+
+.leave-type row, .leave-box-section {
+        background-color: #fff;    
+}
+.leave-type{
+    .row {
+        background-color: #e2edf1;
+        border-bottom: 1px solid #d6e1e5;
+        border-top: 1px solid #d6e1e5;
+        margin: 0 0 0px 0;
+        padding-left: 11px;
+    }
+    .vertical-align {
+        margin-top: 15px;
+    }
+    .show-info{
+        cursor:pointer;
+        position: relative;
+        outline: none;
+    }
+    .info-detail{
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+        text-align: justify;
+        transition: all .5s ease;
+    }
+    .info-detail-active {
+        padding: 20px;        
+        width: 100%;
+        max-height: 600px;
+        overflow: hidden;
+        text-align: justify;
+        transition: all .5s ease;   
+    }
+}
+.info-detail-active > textarea {
+    resize: 'none';
+     width: '100%'; 
+     max-height: '1000px';
+}
+
+.senior-leave, .leave-balance {
+    .Select {
+        display: inline-block;
+    }
+}
+.leave-balance {
+    img {
+    margin-left: -16px;
+    }
+    td {
+        padding: 0;
+    }
+}
+.color-header-vl2 {
+        display: inline-block;
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
+.leave-box-section {
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.16);
+    .dateHolder {
+        width: 150px;
+        position: relative;
+        .dateIcon {
+            position: absolute;
+            right: -68px;
+            top: 13px;
+        }
+    }
+}

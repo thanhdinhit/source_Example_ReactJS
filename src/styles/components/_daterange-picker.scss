@@ -1,0 +1,49 @@
+.common-daterangepicker-inline {
+    table {
+        border-spacing: 0 1px;
+        border-collapse: separate;
+        tbody>tr {
+            td {
+                position: relative;
+                border-radius: 0;
+                &.day.active.from {
+                    z-index: 1;
+                    &:before {
+                        position:absolute;
+                        z-index:-1;
+                        top:0;
+                        right:0;
+                        width:50%;
+                        height:100%;
+                        content:"";
+                        background-color:#B2E4E8;
+                    }
+                }
+                &.day.active.to {
+                    z-index: 1;
+                    &:before {
+                        position:absolute;
+                        z-index:-1;
+                        top:0;
+                        left:0;
+                        width:50%;
+                        height:100%;
+                        content:"";
+                        background-color:#B2E4E8;
+                    }
+                }
+                &.day.highlight {
+                    background-color: #B2E4E8;
+                }
+                &:first-child {
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                }
+                &:last-child {
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                }
+            }
+        }
+    }
+}

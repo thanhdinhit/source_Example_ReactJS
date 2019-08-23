@@ -1,0 +1,102 @@
+.handsets{
+    .header{
+        margin-bottom: 5px;
+    }
+    .filter-option{
+        width: 300px;
+        margin-right: 10px;
+    }
+    .actions-group{
+        margin-left: 15px;
+        float: right;
+
+        >div{
+            display: inline-block;
+        }
+        .raised-button{
+            margin-left: 0px;
+        }
+    }
+    table {
+        td:nth-child(1) {
+            width: 14%;
+        }
+
+        td:nth-child(2) {
+            width: 14%;
+        }
+
+        td:nth-child(3) {
+            width: 14%;
+        }
+
+        td:nth-child(4) {
+            width: 14%;
+        }
+
+        td:nth-child(5) {
+            width: 14%;
+        }
+
+        td:nth-child(6) {
+            width: 20%;
+        }
+
+        .status-cell {
+            span {
+                display: inline-block;
+                text-align: center;
+                padding: 2px 10px 2px 10px !important;
+                min-width: 85px;
+            }
+            .status-In_stock {
+                background: $blue-color-3;
+                border: solid 1px $blue-color-3;
+                color: $blue-color-4;
+            }
+            .status-Assigned {
+                background: $gray-color-10;
+                border: solid 1px $gray-color-10;
+                color: grey;
+            }
+            .status-Lost {
+                background: $gray-color-15;
+                border: solid 1px $gray-color-15;
+                color: grey;
+            }
+            .status-Faulty {
+                background: $pink-color-2;
+                border: solid 1px $pink-color-2;
+                color: $pink-color-3;
+            }
+            .status-Disposed {
+                background: $gray-color-15;
+                border: solid 1px $gray-color-15;
+                color: grey;
+            }
+            .status-Sent_for_repairing {
+                background: $yellow-color-6;
+                border: solid 1px $yellow-color-6;
+                color: $yellow-color-7;
+            }
+        }
+
+        .col-action {
+            text-align: left;
+
+            .fa-user {
+                color:  $primary-color-darker;
+                font-size: 15.5px;
+            }
+
+            .fa-trash-o {
+                color: $lighter-text;
+                font-size: 15.5px;
+            }
+        }
+
+        .avatar-content {
+            left: 0px !important;
+        }
+    }
+}
